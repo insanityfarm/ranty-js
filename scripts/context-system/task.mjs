@@ -3,7 +3,7 @@ import {
   formatTaskSummary,
   loadContextData,
   parseArgs,
-  writeActiveTask,
+  writeActiveTask
 } from "./shared.mjs";
 
 const { flags, positionals } = parseArgs(process.argv.slice(2));
@@ -11,7 +11,7 @@ const task = positionals.join(" ").trim();
 
 if (!task) {
   throw new Error(
-    'Usage: npm run context:task -- "<task>" [--allow-locked=id1,id2]',
+    'Usage: npm run context:task -- "<task>" [--allow-locked=id1,id2]'
   );
 }
 

@@ -1,50 +1,90 @@
 {
-  "name": "anti-drift-ts-boilerplate",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Generic TypeScript boilerplate with an anti-drift workflow baked in.",
-  "type": "module",
-  "engines": {
-    "node": ">=22.0.0"
+  "name": "ranty-js",
+  "version": "1.0.0",
+  "description": "TypeScript port of the Ranty procedural templating language",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/insanityfarm/ranty-js.git"
   },
-  "files": [
-    "dist"
+  "homepage": "https://github.com/insanityfarm/ranty-js",
+  "bugs": {
+    "url": "https://github.com/insanityfarm/ranty-js/issues"
+  },
+  "keywords": [
+    "ranty",
+    "templating",
+    "procedural",
+    "generation",
+    "procgen"
   ],
-  "main": "./dist/index.js",
+  "main": "./dist/ranty.js",
+  "browser": "./dist/ranty.js",
   "types": "./dist/index.d.ts",
+  "unpkg": "./dist/ranty.js",
+  "jsdelivr": "./dist/ranty.js",
+  "bin": {
+    "ranty-js": "./dist/ranty.js"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
+      "default": "./dist/ranty.js"
     }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "docs"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
   },
   "scripts": {
     "arch:check": "node ./scripts/context-system/architecture.mjs",
-    "build": "tsc -p tsconfig.build.json",
+    "bench": "npm run build && bash benchmarks/run-hyperfine.sh",
+    "build": "npm run clean && rollup -c && tsc -p tsconfig.build.json",
     "check": "npm run lint && npm run format:check && npm run typecheck && npm run test && npm run arch:check && npm run context:check",
+    "clean": "rimraf dist coverage",
     "context:build": "node ./scripts/context-system/build.mjs",
     "context:check": "node ./scripts/context-system/check.mjs",
     "context:task": "node ./scripts/context-system/task.mjs",
+    "dev": "rollup -c -w",
+    "dev:repl": "tsx src/hosts/node/dev-repl.ts",
     "drift:review": "node ./scripts/context-system/review.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "npm run lint:eslint && npm run lint:directives && npm run terms:check",
     "lint:directives": "node ./scripts/check-eslint-directives.mjs",
     "lint:eslint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --fix",
     "terms:check": "node ./scripts/context-system/terms.mjs",
-    "test": "vitest run",
+    "test": "npm run build && vitest run",
+    "test:unit": "vitest run",
+    "test:watch": "vitest",
     "typecheck": "tsc --noEmit -p tsconfig.json",
+    "upstream:check-freshness": "node ./scripts/upstream/check-freshness.mjs",
+    "upstream:sync": "node ./scripts/upstream/sync-ranty.mjs",
     "verify": "npm run check && npm run build"
   },
   "devDependencies": {
     "@eslint/js": "^9.23.0",
-    "@types/node": "^22.13.10",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@types/node": "^22.13.13",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
     "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
     "globals": "^16.0.0",
     "js-yaml": "^4.1.0",
+    "jsdom": "^26.0.0",
     "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.36.0",
+    "rollup-plugin-esbuild": "^6.2.1",
+    "tsx": "^4.19.3",
     "typescript": "^5.8.2",
-    "typescript-eslint": "^8.28.0",
     "vitest": "^3.1.1"
   }
 }

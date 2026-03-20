@@ -1,7 +1,7 @@
 ---
 id: ADR-0001
 status: accepted
-date: 2026-03-19
+date: 2026-03-20
 subsystems:
   - repo-governance-context-system
 supersedes: []
@@ -15,8 +15,9 @@ tags:
 
 ## Context
 
-A reusable starter needs a compact, queryable way to keep blank-context work
-aligned with implemented architecture and workflow.
+The standalone Ranty.js repo needs a compact, queryable way to keep
+blank-context work aligned with implemented architecture, workflow, and the
+downstream parity policy.
 
 ## Decision
 

@@ -1,0 +1,93 @@
+id: runtime-core
+title: Runtime core
+status: evolving
+summary: >-
+  Owns the host-agnostic compiler pipeline, runtime engine, stdlib, module
+  resolution logic, value model, and the behavior tests that exercise them.
+owned_paths:
+  - benchmarks/workloads/**
+  - docs/library.md
+  - docs/modules.md
+  - docs/runtime.md
+  - src/core/**
+  - tests/access-range.test.ts
+  - tests/attribute-keywords.test.ts
+  - tests/closure-math.test.ts
+  - tests/collections.test.ts
+  - tests/functions.test.ts
+  - tests/general-format.test.ts
+  - tests/generate.test.ts
+  - tests/lexer.test.ts
+  - tests/lazy.test.ts
+  - tests/match-selector.test.ts
+  - tests/module-paths.test.ts
+  - tests/operators.test.ts
+  - tests/output-control.test.ts
+  - tests/pipes-spread.test.ts
+  - tests/prototype.test.ts
+  - tests/smoke.test.ts
+  - tests/suite-helpers.ts
+  - spec/subsystems/runtime-core.yaml
+related_paths:
+  - src/hosts/**
+  - upstream/ranty/**
+entrypoints:
+  - path: src/core/ranty.ts
+    symbols:
+      - Ranty
+      - RantyOptions
+  - path: src/core/compiler/index.ts
+    symbols:
+      - compileFile
+      - compileString
+  - path: src/core/runtime/vm.ts
+    symbols:
+      - VM
+depends_on: []
+used_by:
+  - public-api-and-build-contract
+  - host-integrations
+  - upstream-parity-contract
+required_reads:
+  spec:
+    - spec/README.md
+    - spec/testing-style.md
+  docs:
+    - docs/library.md
+    - docs/modules.md
+    - docs/runtime.md
+  decisions:
+    - spec/decisions/ADR-0003-rust-upstream-authority.md
+glossary_terms:
+  - runtime core
+  - upstream parity contract
+public_contracts:
+  - name: Ranty compile and run flow
+    summary: The compiler, runtime, and stdlib behave like the upstream Rust implementation unless divergence is made explicit.
+  - name: module resolution
+    summary: Core module-loading and resolver semantics stay host-agnostic and parity-aware.
+invariants:
+  - id: core-001
+    statement: src/core stays free of imports from src/hosts or the root barrel.
+  - id: core-002
+    statement: Runtime and stdlib behavior track the vendored upstream parity contract instead of silently diverging.
+  - id: core-003
+    statement: Core tests prefer observable behavior and corpus-backed parity over internal implementation detail checks.
+performance_constraints:
+  - Hot runtime paths should stay free of host-only wrappers and browser or Node assumptions.
+change_policy:
+  default: additive-with-validation
+  requires_adr:
+    - intentionally diverging core behavior from the Rust upstream contract
+tests:
+  - tests/smoke.test.ts
+  - tests/lexer.test.ts
+  - tests/module-paths.test.ts
+  - tests/operators.test.ts
+  - tests/functions.test.ts
+  - tests/collections.test.ts
+decision_refs:
+  - ADR-0003
+history_anchors:
+  introduced_by: 2026-03-20-ranty-js-repo-split
+  major_refactors: []

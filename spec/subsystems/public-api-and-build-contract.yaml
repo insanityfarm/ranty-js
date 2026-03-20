@@ -2,25 +2,36 @@ id: public-api-and-build-contract
 title: Public API and build contract
 status: locked
 summary: >-
-  Owns the exported library surface, root packaging metadata, and build-facing
-  configuration that defines how consumers load the package.
+  Owns the exported package surface, published package metadata, build
+  configuration, and public entrypoints consumers load.
 owned_paths:
+  - .nvmrc
   - package-lock.json
   - package.json
+  - rollup.config.mjs
   - tsconfig.build.json
   - tsconfig.json
   - vitest.config.ts
   - eslint.config.mjs
-  - spec/subsystems/public-api-and-build-contract.yaml
+  - docs/README.md
+  - docs/intro.md
   - src/index.ts
-  - src/public/**
-related_paths: []
+  - spec/subsystems/public-api-and-build-contract.yaml
+related_paths:
+  - src/core/**
+  - src/hosts/**
 entrypoints:
   - path: src/index.ts
     symbols:
-      - createExampleMessage
+      - Ranty
+      - RantyProgram
+      - RantyInt
+      - RantyRng
+      - DefaultModuleResolver
+      - VirtualModuleResolver
 depends_on:
-  - library-core
+  - runtime-core
+  - host-integrations
 used_by:
   - repo-governance-context-system
 required_reads:
@@ -31,30 +42,36 @@ required_reads:
     - docs/context-system/README.md
   decisions:
     - spec/decisions/ADR-0002-locked-subsystem-edit-policy.md
+    - spec/decisions/ADR-0003-rust-upstream-authority.md
 glossary_terms:
   - public API
   - locked subsystem
+  - parity lock
 public_contracts:
-  - name: "createExampleMessage(name?: string): string"
-    summary: Public sample API exposed through the root package barrel.
   - name: package exports
-    summary: Root package metadata defines the runtime and type entrypoints.
+    summary: Root package metadata defines the runtime, type, browser, and bin entrypoints.
+  - name: root barrel
+    summary: src/index.ts is the supported import surface for library consumers.
 invariants:
   - id: api-001
-    statement: Consumers import through src/index.ts rather than internal implementation paths.
+    statement: Consumers import through src/index.ts rather than deep internal paths.
   - id: api-002
-    statement: The root barrel re-exports public modules and does not reach into internal helpers directly.
+    statement: The root barrel may wire host bootstraps, but the public export surface remains intentional and stable.
+  - id: api-003
+    statement: Build, lint, and test configuration changes stay aligned with the published package contract.
 performance_constraints:
-  - Exported API changes must remain intentional because they affect downstream consumers.
+  - Exported API and build-surface changes must remain deliberate because they affect downstream consumers and CI behavior.
 change_policy:
   default: additive-with-validation
   requires_adr:
-    - changing the meaning of the exported contract
-    - weakening the public barrel boundary
+    - changing exported package behavior or entrypoints
+    - weakening the locked public or build contract
 tests:
-  - src/__tests__/createExampleMessage.test.ts
+  - tests/smoke.test.ts
+  - tests/browser-global.test.ts
 decision_refs:
   - ADR-0002
+  - ADR-0003
 history_anchors:
-  introduced_by: 2026-03-19-boilerplate-bootstrap
+  introduced_by: 2026-03-20-ranty-js-repo-split
   major_refactors: []

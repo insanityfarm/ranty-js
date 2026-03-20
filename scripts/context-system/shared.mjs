@@ -18,7 +18,7 @@ const WALK_IGNORES = new Set([
   ".git",
   "coverage",
   "dist",
-  "node_modules",
+  "node_modules"
 ]);
 
 function normalizePath(value) {
@@ -63,8 +63,8 @@ function formatGeneratedOutput(repoRoot, relativePath, contents) {
       {
         cwd: repoRoot,
         encoding: "utf8",
-        input: contents,
-      },
+        input: contents
+      }
     );
   } catch (error) {
     if (
@@ -144,8 +144,8 @@ function tokenizeText(input) {
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, " ")
         .split(/\s+/)
-        .filter((token) => token.length >= 3),
-    ),
+        .filter((token) => token.length >= 3)
+    )
   );
 }
 
@@ -165,13 +165,13 @@ export function parseArgs(argv) {
 
   return {
     flags,
-    positionals,
+    positionals
   };
 }
 
 function isPathInGeneratedRoots(relativePath, subsystemIndex) {
   return subsystemIndex.generated_roots.some((pattern) =>
-    path.posix.matchesGlob(relativePath, `${normalizePath(pattern)}/**`),
+    path.posix.matchesGlob(relativePath, `${normalizePath(pattern)}/**`)
   );
 }
 
@@ -184,15 +184,15 @@ function validateGlossarySource(glossarySource) {
   assertArray(glossarySource.terms, "glossary/terms.yaml must define terms.");
   assertArray(
     glossarySource.examples,
-    "glossary/terms.yaml must define examples.",
+    "glossary/terms.yaml must define examples."
   );
   assertArray(
     glossarySource.usage_rules,
-    "glossary/terms.yaml must define usage_rules.",
+    "glossary/terms.yaml must define usage_rules."
   );
   assertArray(
     glossarySource.cross_references,
-    "glossary/terms.yaml must define cross_references.",
+    "glossary/terms.yaml must define cross_references."
   );
 
   const termIds = new Set();
@@ -213,15 +213,15 @@ function validateGlossarySource(glossarySource) {
 
     assertArray(
       term.discouraged,
-      `Glossary term ${term.id} must define discouraged replacements.`,
+      `Glossary term ${term.id} must define discouraged replacements.`
     );
     assertArray(
       term.applies_to,
-      `Glossary term ${term.id} must define applies_to paths.`,
+      `Glossary term ${term.id} must define applies_to paths.`
     );
     assertArray(
       term.related_terms,
-      `Glossary term ${term.id} must define related_terms.`,
+      `Glossary term ${term.id} must define related_terms.`
     );
   });
 
@@ -229,7 +229,7 @@ function validateGlossarySource(glossarySource) {
     term.related_terms.forEach((relatedTermId) => {
       if (!termIds.has(relatedTermId)) {
         throw new Error(
-          `Glossary term ${term.id} references unknown related term ${relatedTermId}.`,
+          `Glossary term ${term.id} references unknown related term ${relatedTermId}.`
         );
       }
     });
@@ -238,7 +238,7 @@ function validateGlossarySource(glossarySource) {
   glossarySource.examples.forEach((entry, index) => {
     assertObject(
       entry,
-      `Glossary examples entry ${index + 1} must be an object.`,
+      `Glossary examples entry ${index + 1} must be an object.`
     );
 
     if (typeof entry.term !== "string" || entry.term.trim().length === 0) {
@@ -247,12 +247,12 @@ function validateGlossarySource(glossarySource) {
 
     assertArray(
       entry.examples,
-      `Glossary examples entry ${entry.term} must define examples.`,
+      `Glossary examples entry ${entry.term} must define examples.`
     );
 
     if (!termIds.has(entry.term)) {
       throw new Error(
-        `Glossary examples entry ${entry.term} references an unknown term.`,
+        `Glossary examples entry ${entry.term} references an unknown term.`
       );
     }
   });
@@ -263,18 +263,18 @@ function validateGlossarySource(glossarySource) {
 function validateSubsystemIndex(subsystemIndex) {
   assertObject(
     subsystemIndex,
-    "spec/subsystems/index.yaml must parse to an object.",
+    "spec/subsystems/index.yaml must parse to an object."
   );
 
   [
     "source_roots",
     "generated_roots",
     "exempt_paths",
-    "architecture_rules",
+    "architecture_rules"
   ].forEach((field) => {
     assertArray(
       subsystemIndex[field],
-      `spec/subsystems/index.yaml must define ${field}.`,
+      `spec/subsystems/index.yaml must define ${field}.`
     );
   });
 
@@ -300,7 +300,7 @@ function validateSubsystemRecord(record, filePath) {
     "used_by",
     "glossary_terms",
     "tests",
-    "decision_refs",
+    "decision_refs"
   ].forEach((field) => {
     assertArray(record[field], `${filePath} must define ${field}.`);
   });
@@ -309,19 +309,19 @@ function validateSubsystemRecord(record, filePath) {
     "entrypoints",
     "public_contracts",
     "invariants",
-    "performance_constraints",
+    "performance_constraints"
   ].forEach((field) => {
     assertArray(record[field], `${filePath} must define ${field}.`);
   });
 
   assertObject(
     record.required_reads,
-    `${filePath} must define required_reads.`,
+    `${filePath} must define required_reads.`
   );
   assertObject(record.change_policy, `${filePath} must define change_policy.`);
   assertObject(
     record.history_anchors,
-    `${filePath} must define history_anchors.`,
+    `${filePath} must define history_anchors.`
   );
 
   return record;
@@ -337,19 +337,19 @@ function parseFrontmatter(filePath) {
 
   return {
     body: contents.slice(match[0].length),
-    frontmatter: yaml.load(match[1]),
+    frontmatter: yaml.load(match[1])
   };
 }
 
 function loadGlossarySource(repoRoot) {
   return validateGlossarySource(
-    parseYamlFile(toAbsolutePath(repoRoot, "glossary/terms.yaml")),
+    parseYamlFile(toAbsolutePath(repoRoot, "glossary/terms.yaml"))
   );
 }
 
 function loadSubsystemIndex(repoRoot) {
   return validateSubsystemIndex(
-    parseYamlFile(toAbsolutePath(repoRoot, "spec/subsystems/index.yaml")),
+    parseYamlFile(toAbsolutePath(repoRoot, "spec/subsystems/index.yaml"))
   );
 }
 
@@ -364,12 +364,12 @@ function loadSubsystemRecords(repoRoot) {
     const relativePath = normalizePath(path.join("spec/subsystems", entry));
     const parsed = validateSubsystemRecord(
       parseYamlFile(toAbsolutePath(repoRoot, relativePath)),
-      relativePath,
+      relativePath
     );
 
     return {
       ...parsed,
-      filePath: relativePath,
+      filePath: relativePath
     };
   });
 
@@ -379,7 +379,7 @@ function loadSubsystemRecords(repoRoot) {
     [...record.depends_on, ...record.used_by].forEach((dependencyId) => {
       if (!ids.has(dependencyId)) {
         throw new Error(
-          `${record.filePath} references unknown subsystem ${dependencyId}.`,
+          `${record.filePath} references unknown subsystem ${dependencyId}.`
         );
       }
     });
@@ -402,7 +402,7 @@ function loadAdrRecords(repoRoot) {
     return {
       ...parsed.frontmatter,
       body: parsed.body,
-      filePath: relativePath,
+      filePath: relativePath
     };
   });
 }
@@ -418,7 +418,7 @@ export function loadContextData(repoRoot = process.cwd()) {
     glossary,
     repoRoot,
     subsystemIndex,
-    subsystems,
+    subsystems
   };
 }
 
@@ -430,7 +430,7 @@ function renderGlossaryTerm(term, glossarySource) {
     .map((entry) => `  - \`${entry}\``)
     .join("\n");
   const canonicalTerms = new Map(
-    glossarySource.terms.map((entry) => [entry.id, entry.canonical]),
+    glossarySource.terms.map((entry) => [entry.id, entry.canonical])
   );
   const relatedTerms = term.related_terms
     .map((entry) => `\`${canonicalTerms.get(entry) || entry}\``)
@@ -446,7 +446,7 @@ function renderGlossaryTerm(term, glossarySource) {
     "- Applies to:",
     appliesToLines,
     `- Related terms: ${relatedTerms || "none"}`,
-    "",
+    ""
   ].join("\n");
 }
 
@@ -454,7 +454,7 @@ export function generateGlossaryReadme(glossarySource) {
   const exampleRows = glossarySource.examples
     .map((entry) => {
       const term = glossarySource.terms.find(
-        (termEntry) => termEntry.id === entry.term,
+        (termEntry) => termEntry.id === entry.term
       );
       const exampleList = entry.examples
         .map((example) => `\`${example}\``)
@@ -481,7 +481,7 @@ export function generateGlossaryReadme(glossarySource) {
     "## Core Terms",
     "",
     ...glossarySource.terms.flatMap((term) => [
-      renderGlossaryTerm(term, glossarySource),
+      renderGlossaryTerm(term, glossarySource)
     ]),
     "## Examples",
     "",
@@ -496,7 +496,7 @@ export function generateGlossaryReadme(glossarySource) {
     "## Cross References",
     "",
     crossReferences,
-    "",
+    ""
   ].join("\n");
 }
 
@@ -537,7 +537,7 @@ function resolveImportSpecifier(repoRoot, fromFile, rawSpecifier) {
   }
 
   const resolvedPath = candidatePaths.find((candidatePath) =>
-    fs.existsSync(toAbsolutePath(repoRoot, candidatePath)),
+    fs.existsSync(toAbsolutePath(repoRoot, candidatePath))
   );
 
   return resolvedPath ? normalizePath(resolvedPath) : null;
@@ -549,7 +549,7 @@ function collectSourceImports(repoRoot, filePath, sourceText) {
     sourceText,
     ts.ScriptTarget.Latest,
     true,
-    filePath.endsWith(".ts") ? ts.ScriptKind.TS : ts.ScriptKind.JS,
+    filePath.endsWith(".ts") ? ts.ScriptKind.TS : ts.ScriptKind.JS
   );
   const imports = new Set();
 
@@ -591,7 +591,7 @@ function collectSourceImports(repoRoot, filePath, sourceText) {
 
 function collectFirstPartyFiles(repoRoot, subsystemIndex) {
   const files = subsystemIndex.source_roots.flatMap((rootEntry) =>
-    collectFilesFromRoot(repoRoot, rootEntry),
+    collectFilesFromRoot(repoRoot, rootEntry)
   );
   const uniqueFiles = Array.from(new Set(files)).sort();
 
@@ -606,13 +606,13 @@ function collectFirstPartyFiles(repoRoot, subsystemIndex) {
 
 function matchPatterns(relativePath, patterns) {
   return patterns.some((pattern) =>
-    path.posix.matchesGlob(relativePath, normalizePath(pattern)),
+    path.posix.matchesGlob(relativePath, normalizePath(pattern))
   );
 }
 
 function getOwningSubsystems(relativePath, subsystems) {
   return subsystems.filter((subsystem) =>
-    matchPatterns(relativePath, subsystem.owned_paths),
+    matchPatterns(relativePath, subsystem.owned_paths)
   );
 }
 
@@ -620,14 +620,14 @@ function getCoveredSubsystems(relativePath, subsystems) {
   return subsystems.filter(
     (subsystem) =>
       matchPatterns(relativePath, subsystem.owned_paths) ||
-      matchPatterns(relativePath, subsystem.related_paths),
+      matchPatterns(relativePath, subsystem.related_paths)
   );
 }
 
 export function buildRepoMap(contextData) {
   const firstPartyFiles = collectFirstPartyFiles(
     contextData.repoRoot,
-    contextData.subsystemIndex,
+    contextData.subsystemIndex
   );
   const codeFiles = firstPartyFiles.filter(isCodeFile);
   const importsByFile = new Map();
@@ -638,7 +638,7 @@ export function buildRepoMap(contextData) {
     const imports = collectSourceImports(
       contextData.repoRoot,
       relativePath,
-      readText(absolutePath),
+      readText(absolutePath)
     );
     importsByFile.set(relativePath, imports);
     imports.forEach((importPath) => {
@@ -655,10 +655,10 @@ export function buildRepoMap(contextData) {
       dependents: [...new Set(dependentsByFile.get(relativePath) || [])].sort(),
       imports: importsByFile.get(relativePath) || [],
       owners: getOwningSubsystems(relativePath, contextData.subsystems).map(
-        (subsystem) => subsystem.id,
+        (subsystem) => subsystem.id
       ),
       path: relativePath,
-      type: isCodeFile(relativePath) ? "code" : "text",
+      type: isCodeFile(relativePath) ? "code" : "text"
     })),
     subsystems: contextData.subsystems.map((subsystem) => ({
       depends_on: subsystem.depends_on,
@@ -666,8 +666,8 @@ export function buildRepoMap(contextData) {
       owned_paths: subsystem.owned_paths,
       related_paths: subsystem.related_paths,
       status: subsystem.status,
-      used_by: subsystem.used_by,
-    })),
+      used_by: subsystem.used_by
+    }))
   };
 }
 
@@ -676,7 +676,7 @@ export function renderSubsystemGraph(contextData) {
 
   contextData.subsystems.forEach((subsystem) => {
     lines.push(
-      `  ${subsystem.id.replace(/-/g, "_")}["${subsystem.title} (${subsystem.status})"]`,
+      `  ${subsystem.id.replace(/-/g, "_")}["${subsystem.title} (${subsystem.status})"]`
     );
   });
 
@@ -685,8 +685,8 @@ export function renderSubsystemGraph(contextData) {
       lines.push(
         `  ${subsystem.id.replace(/-/g, "_")} --> ${dependencyId.replace(
           /-/g,
-          "_",
-        )}`,
+          "_"
+        )}`
       );
     });
   });
@@ -709,7 +709,7 @@ function scoreSubsystem(subsystem, glossarySource, taskText, taskTokens) {
     ...subsystem.public_contracts.map((entry) => entry.name),
     ...subsystem.invariants.map((entry) => entry.statement),
     ...subsystem.performance_constraints,
-    ...subsystem.glossary_terms,
+    ...subsystem.glossary_terms
   ]
     .join(" \n ")
     .toLowerCase();
@@ -746,7 +746,7 @@ function scoreSubsystem(subsystem, glossarySource, taskText, taskTokens) {
 
     if (
       term.discouraged.some((entry) =>
-        loweredTaskText.includes(entry.toLowerCase()),
+        loweredTaskText.includes(entry.toLowerCase())
       )
     ) {
       score += 3;
@@ -757,7 +757,7 @@ function scoreSubsystem(subsystem, glossarySource, taskText, taskTokens) {
   return {
     reasons: uniqueSorted(reasons),
     score,
-    subsystem,
+    subsystem
   };
 }
 
@@ -765,7 +765,7 @@ function expandSubsystemSelection(scoredSubsystems, allSubsystems) {
   const selectedIds = new Set(
     scoredSubsystems
       .filter((entry) => entry.score > 0)
-      .map((entry) => entry.subsystem.id),
+      .map((entry) => entry.subsystem.id)
   );
   const expandedIds = new Set(selectedIds);
 
@@ -775,13 +775,13 @@ function expandSubsystemSelection(scoredSubsystems, allSubsystems) {
     }
 
     subsystem.depends_on.forEach((dependencyId) =>
-      expandedIds.add(dependencyId),
+      expandedIds.add(dependencyId)
     );
     subsystem.used_by.forEach((dependencyId) => expandedIds.add(dependencyId));
   });
 
   const governanceSubsystem = allSubsystems.find(
-    (subsystem) => subsystem.id === "repo-governance-context-system",
+    (subsystem) => subsystem.id === "repo-governance-context-system"
   );
 
   if (governanceSubsystem && expandedIds.size > 0) {
@@ -790,7 +790,7 @@ function expandSubsystemSelection(scoredSubsystems, allSubsystems) {
 
   return {
     expandedIds: [...expandedIds],
-    selectedIds: [...selectedIds],
+    selectedIds: [...selectedIds]
   };
 }
 
@@ -820,45 +820,45 @@ export function buildTaskPacket(contextData, options) {
   const taskTokens = tokenizeText(task);
   const scoredSubsystems = contextData.subsystems
     .map((subsystem) =>
-      scoreSubsystem(subsystem, contextData.glossary, task, taskTokens),
+      scoreSubsystem(subsystem, contextData.glossary, task, taskTokens)
     )
     .sort(
       (left, right) =>
         right.score - left.score ||
-        left.subsystem.id.localeCompare(right.subsystem.id),
+        left.subsystem.id.localeCompare(right.subsystem.id)
     );
   const { expandedIds, selectedIds } = expandSubsystemSelection(
     scoredSubsystems,
-    contextData.subsystems,
+    contextData.subsystems
   );
   const selectedSubsystems = contextData.subsystems.filter((subsystem) =>
-    expandedIds.includes(subsystem.id),
+    expandedIds.includes(subsystem.id)
   );
   const lockedSubsystems = selectedSubsystems
     .filter((subsystem) => subsystem.status === "locked")
     .map((subsystem) => subsystem.id);
   const allowLocked = uniqueSorted(
     (options.allowLocked || []).filter((entry) =>
-      lockedSubsystems.includes(entry),
-    ),
+      lockedSubsystems.includes(entry)
+    )
   );
   const requiredSpecReads = uniqueSorted([
     "spec/README.md",
-    ...selectedSubsystems.flatMap((subsystem) => subsystem.required_reads.spec),
+    ...selectedSubsystems.flatMap((subsystem) => subsystem.required_reads.spec)
   ]);
   const requiredDocsReads = uniqueSorted(
-    selectedSubsystems.flatMap((subsystem) => subsystem.required_reads.docs),
+    selectedSubsystems.flatMap((subsystem) => subsystem.required_reads.docs)
   );
   const requiredDecisionReads = uniqueSorted(
     selectedSubsystems.flatMap(
-      (subsystem) => subsystem.required_reads.decisions,
-    ),
+      (subsystem) => subsystem.required_reads.decisions
+    )
   );
   const requiredTests = uniqueSorted(
-    selectedSubsystems.flatMap((subsystem) => subsystem.tests),
+    selectedSubsystems.flatMap((subsystem) => subsystem.tests)
   );
   const glossaryTerms = uniqueSorted(
-    selectedSubsystems.flatMap((subsystem) => subsystem.glossary_terms),
+    selectedSubsystems.flatMap((subsystem) => subsystem.glossary_terms)
   );
 
   return {
@@ -873,18 +873,18 @@ export function buildTaskPacket(contextData, options) {
         id: entry.subsystem.id,
         reasons: entry.reasons,
         score: entry.score,
-        status: entry.subsystem.status,
+        status: entry.subsystem.status
       })),
     requiredDecisionReads,
     requiredDocsReads,
     requiredSpecReads,
     requiredSubsystemRecords: selectedSubsystems.map(
-      (subsystem) => subsystem.filePath,
+      (subsystem) => subsystem.filePath
     ),
     requiredTests,
     selectedSubsystemIds: selectedIds,
     task,
-    touchedSubsystemIds: selectedSubsystems.map((subsystem) => subsystem.id),
+    touchedSubsystemIds: selectedSubsystems.map((subsystem) => subsystem.id)
   };
 }
 
@@ -896,12 +896,12 @@ export function renderTaskMarkdown(taskPacket) {
     `Confidence: ${taskPacket.confidence}`,
     "",
     "## Matched Subsystems",
-    "",
+    ""
   ];
 
   taskPacket.matchedSubsystems.forEach((entry) => {
     lines.push(
-      `- ${entry.id} (${entry.status}, score ${entry.score}): ${entry.reasons.join(", ")}`,
+      `- ${entry.id} (${entry.status}, score ${entry.score}): ${entry.reasons.join(", ")}`
     );
   });
 
@@ -948,8 +948,8 @@ function getGitStatus(repoRoot) {
     ["status", "--short", "--untracked-files=all"],
     {
       cwd: repoRoot,
-      encoding: "utf8",
-    },
+      encoding: "utf8"
+    }
   );
 
   return output
@@ -978,7 +978,7 @@ function assertOwnedCoverage(contextData, repoMap) {
     throw new Error(
       `Unmapped first-party files detected:\n${unmappedFiles
         .map((entry) => `- ${entry}`)
-        .join("\n")}`,
+        .join("\n")}`
     );
   }
 }
@@ -990,18 +990,18 @@ function expectedGeneratedFiles(contextData) {
     "glossary/README.md": formatGeneratedOutput(
       contextData.repoRoot,
       "glossary/README.md",
-      generateGlossaryReadme(contextData.glossary),
+      generateGlossaryReadme(contextData.glossary)
     ),
     "spec/generated/repo-map.json": formatGeneratedOutput(
       contextData.repoRoot,
       "spec/generated/repo-map.json",
-      `${JSON.stringify(repoMap, null, 2)}\n`,
+      `${JSON.stringify(repoMap, null, 2)}\n`
     ),
     "spec/generated/subsystem-graph.mmd": formatGeneratedOutput(
       contextData.repoRoot,
       "spec/generated/subsystem-graph.mmd",
-      renderSubsystemGraph(contextData),
-    ),
+      renderSubsystemGraph(contextData)
+    )
   };
 }
 
@@ -1018,7 +1018,7 @@ export function writeContextArtifacts(contextData) {
   Object.entries(outputs).forEach(([relativePath, contents]) => {
     const didChange = writeTextIfChanged(
       toAbsolutePath(contextData.repoRoot, relativePath),
-      contents,
+      contents
     );
     if (didChange) {
       changedFiles.push(relativePath);
@@ -1045,9 +1045,9 @@ function touchedSubsystemsForFiles(filePaths, subsystems) {
   return uniqueSorted(
     filePaths.flatMap((filePath) =>
       getCoveredSubsystems(filePath, subsystems).map(
-        (subsystem) => subsystem.id,
-      ),
-    ),
+        (subsystem) => subsystem.id
+      )
+    )
   );
 }
 
@@ -1066,31 +1066,31 @@ function changedFilesNeedingSubsystemRecord(filePaths) {
         "package.json",
         "tsconfig.build.json",
         "tsconfig.json",
-        "vitest.config.ts",
-      ].includes(filePath),
+        "vitest.config.ts"
+      ].includes(filePath)
   );
 }
 
 function checkTaskCoverage(contextData, activeTask, changedFiles) {
   const changedSubsystems = touchedSubsystemsForFiles(
     changedFiles,
-    contextData.subsystems,
+    contextData.subsystems
   );
   const unexpectedSubsystems = changedSubsystems.filter(
-    (subsystemId) => !activeTask.touchedSubsystemIds.includes(subsystemId),
+    (subsystemId) => !activeTask.touchedSubsystemIds.includes(subsystemId)
   );
 
   if (unexpectedSubsystems.length) {
     throw new Error(
       `Changed files spill outside the active task packet:\n${unexpectedSubsystems
         .map((entry) => `- ${entry}`)
-        .join("\n")}`,
+        .join("\n")}`
     );
   }
 
   const disallowedLocked = changedSubsystems.filter((subsystemId) => {
     const subsystem = contextData.subsystems.find(
-      (entry) => entry.id === subsystemId,
+      (entry) => entry.id === subsystemId
     );
 
     return (
@@ -1104,24 +1104,24 @@ function checkTaskCoverage(contextData, activeTask, changedFiles) {
     throw new Error(
       `Locked subsystem edits require explicit allow-list entries:\n${disallowedLocked
         .map((entry) => `- ${entry}`)
-        .join("\n")}`,
+        .join("\n")}`
     );
   }
 
   const changedSubsystemRecords = new Set(
-    changedFiles.filter((filePath) => filePath.startsWith("spec/subsystems/")),
+    changedFiles.filter((filePath) => filePath.startsWith("spec/subsystems/"))
   );
   const changedDecisions = changedFiles.filter((filePath) =>
-    filePath.startsWith("spec/decisions/"),
+    filePath.startsWith("spec/decisions/")
   );
   const touchedOwnedSubsystemIds = touchedSubsystemsForFiles(
     changedFilesNeedingSubsystemRecord(changedFiles),
-    contextData.subsystems,
+    contextData.subsystems
   );
 
   touchedOwnedSubsystemIds.forEach((subsystemId) => {
     const subsystem = contextData.subsystems.find(
-      (entry) => entry.id === subsystemId,
+      (entry) => entry.id === subsystemId
     );
 
     if (!subsystem) {
@@ -1130,13 +1130,13 @@ function checkTaskCoverage(contextData, activeTask, changedFiles) {
 
     if (!changedSubsystemRecords.has(subsystem.filePath)) {
       throw new Error(
-        `Touched subsystem ${subsystemId} requires updating ${subsystem.filePath}.`,
+        `Touched subsystem ${subsystemId} requires updating ${subsystem.filePath}.`
       );
     }
 
     if (subsystem.status === "locked" && changedDecisions.length === 0) {
       throw new Error(
-        `Touched locked subsystem ${subsystemId} requires an ADR change under spec/decisions/.`,
+        `Touched locked subsystem ${subsystemId} requires an ADR change under spec/decisions/.`
       );
     }
   });
@@ -1149,7 +1149,7 @@ export function checkContextState(contextData) {
     throw new Error(
       `Derived context artifacts are stale. Run npm run context:build.\n${staleArtifacts
         .map((entry) => `- ${entry}`)
-        .join("\n")}`,
+        .join("\n")}`
     );
   }
 
@@ -1161,14 +1161,14 @@ export function checkContextState(contextData) {
 
       if (
         contextData.subsystemIndex.generated_roots.some((rootPath) =>
-          path.posix.matchesGlob(relativePath, `${normalizePath(rootPath)}/**`),
+          path.posix.matchesGlob(relativePath, `${normalizePath(rootPath)}/**`)
         )
       ) {
         return false;
       }
 
       return true;
-    },
+    }
   );
 
   if (!changedFiles.length) {
@@ -1177,12 +1177,12 @@ export function checkContextState(contextData) {
 
   const activeTask = readActiveTask(
     contextData.repoRoot,
-    contextData.subsystemIndex,
+    contextData.subsystemIndex
   );
 
   if (!activeTask) {
     throw new Error(
-      'Changed files detected without .agent-context/active-task.json. Run npm run context:task -- "<task>" first.',
+      'Changed files detected without .agent-context/active-task.json. Run npm run context:task -- "<task>" first.'
     );
   }
 
@@ -1192,16 +1192,16 @@ export function checkContextState(contextData) {
 export function checkTerminology(contextData) {
   const filesToScan = collectFirstPartyFiles(
     contextData.repoRoot,
-    contextData.subsystemIndex,
+    contextData.subsystemIndex
   ).filter(
     (relativePath) =>
-      isTextCheckFile(relativePath) && relativePath !== "glossary/terms.yaml",
+      isTextCheckFile(relativePath) && relativePath !== "glossary/terms.yaml"
   );
   const findings = [];
 
   filesToScan.forEach((relativePath) => {
     const contents = readText(
-      toAbsolutePath(contextData.repoRoot, relativePath),
+      toAbsolutePath(contextData.repoRoot, relativePath)
     );
 
     if (contents.startsWith(GENERATED_NOTICE)) {
@@ -1214,7 +1214,7 @@ export function checkTerminology(contextData) {
       term.discouraged.forEach((discouragedValue) => {
         if (loweredContents.includes(discouragedValue.toLowerCase())) {
           findings.push(
-            `${relativePath}: discouraged term "${discouragedValue}" should be replaced with "${term.canonical}".`,
+            `${relativePath}: discouraged term "${discouragedValue}" should be replaced with "${term.canonical}".`
           );
         }
       });
@@ -1236,29 +1236,29 @@ export function checkArchitecture(contextData) {
         (file) =>
           file.type === "code" &&
           rule.from.some((pattern) =>
-            path.posix.matchesGlob(file.path, normalizePath(pattern)),
-          ),
+            path.posix.matchesGlob(file.path, normalizePath(pattern))
+          )
       )
       .forEach((file) => {
         file.imports.forEach((importPath) => {
           const isForbidden = rule.forbidden.some((pattern) =>
-            path.posix.matchesGlob(importPath, normalizePath(pattern)),
+            path.posix.matchesGlob(importPath, normalizePath(pattern))
           );
           const isAllowed = (rule.allowed || []).some((pattern) =>
-            path.posix.matchesGlob(importPath, normalizePath(pattern)),
+            path.posix.matchesGlob(importPath, normalizePath(pattern))
           );
           const isExcepted = (rule.exceptions || []).some(
             (exception) =>
               path.posix.matchesGlob(
                 file.path,
-                normalizePath(exception.from),
+                normalizePath(exception.from)
               ) &&
-              path.posix.matchesGlob(importPath, normalizePath(exception.to)),
+              path.posix.matchesGlob(importPath, normalizePath(exception.to))
           );
 
           if (isForbidden && !isAllowed && !isExcepted) {
             findings.push(
-              `${rule.id}: ${file.path} -> ${importPath}\n  ${rule.message}`,
+              `${rule.id}: ${file.path} -> ${importPath}\n  ${rule.message}`
             );
           }
         });
@@ -1273,11 +1273,11 @@ export function checkArchitecture(contextData) {
 export function writeActiveTask(contextData, taskPacket) {
   const taskJsonPath = toAbsolutePath(
     contextData.repoRoot,
-    contextData.subsystemIndex.task_state_path,
+    contextData.subsystemIndex.task_state_path
   );
   const taskMarkdownPath = toAbsolutePath(
     contextData.repoRoot,
-    contextData.subsystemIndex.task_markdown_path,
+    contextData.subsystemIndex.task_markdown_path
   );
 
   writeTextIfChanged(taskJsonPath, `${JSON.stringify(taskPacket, null, 2)}\n`);
@@ -1287,24 +1287,24 @@ export function writeActiveTask(contextData, taskPacket) {
 export function buildReviewPacket(contextData) {
   const activeTask = readActiveTask(
     contextData.repoRoot,
-    contextData.subsystemIndex,
+    contextData.subsystemIndex
   );
 
   if (!activeTask) {
     throw new Error(
-      "Cannot build a review packet without .agent-context/active-task.json. Run npm run context:task first.",
+      "Cannot build a review packet without .agent-context/active-task.json. Run npm run context:task first."
     );
   }
 
   const changedFiles = getGitStatus(contextData.repoRoot).filter(
-    (relativePath) => !relativePath.startsWith(".agent-context/"),
+    (relativePath) => !relativePath.startsWith(".agent-context/")
   );
   const touchedSubsystems = touchedSubsystemsForFiles(
     changedFiles,
-    contextData.subsystems,
+    contextData.subsystems
   )
     .map((subsystemId) =>
-      contextData.subsystems.find((subsystem) => subsystem.id === subsystemId),
+      contextData.subsystems.find((subsystem) => subsystem.id === subsystemId)
     )
     .filter(Boolean);
   const changedAuthorityFiles = changedFiles.filter(
@@ -1313,7 +1313,7 @@ export function buildReviewPacket(contextData) {
       filePath.startsWith("docs/") ||
       filePath.startsWith("glossary/") ||
       filePath === "README.md" ||
-      filePath === "AGENTS.md",
+      filePath === "AGENTS.md"
   );
 
   const lines = [
@@ -1331,14 +1331,14 @@ export function buildReviewPacket(contextData) {
     ...touchedSubsystems.flatMap((subsystem) => [
       `- ${subsystem.id} (${subsystem.status})`,
       ...subsystem.invariants.map(
-        (invariant) => `  - ${invariant.id}: ${invariant.statement}`,
-      ),
+        (invariant) => `  - ${invariant.id}: ${invariant.statement}`
+      )
     ]),
     "",
     "## Changed Authoritative Artifacts",
     "",
     ...changedAuthorityFiles.map((entry) => `- ${entry}`),
-    "",
+    ""
   ];
 
   return `${lines.join("\n")}\n`;
@@ -1348,9 +1348,9 @@ export function writeReviewPacket(contextData, reviewPacket) {
   writeTextIfChanged(
     toAbsolutePath(
       contextData.repoRoot,
-      contextData.subsystemIndex.review_packet_path,
+      contextData.subsystemIndex.review_packet_path
     ),
-    reviewPacket,
+    reviewPacket
   );
 }
 

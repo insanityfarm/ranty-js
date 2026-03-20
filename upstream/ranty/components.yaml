@@ -1,0 +1,128 @@
+version: 1
+components:
+  - id: compiler
+    title: Compiler pipeline
+    summary: Lexing, reading, parser entrypoints, compiler diagnostics, and source-file compilation.
+    scope: core
+    rust_paths:
+      - src/compiler/**/*.rs
+    js_targets:
+      - src/core/compiler/**
+      - src/core/messages.ts
+      - src/core/errors.ts
+    depends_on:
+      - syntax-model
+
+  - id: syntax-model
+    title: Syntax and value model
+    summary: AST, values, collections, strings, selectors, bindings, conversion helpers, and core shared data structures.
+    scope: core
+    rust_paths:
+      - src/collections/**/*.rs
+      - src/convert.rs
+      - src/func.rs
+      - src/lang.rs
+      - src/selector.rs
+      - src/string.rs
+      - src/value.rs
+      - src/value_eq.rs
+      - src/var.rs
+    js_targets:
+      - src/core/binding.ts
+      - src/core/int64.ts
+      - src/core/lang.ts
+      - src/core/map-proto.ts
+      - src/core/program.ts
+      - src/core/values.ts
+    depends_on: []
+
+  - id: runtime-core
+    title: Runtime core
+    summary: Execution context, runtime engine, formatting state, RNG, module loading, data sources, and core runtime utilities.
+    scope: core
+    rust_paths:
+      - src/data.rs
+      - src/format/**/*.rs
+      - src/lib.rs
+      - src/modres.rs
+      - src/rng.rs
+      - src/runtime/**/*.rs
+      - src/util.rs
+    js_targets:
+      - src/core/constants.ts
+      - src/core/data-source.ts
+      - src/core/errors.ts
+      - src/core/format-state.ts
+      - src/core/module-resolver.ts
+      - src/core/ranty.ts
+      - src/core/rng.ts
+      - src/core/runtime/**
+      - src/core/util.ts
+      - src/core/virtual-module-resolver.ts
+    depends_on:
+      - compiler
+      - syntax-model
+
+  - id: stdlib
+    title: Standard library
+    summary: Built-in functions, constants, block attributes, conversion helpers, generators, and collection/string operations.
+    scope: core
+    rust_paths:
+      - src/stdlib/**/*.rs
+    js_targets:
+      - src/core/stdlib/**
+    depends_on:
+      - runtime-core
+      - syntax-model
+
+  - id: cli-host
+    title: CLI host
+    summary: Native Rust CLI and REPL entrypoint behavior.
+    scope: host-node
+    rust_paths:
+      - src/tools/cli/**/*
+    js_targets:
+      - src/hosts/node/**
+    depends_on:
+      - runtime-core
+      - stdlib
+
+  - id: browser-host
+    title: Browser host bridge
+    summary: Browser-facing virtual module exposure layered on top of core module-resolution semantics.
+    scope: host-browser
+    rust_paths:
+      - src/modres.rs
+    js_targets:
+      - src/hosts/browser/**
+      - src/core/virtual-module-resolver.ts
+    depends_on:
+      - runtime-core
+
+  - id: memory-management
+    title: Rust memory management internals
+    summary: Garbage collection internals and Rust-only memory behavior that the JS port translates rather than copies literally.
+    scope: rust-only
+    rust_paths:
+      - src/gc.rs
+      - src/gc_tests.rs
+    js_targets:
+      - src/core/ranty.ts
+      - src/core/runtime/vm.ts
+    depends_on:
+      - runtime-core
+
+  - id: upstream-fixtures
+    title: Upstream behavior fixtures
+    summary: Canonical behavior fixtures and corpus outputs that the downstream JS repo vendors for parity testing.
+    scope: core
+    rust_paths:
+      - tests/corpus/**/*
+      - tests/sources/**/*
+    js_targets:
+      - upstream/ranty/tests/corpus/**
+      - upstream/ranty/tests/sources/**
+    depends_on:
+      - compiler
+      - runtime-core
+      - stdlib

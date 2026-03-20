@@ -1,0 +1,7 @@
+<$module = (::)>
+@require "leaf08"
+@require "leaf09"
+@require "leaf10"
+@require "leaf11"
+[$module/render] { [cat:[leaf08/value];"|";[leaf09/value];"|";[leaf10/value];"|";[leaf11/value]] }
+<module>

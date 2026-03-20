@@ -1,0 +1,230 @@
+{
+  "cases": [
+    {
+      "name": "cli_help_mentions_ranty_and_supported_flags",
+      "kind": "simple",
+      "args": ["--help"],
+      "stdin": null,
+      "expectedStatus": 0,
+      "expectedStdout": null,
+      "stdoutIncludes": [
+        "Command-line interface for Ranty",
+        "--bench-mode",
+        "--no-debug"
+      ],
+      "stderrIncludes": [],
+      "stderrExcludes": [],
+      "observed": {
+        "status": 0,
+        "stdout": "Ranty CLI 1.0.0\nCommand-line interface for Ranty\n\nUSAGE:\n    ranty [FLAGS] [OPTIONS] [FILE]\n\nFLAGS:\n    -b, --bench-mode     Enables benchmarking\n    -h, --help           Prints help information\n    -D, --no-debug       Disable emitting debug symbols (may improve performance)\n    -W, --no-warnings    Disables compiler warnings\n    -V, --version        Prints version information\n\nOPTIONS:\n    -e, --eval <PROGRAM_STRING>    Runs an inline program string; takes precedence over FILE and stdin\n    -s, --seed <SEED>              Specifies the initial 64-bit hex seed (1 to 16 hex digits, optional 0x prefix)\n\nARGS:\n    <FILE>    Runs a Ranty file if --eval is not used\n",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "cli_version_reports_the_current_build_version",
+      "kind": "simple",
+      "args": ["--version"],
+      "stdin": null,
+      "expectedStatus": 0,
+      "expectedStdout": null,
+      "stdoutIncludes": [],
+      "stderrIncludes": [],
+      "stderrExcludes": [],
+      "observed": {
+        "status": 0,
+        "stdout": "Ranty CLI 1.0.0 [aarch64-apple-darwin]\n",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "cli_runs_a_file",
+      "kind": "workspace",
+      "files": {
+        "hello.ranty": "\"hello from file\""
+      },
+      "args": ["$WORKSPACE/hello.ranty"],
+      "stdin": null,
+      "expectedStatus": 0,
+      "expectedStdout": "hello from file\n",
+      "stdoutIncludes": [],
+      "stderrIncludes": [],
+      "stderrExcludes": [],
+      "observed": {
+        "status": 0,
+        "stdout": "hello from file\n",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "eval_takes_precedence_over_file_input",
+      "kind": "workspace",
+      "files": {
+        "bad.ranty": "@if : {}"
+      },
+      "args": ["--eval", "\"from eval\"", "$WORKSPACE/bad.ranty"],
+      "stdin": null,
+      "expectedStatus": 0,
+      "expectedStdout": "from eval\n",
+      "stdoutIncludes": [],
+      "stderrIncludes": [],
+      "stderrExcludes": [],
+      "observed": {
+        "status": 0,
+        "stdout": "from eval\n",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "cli_runs_piped_stdin_when_no_other_source_is_selected",
+      "kind": "simple",
+      "args": [],
+      "stdin": "\"from stdin\"",
+      "expectedStatus": 0,
+      "expectedStdout": "from stdin\n",
+      "stdoutIncludes": [],
+      "stderrIncludes": [],
+      "stderrExcludes": [],
+      "observed": {
+        "status": 0,
+        "stdout": "from stdin\n",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "cli_uses_deterministic_hex_seeds",
+      "kind": "paired-simple",
+      "first": {
+        "args": ["--seed", "0xdeadbeef", "--eval", "[rand:0;1000000]"],
+        "stdin": null,
+        "expectedStatus": 0,
+        "stderrIncludes": [],
+        "stderrExcludes": [],
+        "observed": {
+          "status": 0,
+          "stdout": "48127\n",
+          "stderr": ""
+        }
+      },
+      "second": {
+        "args": ["--seed", "deadbeef", "--eval", "[rand:0;1000000]"],
+        "stdin": null,
+        "expectedStatus": 0,
+        "stderrIncludes": [],
+        "stderrExcludes": [],
+        "observed": {
+          "status": 0,
+          "stdout": "48127\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "name": "cli_rejects_invalid_seed_values",
+      "kind": "simple",
+      "args": ["--seed", "xyz", "--eval", "test"],
+      "stdin": null,
+      "expectedStatus": 64,
+      "expectedStdout": null,
+      "stdoutIncludes": [],
+      "stderrIncludes": ["invalid seed"],
+      "stderrExcludes": [],
+      "observed": {
+        "status": 64,
+        "stdout": "",
+        "stderr": "error: invalid seed 'xyz'; expected 1 to 16 hexadecimal digits with an optional 0x prefix\n"
+      }
+    },
+    {
+      "name": "cli_can_suppress_warnings",
+      "kind": "paired-simple",
+      "first": {
+        "args": ["--eval", "<$unused = 1>ok"],
+        "stdin": null,
+        "expectedStatus": 0,
+        "stderrIncludes": ["defined but never used"],
+        "stderrExcludes": [],
+        "observed": {
+          "status": 0,
+          "stdout": "ok\n",
+          "stderr": "\nwarning[R1000]: variable 'unused' is defined but never used\n --> (cmdline):1:2\n  |\n1 | <$unused = 1>ok\n  |  ^^^^^^^^^^^\n\n"
+        }
+      },
+      "second": {
+        "args": ["--no-warnings", "--eval", "<$unused = 1>ok"],
+        "stdin": null,
+        "expectedStatus": 0,
+        "stderrIncludes": [],
+        "stderrExcludes": ["defined but never used"],
+        "observed": {
+          "status": 0,
+          "stdout": "ok\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "name": "cli_accepts_no_debug_flag",
+      "kind": "simple",
+      "args": ["--no-debug", "--eval", "\"no debug\""],
+      "stdin": null,
+      "expectedStatus": 0,
+      "expectedStdout": "no debug\n",
+      "stdoutIncludes": [],
+      "stderrIncludes": [],
+      "stderrExcludes": [],
+      "observed": {
+        "status": 0,
+        "stdout": "no debug\n",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "cli_bench_mode_reports_compile_and_execution_timing",
+      "kind": "simple",
+      "args": ["--bench-mode", "--seed", "1", "--eval", "\"bench\""],
+      "stdin": null,
+      "expectedStatus": 0,
+      "expectedStdout": "bench\n",
+      "stdoutIncludes": [],
+      "stderrIncludes": ["Compiled", "Executed"],
+      "stderrExcludes": [],
+      "observed": {
+        "status": 0,
+        "stdout": "bench\n",
+        "stderr": "Compiled in 27.167µs\nExecuted in 25.416µs (seed = 0000000000000001)\n"
+      }
+    },
+    {
+      "name": "cli_returns_dataerr_for_compile_failures",
+      "kind": "simple",
+      "args": ["--eval", "@require"],
+      "stdin": null,
+      "expectedStatus": 65,
+      "expectedStdout": null,
+      "stdoutIncludes": [],
+      "stderrIncludes": ["Compile failed"],
+      "stderrExcludes": [],
+      "observed": {
+        "status": 65,
+        "stdout": "",
+        "stderr": "\nerror[R0202]: missing argument for @require\n --> (cmdline):1:9\n  |\n1 | @require\n  |         ^\n\n\nCompile failed (1 error found)\n\n"
+      }
+    },
+    {
+      "name": "cli_returns_software_for_runtime_failures",
+      "kind": "simple",
+      "args": ["--eval", "[error: \"boom\"]"],
+      "stdin": null,
+      "expectedStatus": 70,
+      "expectedStdout": null,
+      "stdoutIncludes": [],
+      "stderrIncludes": ["Runtime error"],
+      "stderrExcludes": [],
+      "observed": {
+        "status": 70,
+        "stdout": "",
+        "stderr": "Runtime error: [USER_ERROR] boom\n\nstack trace:\n-> [cmdline:1:1] in native call\n-> [cmdline:1:1] in main scope\n"
+      }
+    }
+  ]
+}

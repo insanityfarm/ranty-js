@@ -1,10 +1,11 @@
 ---
 id: ADR-0002
 status: accepted
-date: 2026-03-19
+date: 2026-03-20
 subsystems:
   - repo-governance-context-system
   - public-api-and-build-contract
+  - upstream-parity-contract
 supersedes: []
 tags:
   - anti-drift
@@ -16,9 +17,9 @@ tags:
 
 ## Context
 
-Reusable starter repositories often contain seams that should be extended
-carefully rather than casually rewritten, especially public API contracts and
-build-facing packaging surfaces.
+Ranty.js contains seams that should be extended carefully rather than casually
+rewritten, especially the public package contract and the vendored upstream
+parity machinery.
 
 ## Decision
 

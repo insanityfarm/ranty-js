@@ -1,0 +1,64 @@
+id: host-integrations
+title: Host integrations
+status: evolving
+summary: >-
+  Owns the Node CLI and REPL entrypoints, browser bootstrap behavior, and other
+  host-specific code that sits above the runtime core.
+owned_paths:
+  - benchmarks/run-hyperfine.sh
+  - docs/cli.md
+  - src/hosts/**
+  - tests/browser-global.test.ts
+  - spec/subsystems/host-integrations.yaml
+related_paths:
+  - src/core/**
+  - src/index.ts
+  - tests/smoke.test.ts
+entrypoints:
+  - path: src/hosts/node/cli.ts
+    symbols:
+      - runCli
+  - path: src/hosts/browser/index.ts
+    symbols:
+      - VirtualModuleResolver
+depends_on:
+  - runtime-core
+used_by:
+  - public-api-and-build-contract
+  - upstream-parity-contract
+required_reads:
+  spec:
+    - spec/README.md
+    - spec/testing-style.md
+  docs:
+    - docs/cli.md
+    - docs/runtime.md
+  decisions:
+    - spec/decisions/ADR-0003-rust-upstream-authority.md
+glossary_terms:
+  - public API
+  - runtime core
+public_contracts:
+  - name: Node CLI
+    summary: The CLI exposes the packaged command-line interface, launch modes, exit codes, and REPL flow.
+  - name: browser bootstrap
+    summary: The browser host publishes the virtual module resolver bridge without pulling host behavior into src/core.
+invariants:
+  - id: host-001
+    statement: Host adapters depend on core modules directly instead of importing through src/index.ts.
+  - id: host-002
+    statement: CLI and browser glue stay thin wrappers around core behavior instead of duplicating runtime logic.
+performance_constraints:
+  - Host-specific wrappers should stay thin so parity changes remain concentrated in src/core.
+change_policy:
+  default: additive-with-validation
+  requires_adr:
+    - broadening host behavior in ways that alter the package contract or parity policy
+tests:
+  - tests/browser-global.test.ts
+  - tests/smoke.test.ts
+decision_refs:
+  - ADR-0003
+history_anchors:
+  introduced_by: 2026-03-20-ranty-js-repo-split
+  major_refactors: []

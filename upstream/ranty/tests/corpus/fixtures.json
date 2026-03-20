@@ -1,0 +1,790 @@
+{
+  "cases": [
+    {
+      "file": "upstream/ranty/tests/sources/access/add_assign.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/and_assign.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/div_assign.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/dynamic_index_setter.ranty",
+      "status": 0,
+      "stdout": "1, 2, 4\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/dynamic_multi_index_setter.ranty",
+      "status": 0,
+      "stdout": "1, 2, 4, 4, 5, 6\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/empty-def.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/getter_fallback_from_index.ranty",
+      "status": 0,
+      "stdout": "foo, bar, baz, oops\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/getter_fallback_from_key.ranty",
+      "status": 0,
+      "stdout": "foo, bar, baz, oops\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/getter_fallback_from_var.ranty",
+      "status": 0,
+      "stdout": "123, fallback\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/inv_index_get.ranty",
+      "status": 0,
+      "stdout": "3, 2, 1\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/inv_index_set.ranty",
+      "status": 0,
+      "stdout": "4, 5, 6\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/mod_assign.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/mul_assign.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/or_assign.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/override_shadowed_locals_with_multi_descope.ranty",
+      "status": 0,
+      "stdout": "foo bar baz\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/pow_assign.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/sub_assign.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/access/xor_assign.ranty",
+      "status": 65,
+      "stdout": "",
+      "stderr": "unexpected token: '^='"
+    },
+    {
+      "file": "upstream/ranty/tests/sources/anonymous/anon_getter.ranty",
+      "status": 0,
+      "stdout": "foobar\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/anonymous/anon_setter.ranty",
+      "status": 0,
+      "stdout": "bazqux\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/anonymous/dynamic_anon_getter.ranty",
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/anonymous/dynamic_anon_setter.ranty",
+      "status": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/assert/assert_fail.ranty",
+      "status": 70,
+      "stdout": "",
+      "stderr": "Runtime error: [ASSERT_ERROR] assertion failed: condition was false"
+    },
+    {
+      "file": "upstream/ranty/tests/sources/assert/assert_pass.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/branch/if-else.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/branch/if-elseif-else.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/branch/if-elseif.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/branch/if.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/charms/func_return_output.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/charms/func_return_value.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/charms/rep_break_output.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/charms/rep_break_value.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/charms/rep_continue_output.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/charms/rep_continue_value.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/charms/top_level_return.ranty",
+      "status": 0,
+      "stdout": "foo\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/charms/weight_all_zero.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/closure/closure_capture_arg.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/closure/closure_capture_var.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/closure/closure_mutate_captured_value.ranty",
+      "status": 0,
+      "stdout": "0 1 2 3\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/collections/filter_with_native_predicate.ranty",
+      "status": 0,
+      "stdout": "1, 3, 5, 7, 9\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/collections/filter_with_user_predicate.ranty",
+      "status": 0,
+      "stdout": "1, 3, 5, 7, 9\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/collections/list_autoconcat.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/collections/list_autoconcat_repeater.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/collections/list_tuple_autoconcat.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/collections/map_autoconcat.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/collections/map_with_native_callback.ranty",
+      "status": 0,
+      "stdout": "-1, -2, -3, -4, -5, -6, -7, -8, -9, -10\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/collections/map_with_user_callback.ranty",
+      "status": 0,
+      "stdout": "-1, -2, -3, -4, -5, -6, -7, -8, -9, -10\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/collections/tuple_autoconcat.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/collections/tuple_autoconcat_repeater.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/collections/zip_with_native_callback.ranty",
+      "status": 0,
+      "stdout": "5, 7, 9\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/collections/zip_with_user_callback.ranty",
+      "status": 0,
+      "stdout": "5, 7, 9\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/const/const_define.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/const/const_function.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/const/const_shadow.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/const/redef_const.ranty",
+      "status": 65,
+      "stdout": "",
+      "stderr": "redefinition of known constant 'foo'"
+    },
+    {
+      "file": "upstream/ranty/tests/sources/const/redef_var_with_const.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/func/assignment_pipe_def_const.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/func/assignment_pipe_def_var.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/func/assignment_pipe_set.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/func/func_percolation.ranty",
+      "status": 0,
+      "stdout": "global\nlocal\nvery local\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/func/func_with_optional_param.ranty",
+      "status": 0,
+      "stdout": "foo\nbar\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/func/func_with_variadic_plus.ranty",
+      "status": 0,
+      "stdout": "a\na b\na b c\na b c d\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/func/func_with_variadic_star.ranty",
+      "status": 0,
+      "stdout": "\na\na b\na b c\na b c d\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/func/function_piping.ranty",
+      "status": 0,
+      "stdout": "the fox the dog\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/func/function_piping_callback.ranty",
+      "status": 0,
+      "stdout": "foobar\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/func/pipecall_pipeval.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/math/max.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/math/min.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/modules/require.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/modules/test-module.ranty",
+      "status": 0,
+      "stdout": "(:: test = [function(...)])\n",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/ops/and.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/ops/and_short_circuit.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/ops/cmp.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/ops/math.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/ops/not.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/ops/or.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/ops/or_short_circuit.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/ops/xor.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/range/range_forward.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/range/range_forward_step_divisible.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/range/range_forward_step_indivisible.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/range/range_reverse.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/range/range_reverse_step_divisible.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/range/range_reverse_step_indivisible.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/list/between_dynamic.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/list/between_static.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/list/from_dynamic.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/list/from_static.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/list/full.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/list/to_dynamic.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/list/to_static.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/range/between_dynamic.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/range/between_static.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/range/from_dynamic.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/range/from_static.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/range/full.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/range/to_dynamic.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/range/to_static.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/string/between_dynamic.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/string/between_static.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/string/from_dynamic.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/string/from_static.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/string/full.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/string/to_dynamic.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/string/to_static.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/tuple/between_dynamic.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/tuple/between_static.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/tuple/from_dynamic.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/tuple/from_static.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/tuple/full.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/tuple/to_dynamic.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/slice/tuple/to_static.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/splice/dynamic_from_list.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/splice/dynamic_from_tuple.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/splice/static_from_list.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/splice/static_from_tuple.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/spread/spread_all.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/spread/spread_inner.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/spread/spread_left.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/spread/spread_multi.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/spread/spread_right.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/spread/spread_variadic_plus.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/spread/spread_variadic_star.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/temporal/temporal_one.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/temporal/temporal_one_mixed.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/temporal/temporal_pipe_temporal.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/temporal/temporal_two_diffsize.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/temporal/temporal_two_diffsize_mixed.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/temporal/temporal_two_samesize.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/temporal/temporal_two_samesize_mixed.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/temporal/temporal_two_samesize_sync.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

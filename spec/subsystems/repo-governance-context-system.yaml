@@ -5,24 +5,32 @@ summary: >-
   Owns repository-wide workflow rules, anti-drift tooling, generated context
   artifacts, and contributor-facing maps that explain how to use them.
 owned_paths:
+  - .github/**
   - .gitignore
-  - .nvmrc
+  - .prettierignore
+  - .prettierrc.json
   - AGENTS.md
   - LICENSE
   - README.md
-  - docs/**
+  - docs/README.md
+  - docs/context-system/**
+  - docs/repo-workflow/**
   - glossary/**
-  - scripts/**
+  - scripts/context-system/**
+  - scripts/check-eslint-directives.mjs
+  - scripts/__tests__/contextSystem.test.js
   - spec/README.md
   - spec/tooling-and-quality.md
   - spec/comment-style.md
   - spec/testing-style.md
-  - spec/decisions/**
+  - spec/decisions/ADR-0001-anti-drift-context-system.md
+  - spec/decisions/ADR-0002-locked-subsystem-edit-policy.md
   - spec/generated/**
   - spec/subsystems/index.yaml
   - spec/subsystems/repo-governance-context-system.yaml
   - notes.md
-related_paths: []
+related_paths:
+  - spec/decisions/ADR-0003-rust-upstream-authority.md
 entrypoints:
   - path: scripts/context-system/build.mjs
     symbols:
@@ -35,7 +43,9 @@ entrypoints:
       - checkContextState
 depends_on:
   - public-api-and-build-contract
-  - library-core
+  - runtime-core
+  - host-integrations
+  - upstream-parity-contract
 used_by: []
 required_reads:
   spec:
@@ -53,17 +63,17 @@ glossary_terms:
   - active task packet
   - locked subsystem
 public_contracts:
-  - name: npm run context:build
-    summary: Regenerates tracked context artifacts from structured source files.
-  - name: npm run context:task -- "<task>"
+  - name: "npm run context:build"
+    summary: Regenerates tracked context artifacts from glossary, subsystem, and ADR source files.
+  - name: 'npm run context:task -- "<task>"'
     summary: Writes the repo-local active task packet and prints a bounded task brief.
-  - name: npm run context:check
+  - name: "npm run context:check"
     summary: Fails when task coverage, subsystem ownership, or derived context artifacts drift.
 invariants:
   - id: gov-ctx-001
     statement: AGENTS.md stays intentionally thin and routes readers to authoritative artifacts.
   - id: gov-ctx-002
-    statement: Context build output is derived and must be regenerated from YAML source files.
+    statement: Context build output is derived and must be regenerated from structured source files.
   - id: gov-ctx-003
     statement: Local verification remains authoritative and npm run verify is never weakened.
   - id: gov-ctx-004
@@ -81,5 +91,5 @@ decision_refs:
   - ADR-0001
   - ADR-0002
 history_anchors:
-  introduced_by: 2026-03-19-boilerplate-bootstrap
+  introduced_by: 2026-03-20-ranty-js-repo-split
   major_refactors: []

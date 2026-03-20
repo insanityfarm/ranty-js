@@ -4,4 +4,4 @@ coverage
 .eslintcache
 .agent-context
 .DS_Store
-
+/benchmarks/latest-results.json

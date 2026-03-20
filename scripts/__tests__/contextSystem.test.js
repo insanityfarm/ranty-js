@@ -14,7 +14,7 @@ import {
   generateGlossaryReadme,
   loadContextData,
   writeActiveTask,
-  writeContextArtifacts,
+  writeContextArtifacts
 } from "../context-system/shared.mjs";
 
 const tempRoots = [];
@@ -24,8 +24,8 @@ afterEach(async () => {
   const roots = tempRoots.splice(0, tempRoots.length);
   await Promise.all(
     roots.map(async (tempRoot) =>
-      fs.rm(tempRoot, { force: true, recursive: true }),
-    ),
+      fs.rm(tempRoot, { force: true, recursive: true })
+    )
   );
 });
 
@@ -44,21 +44,21 @@ async function replaceInFile(
   repoRoot,
   relativePath,
   searchValue,
-  replaceValue,
+  replaceValue
 ) {
   const absolutePath = path.join(repoRoot, relativePath);
   const contents = await fs.readFile(absolutePath, "utf8");
   await fs.writeFile(
     absolutePath,
     contents.replace(searchValue, replaceValue),
-    "utf8",
+    "utf8"
   );
 }
 
 function runGit(repoRoot, args) {
   return execFileSync("git", args, {
     cwd: repoRoot,
-    encoding: "utf8",
+    encoding: "utf8"
   });
 }
 
@@ -70,7 +70,7 @@ async function createFixtureRepo() {
     writeFile(
       repoRoot,
       "README.md",
-      "# Fixture repo\n\nThis repo exercises the anti-drift context system.\n",
+      "# Fixture repo\n\nThis repo exercises the anti-drift context system.\n"
     ),
     writeFile(repoRoot, "AGENTS.md", "# Fixture agents\n"),
     writeFile(repoRoot, ".gitignore", ".agent-context\nnode_modules\n"),
@@ -78,17 +78,17 @@ async function createFixtureRepo() {
     writeFile(
       repoRoot,
       "package.json",
-      '{ "name": "fixture", "type": "module" }\n',
+      '{ "name": "fixture", "type": "module" }\n'
     ),
     writeFile(
       repoRoot,
       "tsconfig.json",
-      '{ "compilerOptions": { "strict": true } }\n',
+      '{ "compilerOptions": { "strict": true } }\n'
     ),
     writeFile(
       repoRoot,
       "tsconfig.build.json",
-      '{ "extends": "./tsconfig.json" }\n',
+      '{ "extends": "./tsconfig.json" }\n'
     ),
     writeFile(repoRoot, "vitest.config.ts", "export default {};\n"),
     writeFile(repoRoot, "eslint.config.mjs", "export default [];\n"),
@@ -96,7 +96,7 @@ async function createFixtureRepo() {
     writeFile(
       repoRoot,
       "docs/context-system/README.md",
-      "# Fixture context docs\n",
+      "# Fixture context docs\n"
     ),
     writeFile(
       repoRoot,
@@ -121,7 +121,7 @@ usage_rules:
   - Use authoritative artifact for current checked-in workflow or contract files.
 cross_references:
   - ../spec/README.md
-`,
+`
     ),
     writeFile(repoRoot, "spec/README.md", "# Fixture spec\n"),
     writeFile(
@@ -160,7 +160,7 @@ architecture_rules:
 task_state_path: .agent-context/active-task.json
 task_markdown_path: .agent-context/active-task.md
 review_packet_path: .agent-context/drift-review.md
-`,
+`
     ),
     writeFile(
       repoRoot,
@@ -218,7 +218,7 @@ decision_refs:
 history_anchors:
   introduced_by: fixture
   major_refactors: []
-`,
+`
     ),
     writeFile(
       repoRoot,
@@ -267,7 +267,7 @@ decision_refs:
 history_anchors:
   introduced_by: fixture
   major_refactors: []
-`,
+`
     ),
     writeFile(
       repoRoot,
@@ -311,7 +311,7 @@ decision_refs: []
 history_anchors:
   introduced_by: fixture
   major_refactors: []
-`,
+`
     ),
     writeFile(
       repoRoot,
@@ -354,7 +354,7 @@ decision_refs:
 history_anchors:
   introduced_by: fixture
   major_refactors: []
-`,
+`
     ),
     writeFile(
       repoRoot,
@@ -387,38 +387,38 @@ Public changes require visible record updates.
 ## Validation
 
 The context-system tests cover the seam.
-`,
+`
     ),
     writeFile(
       repoRoot,
       "src/index.ts",
-      `export { createThing } from './public/createThing.js';\n`,
+      `export { createThing } from './public/createThing.js';\n`
     ),
     writeFile(
       repoRoot,
       "src/public/createThing.ts",
-      `import { helper } from '../internal/helper.js';\n\nexport function createThing() {\n  return helper();\n}\n`,
+      `import { helper } from '../internal/helper.js';\n\nexport function createThing() {\n  return helper();\n}\n`
     ),
     writeFile(
       repoRoot,
       "src/internal/helper.ts",
-      `export function helper() {\n  return 'thing';\n}\n`,
+      `export function helper() {\n  return 'thing';\n}\n`
     ),
     writeFile(
       repoRoot,
       "src/__tests__/sample.test.ts",
-      `import { createThing } from '../index.js';\n\nexport const sample = createThing;\n`,
+      `import { createThing } from '../index.js';\n\nexport const sample = createThing;\n`
     ),
     writeFile(
       repoRoot,
       "scripts/context-system/check.mjs",
-      `export const marker = true;\n`,
+      `export const marker = true;\n`
     ),
     writeFile(
       repoRoot,
       "src/ops/report.ts",
-      `export function summarizeReport() {\n  return 'report';\n}\n`,
-    ),
+      `export function summarizeReport() {\n  return 'report';\n}\n`
+    )
   ]);
 
   writeContextArtifacts(loadContextData(repoRoot));
@@ -434,12 +434,12 @@ The context-system tests cover the seam.
       "user.email=fixture@example.com",
       "commit",
       "-m",
-      "Initial fixture",
+      "Initial fixture"
     ],
     {
       cwd: repoRoot,
-      encoding: "utf8",
-    },
+      encoding: "utf8"
+    }
   );
 
   return repoRoot;
@@ -453,18 +453,18 @@ describe("context system tooling", () => {
     const glossaryReadme = generateGlossaryReadme(contextData.glossary);
     const taskPacket = buildTaskPacket(contextData, {
       allowLocked: ["public-api-and-build-contract"],
-      task: "public-api-and-build-contract authoritative artifact",
+      task: "public-api-and-build-contract authoritative artifact"
     });
     const primaryMatch = taskPacket.matchedSubsystems[0];
 
     expect(glossaryReadme).toContain("authoritative artifact");
     expect(primaryMatch.id).toBe("public-api-and-build-contract");
     expect(taskPacket.lockedSubsystems).toContain(
-      "public-api-and-build-contract",
+      "public-api-and-build-contract"
     );
     expect(taskPacket.allowLocked).toContain("public-api-and-build-contract");
     expect(taskPacket.requiredSubsystemRecords).toContain(
-      "spec/subsystems/public-api-and-build-contract.yaml",
+      "spec/subsystems/public-api-and-build-contract.yaml"
     );
   });
 
@@ -476,11 +476,11 @@ describe("context system tooling", () => {
     await writeFile(
       repoRoot,
       "docs/context-system/README.md",
-      `# Fixture context docs\n\nThis note falls back to ${AUTHORITATIVE_DISCIPLINED}.\n`,
+      `# Fixture context docs\n\nThis note falls back to ${AUTHORITATIVE_DISCIPLINED}.\n`
     );
 
     expect(() => checkTerminology(loadContextData(repoRoot))).toThrow(
-      /authoritative artifact/,
+      /authoritative artifact/
     );
   });
 
@@ -492,11 +492,11 @@ describe("context system tooling", () => {
     await writeFile(
       repoRoot,
       "src/internal/badImport.ts",
-      `import { createThing } from '../public/createThing.js';\n\nexport function readBadImport() {\n  return createThing();\n}\n`,
+      `import { createThing } from '../public/createThing.js';\n\nexport function readBadImport() {\n  return createThing();\n}\n`
     );
 
     expect(() => checkArchitecture(loadContextData(repoRoot))).toThrow(
-      /arch-001/,
+      /arch-001/
     );
   });
 
@@ -507,11 +507,11 @@ describe("context system tooling", () => {
       repoRoot,
       "glossary/terms.yaml",
       "Checked-in file that defines current behavior.",
-      "Checked-in file that defines current behavior and workflow.",
+      "Checked-in file that defines current behavior and workflow."
     );
 
     expect(() => checkContextState(loadContextData(repoRoot))).toThrow(
-      /Derived context artifacts are stale/,
+      /Derived context artifacts are stale/
     );
   });
 
@@ -521,11 +521,11 @@ describe("context system tooling", () => {
     await writeFile(
       repoRoot,
       "src/unowned.ts",
-      "export const unowned = true;\n",
+      "export const unowned = true;\n"
     );
 
     expect(() => writeContextArtifacts(loadContextData(repoRoot))).toThrow(
-      /Unmapped first-party files detected/,
+      /Unmapped first-party files detected/
     );
   });
 
@@ -534,19 +534,19 @@ describe("context system tooling", () => {
     const contextData = loadContextData(repoRoot);
     const taskPacket = buildTaskPacket(contextData, {
       allowLocked: ["public-api-and-build-contract"],
-      task: "public-api-and-build-contract export contract",
+      task: "public-api-and-build-contract export contract"
     });
 
     writeActiveTask(contextData, taskPacket);
     await appendFile(
       repoRoot,
       "src/ops/report.ts",
-      "\nexport const touched = true;\n",
+      "\nexport const touched = true;\n"
     );
     writeContextArtifacts(loadContextData(repoRoot));
 
     expect(() => checkContextState(loadContextData(repoRoot))).toThrow(
-      /spill outside the active task packet/,
+      /spill outside the active task packet/
     );
   });
 
@@ -555,30 +555,30 @@ describe("context system tooling", () => {
     const contextData = loadContextData(repoRoot);
     const taskPacket = buildTaskPacket(contextData, {
       allowLocked: ["public-api-and-build-contract"],
-      task: "public-api-and-build-contract export contract",
+      task: "public-api-and-build-contract export contract"
     });
 
     writeActiveTask(contextData, taskPacket);
     await appendFile(
       repoRoot,
       "src/index.ts",
-      "\nexport const TOUCH = true;\n",
+      "\nexport const TOUCH = true;\n"
     );
     await appendFile(
       repoRoot,
       "spec/subsystems/public-api-and-build-contract.yaml",
-      "\n# touched during locked-subsystem test\n",
+      "\n# touched during locked-subsystem test\n"
     );
     writeContextArtifacts(loadContextData(repoRoot));
 
     expect(() => checkContextState(loadContextData(repoRoot))).toThrow(
-      /requires an ADR change/,
+      /requires an ADR change/
     );
 
     await appendFile(
       repoRoot,
       "spec/decisions/ADR-0001-test.md",
-      "\nThe locked public seam changed during this test.\n",
+      "\nThe locked public seam changed during this test.\n"
     );
 
     expect(() => checkContextState(loadContextData(repoRoot))).not.toThrow();

@@ -10,22 +10,29 @@ status_vocabulary:
     Subsystem with active iteration. Behavior may expand, but the subsystem
     record remains authoritative for boundaries and dependencies.
 source_roots:
+  - .github
   - .gitignore
   - .nvmrc
+  - .prettierignore
+  - .prettierrc.json
   - AGENTS.md
   - LICENSE
   - README.md
+  - benchmarks
   - docs
+  - eslint.config.mjs
   - glossary
   - package-lock.json
   - package.json
+  - rollup.config.mjs
   - scripts
   - spec
   - src
+  - tests
   - tsconfig.build.json
   - tsconfig.json
+  - upstream
   - vitest.config.ts
-  - eslint.config.mjs
 generated_roots:
   - spec/generated
 allowed_local_outputs:
@@ -35,24 +42,24 @@ exempt_paths:
 architecture_rules:
   - id: arch-001
     from:
-      - src/internal/**
+      - src/core/**
     forbidden:
+      - src/hosts/**
       - src/index.ts
-      - src/public/**
     allowed: []
     message: >-
-      Internal implementation stays below the public API surface instead of
-      depending on exported modules or the root barrel.
+      The runtime core stays host-agnostic and does not depend on host adapters
+      or the root barrel.
   - id: arch-002
     from:
-      - src/index.ts
+      - src/hosts/**
     forbidden:
-      - src/internal/**
+      - src/index.ts
     allowed:
-      - src/public/**
+      - src/core/**
     message: >-
-      The root barrel re-exports public modules instead of reaching into
-      internal implementation directly.
+      Host integrations depend on core modules directly instead of importing
+      through the root barrel.
 task_state_path: .agent-context/active-task.json
 task_markdown_path: .agent-context/active-task.md
 review_packet_path: .agent-context/drift-review.md

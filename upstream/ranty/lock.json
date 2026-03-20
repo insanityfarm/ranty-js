@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "upstream_repo": "https://github.com/insanityfarm/ranty",
+  "vendored_root": "upstream/ranty",
+  "requested_ref": "39fc1506a96c0a167d7ce63c946875f0b0c3e661",
+  "source_commit": "39fc1506a96c0a167d7ce63c946875f0b0c3e661",
+  "contract_sha256": "3b5286288e9c889f7435ff86800699ea126b3a7b18d5aa7541e97efd2fa76897",
+  "component_signatures": {
+    "compiler": "041e184b3cbc58a98089f5aae8dd05e969ea2c080e1d6202692adfd4d1ec5b00",
+    "syntax-model": "c926d0ce3b5ce01b8c3f36b181e6ba17d9edbf6736e3644faef6b5a6f1e43b95",
+    "runtime-core": "bae17e381359d8153fd91cbfa9f52c0b7fb91e0114fa54ed78ed4ef0d679027e",
+    "stdlib": "6312851db6aca2f68af37888aaaa60ecfb9c5ee23ef6fce2048e2c7c48a30c12",
+    "cli-host": "f10eb88d110153dff1606c5b2afa2b4f74fae2b43a287a47b359f168ca3d465e",
+    "browser-host": "7af89e258fca0d825b61e867fc6e213b31509f93ab7a499008f763767ea2b8af",
+    "memory-management": "3943cb174be3832a7b5621c36430212167739e98000c3e784d55503d73a8b73a",
+    "upstream-fixtures": "ccb63bcc6d0598f05c099f9d48044d1088d62420add67414814d0f81bee04175"
+  }
+}

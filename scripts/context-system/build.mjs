@@ -1,7 +1,7 @@
 import {
   formatBuildSummary,
   loadContextData,
-  writeContextArtifacts,
+  writeContextArtifacts
 } from "./shared.mjs";
 
 const contextData = loadContextData(process.cwd());

@@ -1,0 +1,15 @@
+<%module = (::)>
+
+[$module/banner: vendor] {
+  {silver|saffron|violet} awnings rustle over `<vendor>'s stall.
+}
+
+[$module/treat] {
+  {comet-buns|moon-pears|ink-jam}
+}
+
+[$module/omen] {
+  {the tea hums blue|a moth lands on the till|three bells ring at once}
+}
+
+<module>

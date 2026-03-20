@@ -1,0 +1,74 @@
+id: upstream-parity-contract
+title: Upstream parity contract
+status: locked
+summary: >-
+  Owns the vendored Rust parity bundle, parity lock, sync tooling, and the
+  tests that directly assert the local implementation against upstream
+  inventories and corpora.
+owned_paths:
+  - scripts/upstream/**
+  - upstream/**
+  - tests/corpus-helpers.ts
+  - tests/stdlib-surface.test.ts
+  - spec/decisions/ADR-0003-rust-upstream-authority.md
+  - spec/subsystems/upstream-parity-contract.yaml
+related_paths:
+  - src/core/**
+  - src/hosts/node/**
+  - tests/smoke.test.ts
+entrypoints:
+  - path: scripts/upstream/sync-ranty.mjs
+    symbols:
+      - sync-ranty
+  - path: scripts/upstream/check-freshness.mjs
+    symbols:
+      - check-freshness
+depends_on:
+  - runtime-core
+  - host-integrations
+  - public-api-and-build-contract
+used_by:
+  - repo-governance-context-system
+required_reads:
+  spec:
+    - spec/README.md
+    - spec/tooling-and-quality.md
+  docs:
+    - docs/context-system/README.md
+  decisions:
+    - spec/decisions/ADR-0002-locked-subsystem-edit-policy.md
+    - spec/decisions/ADR-0003-rust-upstream-authority.md
+glossary_terms:
+  - upstream parity contract
+  - parity lock
+  - locked subsystem
+public_contracts:
+  - name: "npm run upstream:sync -- --ref=<rust-sha-or-branch>"
+    summary: Refreshes the vendored upstream contract, tests, and parity lock from Rust.
+  - name: "npm run upstream:check-freshness"
+    summary: Compares the local parity lock against upstream Rust and blocks only core-sensitive drift.
+invariants:
+  - id: parity-001
+    statement: upstream/ranty/** is synced from Rust and is never hand-edited.
+  - id: parity-002
+    statement: upstream/ranty/lock.json pins the exact upstream commit and contract hash vendored into this repo.
+  - id: parity-003
+    statement: >-
+      Freshness enforcement is narrow by design: core, public API, and
+      build-sensitive drift fails closed while host-only or workflow-only drift
+      warns.
+performance_constraints:
+  - Sync tooling should stay dependency-light so Rust-side automation can run it in a clean checkout without installing npm packages.
+change_policy:
+  default: additive-with-validation
+  requires_adr:
+    - changing Rust-upstream authority or the freshness gate semantics
+tests:
+  - tests/stdlib-surface.test.ts
+  - tests/smoke.test.ts
+decision_refs:
+  - ADR-0002
+  - ADR-0003
+history_anchors:
+  introduced_by: 2026-03-20-ranty-js-repo-split
+  major_refactors: []

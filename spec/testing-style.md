@@ -1,20 +1,24 @@
 # Testing Style
 
-Tests in this boilerplate should prefer user-visible or contract-visible
-behavior over implementation details. The project is not tied to a UI runtime,
-so the rule is broader than component testing: verify the public contract that a
-consumer depends on.
+Tests in Ranty.js should prefer user-visible or contract-visible behavior over
+implementation details. This repository spans library, CLI, browser, and
+workflow surfaces, so the rule is broader than API-only testing: verify the
+behavior a consumer or contributor depends on.
 
 ## Rules
 
-- Assert what the public API or user-observable behavior guarantees.
-- Prefer simple direct tests over broad fixture setup when a small test is enough.
+- Assert what the public API, CLI, browser bridge, or vendored upstream
+  contract guarantees.
+- Prefer simple direct tests over broad fixture setup when a small test is
+  enough.
 - Keep asynchronous waiting narrow and explicit.
-- Use fixtures when the workflow being tested depends on file layout, git state, or generated artifacts.
+- Use fixtures when the workflow being tested depends on file layout, git
+  state, generated artifacts, or vendored upstream corpora.
 
 ## Avoid
 
-- asserting on internal helper structure when the public contract is what matters
+- asserting on internal helper structure when an observable contract is what
+  matters
 - snapshot-driven tests as the primary source of confidence
 - broad polling around behavior that could be expressed directly
 - brittle tests that depend on file ordering without a real contract reason
@@ -24,5 +28,7 @@ consumer depends on.
 These rules apply to:
 
 - public API tests
+- runtime and stdlib tests
+- CLI and browser-host tests
+- vendored upstream parity tests
 - repository workflow tests
-- anti-drift tooling tests

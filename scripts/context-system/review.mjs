@@ -2,7 +2,7 @@ import {
   buildReviewPacket,
   formatReviewSummary,
   loadContextData,
-  writeReviewPacket,
+  writeReviewPacket
 } from "./shared.mjs";
 
 const contextData = loadContextData(process.cwd());

@@ -9,7 +9,7 @@ const ignoredDirectories = new Set([
   "coverage",
   "dist",
   "node_modules",
-  "spec/generated",
+  "spec/generated"
 ]);
 
 const filesToCheck = [];
@@ -41,7 +41,7 @@ collectFiles(repoRoot);
 const invalidDirectives = [];
 const directiveToken = ["eslint", "disable"].join("-");
 const directivePattern = new RegExp(
-  `${directiveToken}(?:-next-line|-line)?\\b`,
+  `${directiveToken}(?:-next-line|-line)?\\b`
 );
 
 filesToCheck.forEach((filePath) => {
@@ -52,7 +52,7 @@ filesToCheck.forEach((filePath) => {
       invalidDirectives.push({
         filePath: path.relative(repoRoot, filePath),
         lineNumber: index + 1,
-        line,
+        line
       });
     }
   });
@@ -60,7 +60,7 @@ filesToCheck.forEach((filePath) => {
 
 if (invalidDirectives.length > 0) {
   console.error(
-    'ESLint disable directives must include a reason introduced by "--".',
+    'ESLint disable directives must include a reason introduced by "--".'
   );
 
   invalidDirectives.forEach(({ filePath, line, lineNumber }) => {

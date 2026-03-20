@@ -6,14 +6,35 @@
       "dependents": [],
       "imports": [],
       "owners": ["repo-governance-context-system"],
-      "path": ".gitignore",
+      "path": ".github/workflows/ci.yml",
       "type": "text"
     },
     {
       "dependents": [],
       "imports": [],
       "owners": ["repo-governance-context-system"],
+      "path": ".gitignore",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["public-api-and-build-contract"],
       "path": ".nvmrc",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": ".prettierignore",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": ".prettierrc.json",
       "type": "text"
     },
     {
@@ -40,8 +61,200 @@
     {
       "dependents": [],
       "imports": [],
-      "owners": ["repo-governance-context-system"],
+      "owners": ["host-integrations"],
+      "path": "benchmarks/run-hyperfine.sh",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/collection_callback_pipeline.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/group00.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/group01.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/group02.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/group03.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf00.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf01.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf02.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf03.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf04.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf05.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf06.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf07.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf08.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf09.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf10.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf11.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf12.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf13.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf14.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/mods/leaf15.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/module_require_fanout.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/selector_ping_repeater.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/temporal_labeled_cartesian_call.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "benchmarks/workloads/unicode_reverse_repeater.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": [
+        "public-api-and-build-contract",
+        "repo-governance-context-system"
+      ],
       "path": "docs/README.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["host-integrations"],
+      "path": "docs/cli.md",
       "type": "text"
     },
     {
@@ -54,8 +267,36 @@
     {
       "dependents": [],
       "imports": [],
+      "owners": ["public-api-and-build-contract"],
+      "path": "docs/intro.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "docs/library.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "docs/modules.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
       "owners": ["repo-governance-context-system"],
       "path": "docs/repo-workflow/README.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "docs/runtime.md",
       "type": "text"
     },
     {
@@ -92,6 +333,13 @@
       "owners": ["public-api-and-build-contract"],
       "path": "package.json",
       "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["public-api-and-build-contract"],
+      "path": "rollup.config.mjs",
+      "type": "code"
     },
     {
       "dependents": [],
@@ -166,6 +414,30 @@
     },
     {
       "dependents": [],
+      "imports": ["scripts/upstream/shared.mjs"],
+      "owners": ["upstream-parity-contract"],
+      "path": "scripts/upstream/check-freshness.mjs",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "scripts/upstream/check-freshness.mjs",
+        "scripts/upstream/sync-ranty.mjs"
+      ],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "scripts/upstream/shared.mjs",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["scripts/upstream/shared.mjs"],
+      "owners": ["upstream-parity-contract"],
+      "path": "scripts/upstream/sync-ranty.mjs",
+      "type": "code"
+    },
+    {
+      "dependents": [],
       "imports": [],
       "owners": ["repo-governance-context-system"],
       "path": "spec/README.md",
@@ -195,15 +467,22 @@
     {
       "dependents": [],
       "imports": [],
-      "owners": ["repo-governance-context-system"],
-      "path": "spec/subsystems/index.yaml",
+      "owners": ["upstream-parity-contract"],
+      "path": "spec/decisions/ADR-0003-rust-upstream-authority.md",
       "type": "text"
     },
     {
       "dependents": [],
       "imports": [],
-      "owners": ["library-core"],
-      "path": "spec/subsystems/library-core.yaml",
+      "owners": ["host-integrations"],
+      "path": "spec/subsystems/host-integrations.yaml",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "spec/subsystems/index.yaml",
       "type": "text"
     },
     {
@@ -223,6 +502,20 @@
     {
       "dependents": [],
       "imports": [],
+      "owners": ["runtime-core"],
+      "path": "spec/subsystems/runtime-core.yaml",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "spec/subsystems/upstream-parity-contract.yaml",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
       "owners": ["repo-governance-context-system"],
       "path": "spec/testing-style.md",
       "type": "text"
@@ -235,31 +528,817 @@
       "type": "text"
     },
     {
-      "dependents": [],
-      "imports": ["src/index.ts"],
-      "owners": ["library-core"],
-      "path": "src/__tests__/createExampleMessage.test.ts",
+      "dependents": ["src/core/ranty.ts", "src/core/runtime/vm.ts"],
+      "imports": ["src/core/lang.ts", "src/core/values.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/binding.ts",
       "type": "code"
     },
     {
-      "dependents": ["src/__tests__/createExampleMessage.test.ts"],
-      "imports": ["src/public/createExampleMessage.ts"],
+      "dependents": [
+        "src/core/module-resolver.ts",
+        "src/core/ranty.ts",
+        "src/core/virtual-module-resolver.ts",
+        "src/hosts/node/cli.ts"
+      ],
+      "imports": [
+        "src/core/compiler/lexer.ts",
+        "src/core/compiler/message.ts",
+        "src/core/compiler/parser.ts",
+        "src/core/errors.ts",
+        "src/core/messages.ts",
+        "src/core/program.ts",
+        "src/core/util.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/compiler/index.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/compiler/index.ts",
+        "src/core/compiler/parser.ts",
+        "src/core/compiler/token-reader.ts",
+        "tests/lexer.test.ts"
+      ],
+      "imports": [
+        "src/core/compiler/message.ts",
+        "src/core/compiler/reader.ts",
+        "src/core/errors.ts",
+        "src/core/messages.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/compiler/lexer.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/compiler/index.ts",
+        "src/core/compiler/lexer.ts",
+        "src/core/compiler/parser.ts",
+        "src/core/ranty.ts",
+        "tests/lexer.test.ts"
+      ],
+      "imports": ["src/core/messages.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/compiler/message.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/compiler/index.ts"],
+      "imports": [
+        "src/core/compiler/lexer.ts",
+        "src/core/compiler/message.ts",
+        "src/core/compiler/token-reader.ts",
+        "src/core/errors.ts",
+        "src/core/lang.ts",
+        "src/core/messages.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/compiler/parser.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/compiler/lexer.ts"],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "src/core/compiler/reader.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/compiler/parser.ts"],
+      "imports": ["src/core/compiler/lexer.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/compiler/token-reader.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/module-resolver.ts",
+        "src/core/ranty.ts",
+        "src/core/stdlib/general.ts",
+        "src/hosts/node/cli.ts",
+        "src/index.ts"
+      ],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "src/core/constants.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/ranty.ts",
+        "src/index.ts",
+        "tests/general-format.test.ts"
+      ],
+      "imports": ["src/core/values.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/data-source.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/compiler/index.ts",
+        "src/core/compiler/lexer.ts",
+        "src/core/compiler/parser.ts",
+        "src/core/map-proto.ts",
+        "src/core/module-resolver.ts",
+        "src/core/ranty.ts",
+        "src/core/runtime/vm.ts",
+        "src/core/stdlib/assertion.ts",
+        "src/core/stdlib/block.ts",
+        "src/core/stdlib/collections.ts",
+        "src/core/stdlib/format.ts",
+        "src/core/stdlib/general.ts",
+        "src/core/stdlib/generate.ts",
+        "src/core/stdlib/shared.ts",
+        "src/core/virtual-module-resolver.ts",
+        "src/hosts/node/cli.ts",
+        "src/index.ts",
+        "tests/smoke.test.ts"
+      ],
+      "imports": ["src/core/messages.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/errors.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/ranty.ts", "src/core/stdlib/format.ts"],
+      "imports": ["src/core/values.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/format-state.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/rng.ts",
+        "src/core/runtime/vm.ts",
+        "src/core/stdlib/convert.ts",
+        "src/core/stdlib/general.ts",
+        "src/core/stdlib/generate.ts",
+        "src/core/values.ts",
+        "src/index.ts"
+      ],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "src/core/int64.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/binding.ts",
+        "src/core/compiler/parser.ts",
+        "src/core/program.ts",
+        "src/core/runtime/vm.ts"
+      ],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "src/core/lang.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/runtime/vm.ts",
+        "src/core/stdlib/collections.ts",
+        "src/core/stdlib/proto.ts",
+        "tests/collections.test.ts"
+      ],
+      "imports": ["src/core/errors.ts", "src/core/values.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/map-proto.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/compiler/index.ts",
+        "src/core/compiler/lexer.ts",
+        "src/core/compiler/message.ts",
+        "src/core/compiler/parser.ts",
+        "src/core/errors.ts",
+        "src/core/module-resolver.ts",
+        "src/core/ranty.ts",
+        "src/core/virtual-module-resolver.ts",
+        "src/hosts/node/cli.ts",
+        "src/index.ts",
+        "tests/attribute-keywords.test.ts",
+        "tests/collections.test.ts",
+        "tests/lazy.test.ts",
+        "tests/match-selector.test.ts",
+        "tests/module-paths.test.ts",
+        "tests/pipes-spread.test.ts",
+        "tests/suite-helpers.ts"
+      ],
+      "imports": [],
+      "owners": ["runtime-core"],
+      "path": "src/core/messages.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/ranty.ts",
+        "src/core/virtual-module-resolver.ts",
+        "src/index.ts"
+      ],
+      "imports": [
+        "src/core/compiler/index.ts",
+        "src/core/constants.ts",
+        "src/core/errors.ts",
+        "src/core/messages.ts",
+        "src/core/program.ts",
+        "src/core/ranty.ts",
+        "src/core/util.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/module-resolver.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/compiler/index.ts",
+        "src/core/module-resolver.ts",
+        "src/core/ranty.ts",
+        "src/core/runtime/vm.ts",
+        "src/core/virtual-module-resolver.ts",
+        "src/hosts/node/cli.ts",
+        "src/index.ts"
+      ],
+      "imports": ["src/core/lang.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/program.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/module-resolver.ts",
+        "src/core/runtime/vm.ts",
+        "src/core/stdlib/assertion.ts",
+        "src/core/stdlib/block.ts",
+        "src/core/stdlib/boolean.ts",
+        "src/core/stdlib/collections.ts",
+        "src/core/stdlib/compare.ts",
+        "src/core/stdlib/convert.ts",
+        "src/core/stdlib/format.ts",
+        "src/core/stdlib/general.ts",
+        "src/core/stdlib/generate.ts",
+        "src/core/stdlib/index.ts",
+        "src/core/stdlib/math.ts",
+        "src/core/stdlib/proto.ts",
+        "src/core/stdlib/shared.ts",
+        "src/core/stdlib/strings.ts",
+        "src/core/stdlib/verify.ts",
+        "src/core/virtual-module-resolver.ts",
+        "src/hosts/node/cli.ts",
+        "src/index.ts"
+      ],
+      "imports": [
+        "src/core/binding.ts",
+        "src/core/compiler/index.ts",
+        "src/core/compiler/message.ts",
+        "src/core/constants.ts",
+        "src/core/data-source.ts",
+        "src/core/errors.ts",
+        "src/core/format-state.ts",
+        "src/core/messages.ts",
+        "src/core/module-resolver.ts",
+        "src/core/program.ts",
+        "src/core/rng.ts",
+        "src/core/runtime/vm.ts",
+        "src/core/stdlib/index.ts",
+        "src/core/values.ts",
+        "src/core/virtual-module-resolver.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/ranty.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/ranty.ts", "src/index.ts"],
+      "imports": ["src/core/int64.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/rng.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/ranty.ts"],
+      "imports": [
+        "src/core/binding.ts",
+        "src/core/errors.ts",
+        "src/core/int64.ts",
+        "src/core/lang.ts",
+        "src/core/map-proto.ts",
+        "src/core/program.ts",
+        "src/core/ranty.ts",
+        "src/core/stdlib/shared.ts",
+        "src/core/util.ts",
+        "src/core/values.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/runtime/vm.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/stdlib/index.ts"],
+      "imports": [
+        "src/core/errors.ts",
+        "src/core/ranty.ts",
+        "src/core/stdlib/shared.ts",
+        "src/core/util.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/assertion.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/stdlib/index.ts"],
+      "imports": [
+        "src/core/errors.ts",
+        "src/core/ranty.ts",
+        "src/core/stdlib/shared.ts",
+        "src/core/values.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/block.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/stdlib/index.ts"],
+      "imports": ["src/core/ranty.ts", "src/core/stdlib/shared.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/boolean.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/stdlib/index.ts"],
+      "imports": [
+        "src/core/errors.ts",
+        "src/core/map-proto.ts",
+        "src/core/ranty.ts",
+        "src/core/stdlib/shared.ts",
+        "src/core/util.ts",
+        "src/core/values.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/collections.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/stdlib/index.ts"],
+      "imports": ["src/core/ranty.ts", "src/core/stdlib/shared.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/compare.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/stdlib/index.ts"],
+      "imports": [
+        "src/core/int64.ts",
+        "src/core/ranty.ts",
+        "src/core/stdlib/shared.ts",
+        "src/core/values.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/convert.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/stdlib/index.ts"],
+      "imports": [
+        "src/core/errors.ts",
+        "src/core/format-state.ts",
+        "src/core/ranty.ts",
+        "src/core/stdlib/shared.ts",
+        "src/core/values.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/format.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/stdlib/index.ts"],
+      "imports": [
+        "src/core/constants.ts",
+        "src/core/errors.ts",
+        "src/core/int64.ts",
+        "src/core/ranty.ts",
+        "src/core/stdlib/shared.ts",
+        "src/core/util.ts",
+        "src/core/values.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/general.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/stdlib/index.ts"],
+      "imports": [
+        "src/core/errors.ts",
+        "src/core/int64.ts",
+        "src/core/ranty.ts",
+        "src/core/stdlib/shared.ts",
+        "src/core/values.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/generate.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/ranty.ts"],
+      "imports": [
+        "src/core/ranty.ts",
+        "src/core/stdlib/assertion.ts",
+        "src/core/stdlib/block.ts",
+        "src/core/stdlib/boolean.ts",
+        "src/core/stdlib/collections.ts",
+        "src/core/stdlib/compare.ts",
+        "src/core/stdlib/convert.ts",
+        "src/core/stdlib/format.ts",
+        "src/core/stdlib/general.ts",
+        "src/core/stdlib/generate.ts",
+        "src/core/stdlib/math.ts",
+        "src/core/stdlib/proto.ts",
+        "src/core/stdlib/strings.ts",
+        "src/core/stdlib/verify.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/index.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/stdlib/index.ts"],
+      "imports": ["src/core/ranty.ts", "src/core/stdlib/shared.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/math.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/stdlib/index.ts"],
+      "imports": [
+        "src/core/map-proto.ts",
+        "src/core/ranty.ts",
+        "src/core/stdlib/shared.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/proto.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/runtime/vm.ts",
+        "src/core/stdlib/assertion.ts",
+        "src/core/stdlib/block.ts",
+        "src/core/stdlib/boolean.ts",
+        "src/core/stdlib/collections.ts",
+        "src/core/stdlib/compare.ts",
+        "src/core/stdlib/convert.ts",
+        "src/core/stdlib/format.ts",
+        "src/core/stdlib/general.ts",
+        "src/core/stdlib/generate.ts",
+        "src/core/stdlib/math.ts",
+        "src/core/stdlib/proto.ts",
+        "src/core/stdlib/strings.ts",
+        "src/core/stdlib/verify.ts"
+      ],
+      "imports": [
+        "src/core/errors.ts",
+        "src/core/ranty.ts",
+        "src/core/util.ts",
+        "src/core/values.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/shared.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/stdlib/index.ts"],
+      "imports": ["src/core/ranty.ts", "src/core/stdlib/shared.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/strings.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/core/stdlib/index.ts"],
+      "imports": [
+        "src/core/ranty.ts",
+        "src/core/stdlib/shared.ts",
+        "src/core/values.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/stdlib/verify.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/compiler/index.ts",
+        "src/core/module-resolver.ts",
+        "src/core/runtime/vm.ts",
+        "src/core/stdlib/assertion.ts",
+        "src/core/stdlib/collections.ts",
+        "src/core/stdlib/general.ts",
+        "src/core/stdlib/shared.ts",
+        "src/hosts/node/cli.ts"
+      ],
+      "imports": ["src/core/values.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/util.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/binding.ts",
+        "src/core/data-source.ts",
+        "src/core/format-state.ts",
+        "src/core/map-proto.ts",
+        "src/core/ranty.ts",
+        "src/core/runtime/vm.ts",
+        "src/core/stdlib/block.ts",
+        "src/core/stdlib/collections.ts",
+        "src/core/stdlib/convert.ts",
+        "src/core/stdlib/format.ts",
+        "src/core/stdlib/general.ts",
+        "src/core/stdlib/generate.ts",
+        "src/core/stdlib/shared.ts",
+        "src/core/stdlib/verify.ts",
+        "src/core/util.ts",
+        "tests/collections.test.ts",
+        "tests/general-format.test.ts",
+        "tests/generate.test.ts"
+      ],
+      "imports": ["src/core/int64.ts"],
+      "owners": ["runtime-core"],
+      "path": "src/core/values.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "src/core/ranty.ts",
+        "src/hosts/browser/index.ts",
+        "src/index.ts"
+      ],
+      "imports": [
+        "src/core/compiler/index.ts",
+        "src/core/errors.ts",
+        "src/core/messages.ts",
+        "src/core/module-resolver.ts",
+        "src/core/program.ts",
+        "src/core/ranty.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "src/core/virtual-module-resolver.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/index.ts"],
+      "imports": ["src/core/virtual-module-resolver.ts"],
+      "owners": ["host-integrations"],
+      "path": "src/hosts/browser/index.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/hosts/node/cli.ts", "tests/smoke.test.ts"],
+      "imports": [],
+      "owners": ["host-integrations"],
+      "path": "src/hosts/node/cli-utils.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/hosts/node/dev-repl.ts", "src/index.ts"],
+      "imports": [
+        "src/core/compiler/index.ts",
+        "src/core/constants.ts",
+        "src/core/errors.ts",
+        "src/core/messages.ts",
+        "src/core/program.ts",
+        "src/core/ranty.ts",
+        "src/core/util.ts",
+        "src/hosts/node/cli-utils.ts"
+      ],
+      "owners": ["host-integrations"],
+      "path": "src/hosts/node/cli.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["src/hosts/node/cli.ts"],
+      "owners": ["host-integrations"],
+      "path": "src/hosts/node/dev-repl.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "tests/access-range.test.ts",
+        "tests/attribute-keywords.test.ts",
+        "tests/browser-global.test.ts",
+        "tests/closure-math.test.ts",
+        "tests/collections.test.ts",
+        "tests/functions.test.ts",
+        "tests/general-format.test.ts",
+        "tests/generate.test.ts",
+        "tests/lazy.test.ts",
+        "tests/lexer.test.ts",
+        "tests/match-selector.test.ts",
+        "tests/module-paths.test.ts",
+        "tests/operators.test.ts",
+        "tests/output-control.test.ts",
+        "tests/pipes-spread.test.ts",
+        "tests/prototype.test.ts",
+        "tests/smoke.test.ts",
+        "tests/stdlib-surface.test.ts",
+        "tests/suite-helpers.ts"
+      ],
+      "imports": [
+        "src/core/constants.ts",
+        "src/core/data-source.ts",
+        "src/core/errors.ts",
+        "src/core/int64.ts",
+        "src/core/messages.ts",
+        "src/core/module-resolver.ts",
+        "src/core/program.ts",
+        "src/core/ranty.ts",
+        "src/core/rng.ts",
+        "src/core/virtual-module-resolver.ts",
+        "src/hosts/browser/index.ts",
+        "src/hosts/node/cli.ts"
+      ],
       "owners": ["public-api-and-build-contract"],
       "path": "src/index.ts",
       "type": "code"
     },
     {
-      "dependents": ["src/public/createExampleMessage.ts"],
-      "imports": [],
-      "owners": ["library-core"],
-      "path": "src/internal/formatExampleMessage.ts",
+      "dependents": [],
+      "imports": ["src/index.ts"],
+      "owners": ["runtime-core"],
+      "path": "tests/access-range.test.ts",
       "type": "code"
     },
     {
-      "dependents": ["src/index.ts"],
-      "imports": ["src/internal/formatExampleMessage.ts"],
-      "owners": ["public-api-and-build-contract"],
-      "path": "src/public/createExampleMessage.ts",
+      "dependents": [],
+      "imports": [
+        "src/core/messages.ts",
+        "src/index.ts",
+        "tests/suite-helpers.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "tests/attribute-keywords.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["src/index.ts"],
+      "owners": ["host-integrations"],
+      "path": "tests/browser-global.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["src/index.ts"],
+      "owners": ["runtime-core"],
+      "path": "tests/closure-math.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": [
+        "src/core/map-proto.ts",
+        "src/core/messages.ts",
+        "src/core/values.ts",
+        "src/index.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "tests/collections.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["tests/smoke.test.ts", "tests/stdlib-surface.test.ts"],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "tests/corpus-helpers.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["src/index.ts"],
+      "owners": ["runtime-core"],
+      "path": "tests/functions.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": [
+        "src/core/data-source.ts",
+        "src/core/values.ts",
+        "src/index.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "tests/general-format.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["src/core/values.ts", "src/index.ts"],
+      "owners": ["runtime-core"],
+      "path": "tests/generate.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["src/core/messages.ts", "src/index.ts"],
+      "owners": ["runtime-core"],
+      "path": "tests/lazy.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": [
+        "src/core/compiler/lexer.ts",
+        "src/core/compiler/message.ts",
+        "src/index.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "tests/lexer.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": [
+        "src/core/messages.ts",
+        "src/index.ts",
+        "tests/suite-helpers.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "tests/match-selector.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": [
+        "src/core/messages.ts",
+        "src/index.ts",
+        "tests/suite-helpers.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "tests/module-paths.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["src/index.ts"],
+      "owners": ["runtime-core"],
+      "path": "tests/operators.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["src/index.ts", "tests/suite-helpers.ts"],
+      "owners": ["runtime-core"],
+      "path": "tests/output-control.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["src/core/messages.ts", "src/index.ts"],
+      "owners": ["runtime-core"],
+      "path": "tests/pipes-spread.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["src/index.ts", "tests/suite-helpers.ts"],
+      "owners": ["runtime-core"],
+      "path": "tests/prototype.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": [
+        "src/core/errors.ts",
+        "src/hosts/node/cli-utils.ts",
+        "src/index.ts",
+        "tests/corpus-helpers.ts",
+        "tests/suite-helpers.ts"
+      ],
+      "owners": ["runtime-core"],
+      "path": "tests/smoke.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["src/index.ts", "tests/corpus-helpers.ts"],
+      "owners": ["upstream-parity-contract"],
+      "path": "tests/stdlib-surface.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "tests/attribute-keywords.test.ts",
+        "tests/match-selector.test.ts",
+        "tests/module-paths.test.ts",
+        "tests/output-control.test.ts",
+        "tests/prototype.test.ts",
+        "tests/smoke.test.ts"
+      ],
+      "imports": ["src/core/messages.ts", "src/index.ts"],
+      "owners": ["runtime-core"],
+      "path": "tests/suite-helpers.ts",
       "type": "code"
     },
     {
@@ -279,6 +1358,993 @@
     {
       "dependents": [],
       "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/components.yaml",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/contract.json",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/lock.json",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/corpus/cli.json",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/corpus/fixtures.json",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/corpus/fuzz.json",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/add_assign.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/and_assign.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/div_assign.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/dynamic_index_setter.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/dynamic_multi_index_setter.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/empty-def.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/getter_fallback_from_index.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/getter_fallback_from_key.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/getter_fallback_from_var.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/inv_index_get.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/inv_index_set.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/mod_assign.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/mul_assign.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/or_assign.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/override_shadowed_locals_with_multi_descope.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/pow_assign.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/sub_assign.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/access/xor_assign.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/anonymous/anon_getter.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/anonymous/anon_setter.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/anonymous/dynamic_anon_getter.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/anonymous/dynamic_anon_setter.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/assert/assert_fail.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/assert/assert_pass.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/branch/if-else.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/branch/if-elseif-else.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/branch/if-elseif.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/branch/if.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/charms/func_return_output.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/charms/func_return_value.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/charms/rep_break_output.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/charms/rep_break_value.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/charms/rep_continue_output.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/charms/rep_continue_value.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/charms/top_level_return.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/charms/weight_all_zero.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/closure/closure_capture_arg.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/closure/closure_capture_var.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/closure/closure_mutate_captured_value.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/collections/filter_with_native_predicate.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/collections/filter_with_user_predicate.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/collections/list_autoconcat.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/collections/list_autoconcat_repeater.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/collections/list_tuple_autoconcat.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/collections/map_autoconcat.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/collections/map_with_native_callback.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/collections/map_with_user_callback.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/collections/tuple_autoconcat.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/collections/tuple_autoconcat_repeater.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/collections/zip_with_native_callback.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/collections/zip_with_user_callback.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/compat/module_dep.rant",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/compat/module_entry.rant",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/const/const_define.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/const/const_function.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/const/const_shadow.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/const/redef_const.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/const/redef_var_with_const.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/func/assignment_pipe_def_const.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/func/assignment_pipe_def_var.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/func/assignment_pipe_set.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/func/func_percolation.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/func/func_with_optional_param.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/func/func_with_variadic_plus.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/func/func_with_variadic_star.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/func/function_piping.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/func/function_piping_callback.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/func/pipecall_pipeval.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/math/max.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/math/min.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/modules/require.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/modules/test-module.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/ops/and.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/ops/and_short_circuit.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/ops/cmp.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/ops/math.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/ops/not.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/ops/or.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/ops/or_short_circuit.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/ops/xor.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/range/range_forward.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/range/range_forward_step_divisible.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/range/range_forward_step_indivisible.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/range/range_reverse.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/range/range_reverse_step_divisible.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/range/range_reverse_step_indivisible.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/list/between_dynamic.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/list/between_static.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/list/from_dynamic.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/list/from_static.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/list/full.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/list/to_dynamic.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/list/to_static.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/range/between_dynamic.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/range/between_static.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/range/from_dynamic.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/range/from_static.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/range/full.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/range/to_dynamic.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/range/to_static.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/string/between_dynamic.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/string/between_static.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/string/from_dynamic.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/string/from_static.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/string/full.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/string/to_dynamic.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/string/to_static.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/tuple/between_dynamic.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/tuple/between_static.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/tuple/from_dynamic.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/tuple/from_static.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/tuple/full.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/tuple/to_dynamic.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/slice/tuple/to_static.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/splice/dynamic_from_list.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/splice/dynamic_from_tuple.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/splice/static_from_list.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/splice/static_from_tuple.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/spread/spread_all.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/spread/spread_inner.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/spread/spread_left.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/spread/spread_multi.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/spread/spread_right.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/spread/spread_variadic_plus.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/spread/spread_variadic_star.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/temporal/temporal_one.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/temporal/temporal_one_mixed.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/temporal/temporal_pipe_temporal.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/temporal/temporal_two_diffsize.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/temporal/temporal_two_diffsize_mixed.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/temporal/temporal_two_samesize.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/temporal/temporal_two_samesize_mixed.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/temporal/temporal_two_samesize_sync.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/tutorial/moon-market-kit.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/tutorial/moon-market-parts.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
       "owners": ["public-api-and-build-contract"],
       "path": "vitest.config.ts",
       "type": "code"
@@ -286,63 +2352,136 @@
   ],
   "subsystems": [
     {
-      "depends_on": [],
-      "id": "library-core",
+      "depends_on": ["runtime-core"],
+      "id": "host-integrations",
       "owned_paths": [
-        "spec/subsystems/library-core.yaml",
-        "src/__tests__/createExampleMessage.test.ts",
-        "src/internal/**"
+        "benchmarks/run-hyperfine.sh",
+        "docs/cli.md",
+        "src/hosts/**",
+        "tests/browser-global.test.ts",
+        "spec/subsystems/host-integrations.yaml"
       ],
-      "related_paths": ["src/public/**"],
+      "related_paths": ["src/core/**", "src/index.ts", "tests/smoke.test.ts"],
       "status": "evolving",
-      "used_by": [
-        "public-api-and-build-contract",
-        "repo-governance-context-system"
-      ]
+      "used_by": ["public-api-and-build-contract", "upstream-parity-contract"]
     },
     {
-      "depends_on": ["library-core"],
+      "depends_on": ["runtime-core", "host-integrations"],
       "id": "public-api-and-build-contract",
       "owned_paths": [
+        ".nvmrc",
         "package-lock.json",
         "package.json",
+        "rollup.config.mjs",
         "tsconfig.build.json",
         "tsconfig.json",
         "vitest.config.ts",
         "eslint.config.mjs",
-        "spec/subsystems/public-api-and-build-contract.yaml",
+        "docs/README.md",
+        "docs/intro.md",
         "src/index.ts",
-        "src/public/**"
+        "spec/subsystems/public-api-and-build-contract.yaml"
       ],
-      "related_paths": [],
+      "related_paths": ["src/core/**", "src/hosts/**"],
       "status": "locked",
       "used_by": ["repo-governance-context-system"]
     },
     {
-      "depends_on": ["public-api-and-build-contract", "library-core"],
+      "depends_on": [
+        "public-api-and-build-contract",
+        "runtime-core",
+        "host-integrations",
+        "upstream-parity-contract"
+      ],
       "id": "repo-governance-context-system",
       "owned_paths": [
+        ".github/**",
         ".gitignore",
-        ".nvmrc",
+        ".prettierignore",
+        ".prettierrc.json",
         "AGENTS.md",
         "LICENSE",
         "README.md",
-        "docs/**",
+        "docs/README.md",
+        "docs/context-system/**",
+        "docs/repo-workflow/**",
         "glossary/**",
-        "scripts/**",
+        "scripts/context-system/**",
+        "scripts/check-eslint-directives.mjs",
+        "scripts/__tests__/contextSystem.test.js",
         "spec/README.md",
         "spec/tooling-and-quality.md",
         "spec/comment-style.md",
         "spec/testing-style.md",
-        "spec/decisions/**",
+        "spec/decisions/ADR-0001-anti-drift-context-system.md",
+        "spec/decisions/ADR-0002-locked-subsystem-edit-policy.md",
         "spec/generated/**",
         "spec/subsystems/index.yaml",
         "spec/subsystems/repo-governance-context-system.yaml",
         "notes.md"
       ],
-      "related_paths": [],
+      "related_paths": ["spec/decisions/ADR-0003-rust-upstream-authority.md"],
       "status": "stable",
       "used_by": []
+    },
+    {
+      "depends_on": [],
+      "id": "runtime-core",
+      "owned_paths": [
+        "benchmarks/workloads/**",
+        "docs/library.md",
+        "docs/modules.md",
+        "docs/runtime.md",
+        "src/core/**",
+        "tests/access-range.test.ts",
+        "tests/attribute-keywords.test.ts",
+        "tests/closure-math.test.ts",
+        "tests/collections.test.ts",
+        "tests/functions.test.ts",
+        "tests/general-format.test.ts",
+        "tests/generate.test.ts",
+        "tests/lexer.test.ts",
+        "tests/lazy.test.ts",
+        "tests/match-selector.test.ts",
+        "tests/module-paths.test.ts",
+        "tests/operators.test.ts",
+        "tests/output-control.test.ts",
+        "tests/pipes-spread.test.ts",
+        "tests/prototype.test.ts",
+        "tests/smoke.test.ts",
+        "tests/suite-helpers.ts",
+        "spec/subsystems/runtime-core.yaml"
+      ],
+      "related_paths": ["src/hosts/**", "upstream/ranty/**"],
+      "status": "evolving",
+      "used_by": [
+        "public-api-and-build-contract",
+        "host-integrations",
+        "upstream-parity-contract"
+      ]
+    },
+    {
+      "depends_on": [
+        "runtime-core",
+        "host-integrations",
+        "public-api-and-build-contract"
+      ],
+      "id": "upstream-parity-contract",
+      "owned_paths": [
+        "scripts/upstream/**",
+        "upstream/**",
+        "tests/corpus-helpers.ts",
+        "tests/stdlib-surface.test.ts",
+        "spec/decisions/ADR-0003-rust-upstream-authority.md",
+        "spec/subsystems/upstream-parity-contract.yaml"
+      ],
+      "related_paths": [
+        "src/core/**",
+        "src/hosts/node/**",
+        "tests/smoke.test.ts"
+      ],
+      "status": "locked",
+      "used_by": ["repo-governance-context-system"]
     }
   ]
 }

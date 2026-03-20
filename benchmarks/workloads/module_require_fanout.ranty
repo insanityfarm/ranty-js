@@ -1,0 +1,5 @@
+@require "mods/group00"
+@require "mods/group01"
+@require "mods/group02"
+@require "mods/group03"
+[cat:[group00/render];"\n";[group01/render];"\n";[group02/render];"\n";[group03/render]]

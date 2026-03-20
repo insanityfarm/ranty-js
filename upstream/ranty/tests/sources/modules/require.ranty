@@ -1,0 +1,2 @@
+@require "upstream/ranty/tests/sources/modules/test-module"
+[test-module/test |> assert-eq: 42]

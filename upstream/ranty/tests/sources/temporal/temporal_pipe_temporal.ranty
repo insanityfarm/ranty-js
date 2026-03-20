@@ -1,0 +1,3 @@
+<%test = [cat: **(a; b) |> cat: **(c; d)]>
+
+[assert-eq: <test>; "acadbcbd"]

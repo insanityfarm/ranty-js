@@ -1,0 +1,2 @@
+@require "module_dep"
+legacy fixture:[module_dep/value]

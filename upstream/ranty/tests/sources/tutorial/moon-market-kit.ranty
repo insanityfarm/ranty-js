@@ -1,0 +1,28 @@
+@require parts: "./moon-market-parts"
+
+<%module = (::)>
+
+<$stall-proto = (::
+  describe = [?: stall] {
+    [parts/banner: <stall/name>]\n
+    Specialty: `<stall/specialty>\n
+    Omen: `[parts/omen]
+  };
+)>
+
+[$module/make-stall: name; specialty ? [parts/treat]] {
+  <$stall = (:: name = <name>; specialty = <specialty>; mood = cozy)>
+  [set-proto: <stall>; <stall-proto>]
+  <stall>
+}
+
+[$module/opening-line: name ? "Juniper"] {
+  <$stall = [module/make-stall: <name>]>
+  [stall/describe: <stall>]
+}
+
+[$module/omen] {
+  [parts/omen]
+}
+
+<module>

@@ -1,0 +1,8 @@
+<@text $test=foo>
+{
+  <@text $test=bar>
+  {
+    <@text $test=baz>
+    <^^test> <^test> <test>
+  }
+}

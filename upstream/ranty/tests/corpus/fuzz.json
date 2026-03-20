@@ -1,0 +1,6664 @@
+{
+  "cases": [
+    {
+      "label": "arithmetic-comparison/1",
+      "kind": "valid",
+      "source": "[add:1;1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/2",
+      "kind": "valid",
+      "source": "[add:2;1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/3",
+      "kind": "valid",
+      "source": "[add:3;1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/4",
+      "kind": "valid",
+      "source": "[add:4;1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/5",
+      "kind": "valid",
+      "source": "[add:5;1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/6",
+      "kind": "valid",
+      "source": "[sub:8;2]",
+      "seed": null,
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/7",
+      "kind": "valid",
+      "source": "[sub:9;2]",
+      "seed": null,
+      "status": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/8",
+      "kind": "valid",
+      "source": "[sub:10;2]",
+      "seed": null,
+      "status": 0,
+      "stdout": "8\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/9",
+      "kind": "valid",
+      "source": "[sub:11;2]",
+      "seed": null,
+      "status": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/10",
+      "kind": "valid",
+      "source": "[sub:12;2]",
+      "seed": null,
+      "status": 0,
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/11",
+      "kind": "valid",
+      "source": "[mul:1;3]",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/12",
+      "kind": "valid",
+      "source": "[mul:2;3]",
+      "seed": null,
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/13",
+      "kind": "valid",
+      "source": "[mul:3;3]",
+      "seed": null,
+      "status": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/14",
+      "kind": "valid",
+      "source": "[mul:4;3]",
+      "seed": null,
+      "status": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/15",
+      "kind": "valid",
+      "source": "[mul:5;3]",
+      "seed": null,
+      "status": 0,
+      "stdout": "15\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/16",
+      "kind": "valid",
+      "source": "[div:5;5]",
+      "seed": null,
+      "status": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/17",
+      "kind": "valid",
+      "source": "[div:10;5]",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/18",
+      "kind": "valid",
+      "source": "[div:15;5]",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/19",
+      "kind": "valid",
+      "source": "[div:20;5]",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/20",
+      "kind": "valid",
+      "source": "[div:25;5]",
+      "seed": null,
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/21",
+      "kind": "valid",
+      "source": "[mod:13;6]",
+      "seed": null,
+      "status": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/22",
+      "kind": "valid",
+      "source": "[mod:14;6]",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/23",
+      "kind": "valid",
+      "source": "[mod:15;6]",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/24",
+      "kind": "valid",
+      "source": "[mod:16;6]",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/25",
+      "kind": "valid",
+      "source": "[mod:17;6]",
+      "seed": null,
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/26",
+      "kind": "valid",
+      "source": "[pow:2;1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/27",
+      "kind": "valid",
+      "source": "[pow:3;1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/28",
+      "kind": "valid",
+      "source": "[pow:4;1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/29",
+      "kind": "valid",
+      "source": "[pow:5;1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/30",
+      "kind": "valid",
+      "source": "[pow:6;1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/31",
+      "kind": "valid",
+      "source": "[eq:1;1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/32",
+      "kind": "valid",
+      "source": "[eq:2;2]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/33",
+      "kind": "valid",
+      "source": "[eq:3;3]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/34",
+      "kind": "valid",
+      "source": "[eq:4;4]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/35",
+      "kind": "valid",
+      "source": "[eq:5;5]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/36",
+      "kind": "valid",
+      "source": "[lt:1;9]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/37",
+      "kind": "valid",
+      "source": "[lt:2;10]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/38",
+      "kind": "valid",
+      "source": "[lt:3;11]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/39",
+      "kind": "valid",
+      "source": "[lt:4;12]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "arithmetic-comparison/40",
+      "kind": "valid",
+      "source": "[lt:5;13]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/1",
+      "kind": "valid",
+      "source": "@if @false: {yes} @else: {no}",
+      "seed": null,
+      "status": 0,
+      "stdout": "no\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/2",
+      "kind": "valid",
+      "source": "@if @true: {yes} @else: {no}",
+      "seed": null,
+      "status": 0,
+      "stdout": "yes\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/3",
+      "kind": "valid",
+      "source": "@if @false: {yes} @else: {no}",
+      "seed": null,
+      "status": 0,
+      "stdout": "no\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/4",
+      "kind": "valid",
+      "source": "@if @true: {yes} @else: {no}",
+      "seed": null,
+      "status": 0,
+      "stdout": "yes\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/5",
+      "kind": "valid",
+      "source": "@if @false: {yes} @else: {no}",
+      "seed": null,
+      "status": 0,
+      "stdout": "no\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/6",
+      "kind": "valid",
+      "source": "@if [list:1]: {truthy} @else: {falsy}",
+      "seed": null,
+      "status": 0,
+      "stdout": "truthy\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/7",
+      "kind": "valid",
+      "source": "@if [list]: {truthy} @else: {falsy}",
+      "seed": null,
+      "status": 0,
+      "stdout": "falsy\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/8",
+      "kind": "valid",
+      "source": "@if [list:3]: {truthy} @else: {falsy}",
+      "seed": null,
+      "status": 0,
+      "stdout": "truthy\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/9",
+      "kind": "valid",
+      "source": "@if [list]: {truthy} @else: {falsy}",
+      "seed": null,
+      "status": 0,
+      "stdout": "falsy\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/10",
+      "kind": "valid",
+      "source": "@if [list:5]: {truthy} @else: {falsy}",
+      "seed": null,
+      "status": 0,
+      "stdout": "truthy\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/11",
+      "kind": "valid",
+      "source": "[rep:2]{@if [eq: [step-index]; 0]: {@break stop} @else: {a}}",
+      "seed": null,
+      "status": 0,
+      "stdout": "stop\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/12",
+      "kind": "valid",
+      "source": "[rep:3]{@if [eq: [step-index]; 1]: {@break stop} @else: {a}}",
+      "seed": null,
+      "status": 0,
+      "stdout": "astop\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/13",
+      "kind": "valid",
+      "source": "[rep:4]{@if [eq: [step-index]; 2]: {@break stop} @else: {a}}",
+      "seed": null,
+      "status": 0,
+      "stdout": "aastop\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/14",
+      "kind": "valid",
+      "source": "[rep:5]{@if [eq: [step-index]; 3]: {@break stop} @else: {a}}",
+      "seed": null,
+      "status": 0,
+      "stdout": "aaastop\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/15",
+      "kind": "valid",
+      "source": "[rep:6]{@if [eq: [step-index]; 4]: {@break stop} @else: {a}}",
+      "seed": null,
+      "status": 0,
+      "stdout": "aaaastop\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/16",
+      "kind": "valid",
+      "source": "[rep:3]{@if [eq: [mod: [step-index]; 2]; 0]: {@continue skip} @else: {b}}",
+      "seed": null,
+      "status": 0,
+      "stdout": "skipbskip\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/17",
+      "kind": "valid",
+      "source": "[rep:4]{@if [eq: [mod: [step-index]; 2]; 0]: {@continue skip} @else: {b}}",
+      "seed": null,
+      "status": 0,
+      "stdout": "skipbskipb\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/18",
+      "kind": "valid",
+      "source": "[rep:5]{@if [eq: [mod: [step-index]; 2]; 0]: {@continue skip} @else: {b}}",
+      "seed": null,
+      "status": 0,
+      "stdout": "skipbskipbskip\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/19",
+      "kind": "valid",
+      "source": "[rep:6]{@if [eq: [mod: [step-index]; 2]; 0]: {@continue skip} @else: {b}}",
+      "seed": null,
+      "status": 0,
+      "stdout": "skipbskipbskipb\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/20",
+      "kind": "valid",
+      "source": "[rep:7]{@if [eq: [mod: [step-index]; 2]; 0]: {@continue skip} @else: {b}}",
+      "seed": null,
+      "status": 0,
+      "stdout": "skipbskipbskipbskip\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/21",
+      "kind": "valid",
+      "source": "[$choose:x]{@if <x>: {yes} @else: {no}}[choose:1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "yes\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/22",
+      "kind": "valid",
+      "source": "[$choose:x]{@if <x>: {yes} @else: {no}}[choose:0]",
+      "seed": null,
+      "status": 0,
+      "stdout": "no\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/23",
+      "kind": "valid",
+      "source": "[$choose:x]{@if <x>: {yes} @else: {no}}[choose:1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "yes\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/24",
+      "kind": "valid",
+      "source": "[$choose:x]{@if <x>: {yes} @else: {no}}[choose:0]",
+      "seed": null,
+      "status": 0,
+      "stdout": "no\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/25",
+      "kind": "valid",
+      "source": "[$choose:x]{@if <x>: {yes} @else: {no}}[choose:1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "yes\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/26",
+      "kind": "valid",
+      "source": "@if @false: {bad} @elseif @true: {ok-1} @else: {bad}",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok-1\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/27",
+      "kind": "valid",
+      "source": "@if @false: {bad} @elseif @true: {ok-2} @else: {bad}",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok-2\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/28",
+      "kind": "valid",
+      "source": "@if @false: {bad} @elseif @true: {ok-3} @else: {bad}",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok-3\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/29",
+      "kind": "valid",
+      "source": "@if @false: {bad} @elseif @true: {ok-4} @else: {bad}",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok-4\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/30",
+      "kind": "valid",
+      "source": "@if @false: {bad} @elseif @true: {ok-5} @else: {bad}",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok-5\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/31",
+      "kind": "valid",
+      "source": "@if @true: {@if @false: {bad} @else: {inner-1}} @else: {bad}",
+      "seed": null,
+      "status": 0,
+      "stdout": "inner-1\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/32",
+      "kind": "valid",
+      "source": "@if @true: {@if @false: {bad} @else: {inner-2}} @else: {bad}",
+      "seed": null,
+      "status": 0,
+      "stdout": "inner-2\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/33",
+      "kind": "valid",
+      "source": "@if @true: {@if @false: {bad} @else: {inner-3}} @else: {bad}",
+      "seed": null,
+      "status": 0,
+      "stdout": "inner-3\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/34",
+      "kind": "valid",
+      "source": "@if @true: {@if @false: {bad} @else: {inner-4}} @else: {bad}",
+      "seed": null,
+      "status": 0,
+      "stdout": "inner-4\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/35",
+      "kind": "valid",
+      "source": "@if @true: {@if @false: {bad} @else: {inner-5}} @else: {bad}",
+      "seed": null,
+      "status": 0,
+      "stdout": "inner-5\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/36",
+      "kind": "valid",
+      "source": "[rep:2][sep:\\s]{x}",
+      "seed": null,
+      "status": 0,
+      "stdout": "x x\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/37",
+      "kind": "valid",
+      "source": "[rep:3][sep:\\s]{x}",
+      "seed": null,
+      "status": 0,
+      "stdout": "x x x\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/38",
+      "kind": "valid",
+      "source": "[rep:4][sep:\\s]{x}",
+      "seed": null,
+      "status": 0,
+      "stdout": "x x x x\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/39",
+      "kind": "valid",
+      "source": "[rep:5][sep:\\s]{x}",
+      "seed": null,
+      "status": 0,
+      "stdout": "x x x x x\n",
+      "stderr": ""
+    },
+    {
+      "label": "branch-control-flow/40",
+      "kind": "valid",
+      "source": "[rep:6][sep:\\s]{x}",
+      "seed": null,
+      "status": 0,
+      "stdout": "x x x x x x\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/1",
+      "kind": "valid",
+      "source": "<$items=[list:1;2;3;4;5]><items/0>",
+      "seed": null,
+      "status": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/2",
+      "kind": "valid",
+      "source": "<$items=[list:1;2;3;4;5]><items/1>",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/3",
+      "kind": "valid",
+      "source": "<$items=[list:1;2;3;4;5]><items/2>",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/4",
+      "kind": "valid",
+      "source": "<$items=[list:1;2;3;4;5]><items/3>",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/5",
+      "kind": "valid",
+      "source": "<$items=[list:1;2;3;4;5]><items/4>",
+      "seed": null,
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/6",
+      "kind": "valid",
+      "source": "<$items=[tuple:1;2;3;4;5]><items/0>",
+      "seed": null,
+      "status": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/7",
+      "kind": "valid",
+      "source": "<$items=[tuple:1;2;3;4;5]><items/1>",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/8",
+      "kind": "valid",
+      "source": "<$items=[tuple:1;2;3;4;5]><items/2>",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/9",
+      "kind": "valid",
+      "source": "<$items=[tuple:1;2;3;4;5]><items/3>",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/10",
+      "kind": "valid",
+      "source": "<$items=[tuple:1;2;3;4;5]><items/4>",
+      "seed": null,
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/11",
+      "kind": "valid",
+      "source": "<$obj=(:: a = 1; b = 2; c = 3; d = 4; e = 5)><obj/a>",
+      "seed": null,
+      "status": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/12",
+      "kind": "valid",
+      "source": "<$obj=(:: a = 1; b = 2; c = 3; d = 4; e = 5)><obj/b>",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/13",
+      "kind": "valid",
+      "source": "<$obj=(:: a = 1; b = 2; c = 3; d = 4; e = 5)><obj/c>",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/14",
+      "kind": "valid",
+      "source": "<$obj=(:: a = 1; b = 2; c = 3; d = 4; e = 5)><obj/d>",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/15",
+      "kind": "valid",
+      "source": "<$obj=(:: a = 1; b = 2; c = 3; d = 4; e = 5)><obj/e>",
+      "seed": null,
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/16",
+      "kind": "valid",
+      "source": "<$items=[list:1;2;3;4;5]><items/0..1>",
+      "seed": null,
+      "status": 0,
+      "stdout": "(: 1)\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/17",
+      "kind": "valid",
+      "source": "<$items=[list:1;2;3;4;5]><items/1..2>",
+      "seed": null,
+      "status": 0,
+      "stdout": "(: 2)\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/18",
+      "kind": "valid",
+      "source": "<$items=[list:1;2;3;4;5]><items/2..3>",
+      "seed": null,
+      "status": 0,
+      "stdout": "(: 3)\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/19",
+      "kind": "valid",
+      "source": "<$items=[list:1;2;3;4;5]><items/3..4>",
+      "seed": null,
+      "status": 0,
+      "stdout": "(: 4)\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/20",
+      "kind": "valid",
+      "source": "<$items=[list:1;2;3;4;5]><items/4..5>",
+      "seed": null,
+      "status": 0,
+      "stdout": "(: 5)\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/21",
+      "kind": "valid",
+      "source": "<$items=[tuple:1;2;3;4;5]><items/0..1>",
+      "seed": null,
+      "status": 0,
+      "stdout": "(1;)\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/22",
+      "kind": "valid",
+      "source": "<$items=[tuple:1;2;3;4;5]><items/1..2>",
+      "seed": null,
+      "status": 0,
+      "stdout": "(2;)\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/23",
+      "kind": "valid",
+      "source": "<$items=[tuple:1;2;3;4;5]><items/2..3>",
+      "seed": null,
+      "status": 0,
+      "stdout": "(3;)\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/24",
+      "kind": "valid",
+      "source": "<$items=[tuple:1;2;3;4;5]><items/3..4>",
+      "seed": null,
+      "status": 0,
+      "stdout": "(4;)\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/25",
+      "kind": "valid",
+      "source": "<$items=[tuple:1;2;3;4;5]><items/4..5>",
+      "seed": null,
+      "status": 0,
+      "stdout": "(5;)\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/26",
+      "kind": "valid",
+      "source": "<$text=\"abcde\"><text/0..1>",
+      "seed": null,
+      "status": 0,
+      "stdout": "a\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/27",
+      "kind": "valid",
+      "source": "<$text=\"abcde\"><text/1..2>",
+      "seed": null,
+      "status": 0,
+      "stdout": "b\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/28",
+      "kind": "valid",
+      "source": "<$text=\"abcde\"><text/2..3>",
+      "seed": null,
+      "status": 0,
+      "stdout": "c\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/29",
+      "kind": "valid",
+      "source": "<$text=\"abcde\"><text/3..4>",
+      "seed": null,
+      "status": 0,
+      "stdout": "d\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/30",
+      "kind": "valid",
+      "source": "<$text=\"abcde\"><text/4..5>",
+      "seed": null,
+      "status": 0,
+      "stdout": "e\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/31",
+      "kind": "valid",
+      "source": "<$range=[irange:0;3]><range/0>",
+      "seed": null,
+      "status": 0,
+      "stdout": "0\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/32",
+      "kind": "valid",
+      "source": "<$range=[irange:1;4]><range/1>",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/33",
+      "kind": "valid",
+      "source": "<$range=[irange:2;5]><range/0>",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/34",
+      "kind": "valid",
+      "source": "<$range=[irange:3;6]><range/1>",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/35",
+      "kind": "valid",
+      "source": "<$range=[irange:4;7]><range/0>",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/36",
+      "kind": "valid",
+      "source": "[sum:[to-list:[range:0;3]]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/37",
+      "kind": "valid",
+      "source": "[sum:[to-list:[range:1;4]]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/38",
+      "kind": "valid",
+      "source": "[sum:[to-list:[range:2;5]]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/39",
+      "kind": "valid",
+      "source": "[sum:[to-list:[range:3;6]]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "label": "collections-access-range/40",
+      "kind": "valid",
+      "source": "[sum:[to-list:[range:4;7]]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "15\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/1",
+      "kind": "valid",
+      "source": "[$id:x]{<x>}[id:1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/2",
+      "kind": "valid",
+      "source": "[$id:x]{<x>}[id:2]",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/3",
+      "kind": "valid",
+      "source": "[$id:x]{<x>}[id:3]",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/4",
+      "kind": "valid",
+      "source": "[$id:x]{<x>}[id:4]",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/5",
+      "kind": "valid",
+      "source": "[$id:x]{<x>}[id:5]",
+      "seed": null,
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/6",
+      "kind": "valid",
+      "source": "[$square:x]{[mul:<x>;<x>]}[square:1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/7",
+      "kind": "valid",
+      "source": "[$square:x]{[mul:<x>;<x>]}[square:2]",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/8",
+      "kind": "valid",
+      "source": "[$square:x]{[mul:<x>;<x>]}[square:3]",
+      "seed": null,
+      "status": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/9",
+      "kind": "valid",
+      "source": "[$square:x]{[mul:<x>;<x>]}[square:4]",
+      "seed": null,
+      "status": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/10",
+      "kind": "valid",
+      "source": "[$square:x]{[mul:<x>;<x>]}[square:5]",
+      "seed": null,
+      "status": 0,
+      "stdout": "25\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/11",
+      "kind": "valid",
+      "source": "[$outer:x]{[$inner]{<x>}[inner]}[outer:1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/12",
+      "kind": "valid",
+      "source": "[$outer:x]{[$inner]{<x>}[inner]}[outer:2]",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/13",
+      "kind": "valid",
+      "source": "[$outer:x]{[$inner]{<x>}[inner]}[outer:3]",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/14",
+      "kind": "valid",
+      "source": "[$outer:x]{[$inner]{<x>}[inner]}[outer:4]",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/15",
+      "kind": "valid",
+      "source": "[$outer:x]{[$inner]{<x>}[inner]}[outer:5]",
+      "seed": null,
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/16",
+      "kind": "valid",
+      "source": "[$make:x]{[?]{<x>}}<$f=[make:1]>[f]",
+      "seed": null,
+      "status": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/17",
+      "kind": "valid",
+      "source": "[$make:x]{[?]{<x>}}<$f=[make:2]>[f]",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/18",
+      "kind": "valid",
+      "source": "[$make:x]{[?]{<x>}}<$f=[make:3]>[f]",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/19",
+      "kind": "valid",
+      "source": "[$make:x]{[?]{<x>}}<$f=[make:4]>[f]",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/20",
+      "kind": "valid",
+      "source": "[$make:x]{[?]{<x>}}<$f=[make:5]>[f]",
+      "seed": null,
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/21",
+      "kind": "valid",
+      "source": "[$concat:xs*]{[join:<xs>;\\s]}[concat:a;b;c]",
+      "seed": null,
+      "status": 0,
+      "stdout": "a b c\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/22",
+      "kind": "valid",
+      "source": "[$concat:xs*]{[join:<xs>;\\s]}[concat:a;b;c]",
+      "seed": null,
+      "status": 0,
+      "stdout": "a b c\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/23",
+      "kind": "valid",
+      "source": "[$concat:xs*]{[join:<xs>;\\s]}[concat:a;b;c]",
+      "seed": null,
+      "status": 0,
+      "stdout": "a b c\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/24",
+      "kind": "valid",
+      "source": "[$concat:xs*]{[join:<xs>;\\s]}[concat:a;b;c]",
+      "seed": null,
+      "status": 0,
+      "stdout": "a b c\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/25",
+      "kind": "valid",
+      "source": "[$concat:xs*]{[join:<xs>;\\s]}[concat:a;b;c]",
+      "seed": null,
+      "status": 0,
+      "stdout": "a b c\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/26",
+      "kind": "valid",
+      "source": "[$concat:xs+]{[join:<xs>;\\s]}[concat:a;b;c]",
+      "seed": null,
+      "status": 0,
+      "stdout": "a b c\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/27",
+      "kind": "valid",
+      "source": "[$concat:xs+]{[join:<xs>;\\s]}[concat:a;b;c]",
+      "seed": null,
+      "status": 0,
+      "stdout": "a b c\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/28",
+      "kind": "valid",
+      "source": "[$concat:xs+]{[join:<xs>;\\s]}[concat:a;b;c]",
+      "seed": null,
+      "status": 0,
+      "stdout": "a b c\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/29",
+      "kind": "valid",
+      "source": "[$concat:xs+]{[join:<xs>;\\s]}[concat:a;b;c]",
+      "seed": null,
+      "status": 0,
+      "stdout": "a b c\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/30",
+      "kind": "valid",
+      "source": "[$concat:xs+]{[join:<xs>;\\s]}[concat:a;b;c]",
+      "seed": null,
+      "status": 0,
+      "stdout": "a b c\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/31",
+      "kind": "valid",
+      "source": "[$choose:x]{@if <x>: {yes} @else: {no}}[choose:1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "yes\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/32",
+      "kind": "valid",
+      "source": "[$choose:x]{@if <x>: {yes} @else: {no}}[choose:0]",
+      "seed": null,
+      "status": 0,
+      "stdout": "no\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/33",
+      "kind": "valid",
+      "source": "[$choose:x]{@if <x>: {yes} @else: {no}}[choose:1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "yes\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/34",
+      "kind": "valid",
+      "source": "[$choose:x]{@if <x>: {yes} @else: {no}}[choose:0]",
+      "seed": null,
+      "status": 0,
+      "stdout": "no\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/35",
+      "kind": "valid",
+      "source": "[$choose:x]{@if <x>: {yes} @else: {no}}[choose:1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "yes\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/36",
+      "kind": "valid",
+      "source": "[$capture:x]{<$value=<x>>[?]{<value>}}<$f=[capture:1]>[f]",
+      "seed": null,
+      "status": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/37",
+      "kind": "valid",
+      "source": "[$capture:x]{<$value=<x>>[?]{<value>}}<$f=[capture:2]>[f]",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/38",
+      "kind": "valid",
+      "source": "[$capture:x]{<$value=<x>>[?]{<value>}}<$f=[capture:3]>[f]",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/39",
+      "kind": "valid",
+      "source": "[$capture:x]{<$value=<x>>[?]{<value>}}<$f=[capture:4]>[f]",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "functions-closure/40",
+      "kind": "valid",
+      "source": "[$capture:x]{<$value=<x>>[?]{<value>}}<$f=[capture:5]>[f]",
+      "seed": null,
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/1",
+      "kind": "valid",
+      "source": "<$x ?= [add:1;1]><x>,<x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "2,2\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/2",
+      "kind": "valid",
+      "source": "<$x ?= [add:2;1]><x>,<x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "3,3\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/3",
+      "kind": "valid",
+      "source": "<$x ?= [add:3;1]><x>,<x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "4,4\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/4",
+      "kind": "valid",
+      "source": "<$x ?= [add:4;1]><x>,<x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "5,5\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/5",
+      "kind": "valid",
+      "source": "<$x ?= [add:5;1]><x>,<x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "6,6\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/6",
+      "kind": "valid",
+      "source": "<$x ?= [add:1;1]><x = 10><x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/7",
+      "kind": "valid",
+      "source": "<$x ?= [add:2;1]><x = 11><x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/8",
+      "kind": "valid",
+      "source": "<$x ?= [add:3;1]><x = 12><x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/9",
+      "kind": "valid",
+      "source": "<$x ?= [add:4;1]><x = 13><x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "13\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/10",
+      "kind": "valid",
+      "source": "<$x ?= [add:5;1]><x = 14><x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/11",
+      "kind": "valid",
+      "source": "<%x ?= [mul:1;2]><x>,<x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "2,2\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/12",
+      "kind": "valid",
+      "source": "<%x ?= [mul:2;2]><x>,<x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "4,4\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/13",
+      "kind": "valid",
+      "source": "<%x ?= [mul:3;2]><x>,<x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "6,6\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/14",
+      "kind": "valid",
+      "source": "<%x ?= [mul:4;2]><x>,<x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "8,8\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/15",
+      "kind": "valid",
+      "source": "<%x ?= [mul:5;2]><x>,<x>",
+      "seed": null,
+      "status": 0,
+      "stdout": "10,10\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/16",
+      "kind": "valid",
+      "source": "[$ignore:@lazy x]{ok}[ignore:[add:1;1]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/17",
+      "kind": "valid",
+      "source": "[$ignore:@lazy x]{ok}[ignore:[add:2;1]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/18",
+      "kind": "valid",
+      "source": "[$ignore:@lazy x]{ok}[ignore:[add:3;1]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/19",
+      "kind": "valid",
+      "source": "[$ignore:@lazy x]{ok}[ignore:[add:4;1]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/20",
+      "kind": "valid",
+      "source": "[$ignore:@lazy x]{ok}[ignore:[add:5;1]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/21",
+      "kind": "valid",
+      "source": "[$dup:@lazy x]{<x>,<x>}[dup:[add:1;1]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "2,2\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/22",
+      "kind": "valid",
+      "source": "[$dup:@lazy x]{<x>,<x>}[dup:[add:2;1]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "3,3\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/23",
+      "kind": "valid",
+      "source": "[$dup:@lazy x]{<x>,<x>}[dup:[add:3;1]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "4,4\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/24",
+      "kind": "valid",
+      "source": "[$dup:@lazy x]{<x>,<x>}[dup:[add:4;1]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "5,5\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/25",
+      "kind": "valid",
+      "source": "[$dup:@lazy x]{<x>,<x>}[dup:[add:5;1]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "6,6\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/26",
+      "kind": "valid",
+      "source": "[$unused:@lazy x ? [add:1;1]]{ok}[unused]",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/27",
+      "kind": "valid",
+      "source": "[$unused:@lazy x ? [add:2;1]]{ok}[unused]",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/28",
+      "kind": "valid",
+      "source": "[$unused:@lazy x ? [add:3;1]]{ok}[unused]",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/29",
+      "kind": "valid",
+      "source": "[$unused:@lazy x ? [add:4;1]]{ok}[unused]",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/30",
+      "kind": "valid",
+      "source": "[$unused:@lazy x ? [add:5;1]]{ok}[unused]",
+      "seed": null,
+      "status": 0,
+      "stdout": "ok\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/31",
+      "kind": "valid",
+      "source": "[$used:@lazy x ? [add:1;1]]{<x>,<x>}[used]",
+      "seed": null,
+      "status": 0,
+      "stdout": "2,2\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/32",
+      "kind": "valid",
+      "source": "[$used:@lazy x ? [add:2;1]]{<x>,<x>}[used]",
+      "seed": null,
+      "status": 0,
+      "stdout": "3,3\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/33",
+      "kind": "valid",
+      "source": "[$used:@lazy x ? [add:3;1]]{<x>,<x>}[used]",
+      "seed": null,
+      "status": 0,
+      "stdout": "4,4\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/34",
+      "kind": "valid",
+      "source": "[$used:@lazy x ? [add:4;1]]{<x>,<x>}[used]",
+      "seed": null,
+      "status": 0,
+      "stdout": "5,5\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/35",
+      "kind": "valid",
+      "source": "[$used:@lazy x ? [add:5;1]]{<x>,<x>}[used]",
+      "seed": null,
+      "status": 0,
+      "stdout": "6,6\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/36",
+      "kind": "valid",
+      "source": "<$value=1><$lazy ?= <value>><value=2><lazy>",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/37",
+      "kind": "valid",
+      "source": "<$value=2><$lazy ?= <value>><value=3><lazy>",
+      "seed": null,
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/38",
+      "kind": "valid",
+      "source": "<$value=3><$lazy ?= <value>><value=4><lazy>",
+      "seed": null,
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/39",
+      "kind": "valid",
+      "source": "<$value=4><$lazy ?= <value>><value=5><lazy>",
+      "seed": null,
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "lazy-bindings/40",
+      "kind": "valid",
+      "source": "<$value=5><$lazy ?= <value>><value=6><lazy>",
+      "seed": null,
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/1",
+      "kind": "valid",
+      "source": "<$args = (foo; bar; baz; qux)>[$abcd:a;b;c;d]{<a><b><c><d>}[abcd:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/2",
+      "kind": "valid",
+      "source": "<$args = (foo; bar; baz; qux)>[$abcd:a;b;c;d]{<a><b><c><d>}[abcd:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/3",
+      "kind": "valid",
+      "source": "<$args = (foo; bar; baz; qux)>[$abcd:a;b;c;d]{<a><b><c><d>}[abcd:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/4",
+      "kind": "valid",
+      "source": "<$args = (foo; bar; baz; qux)>[$abcd:a;b;c;d]{<a><b><c><d>}[abcd:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/5",
+      "kind": "valid",
+      "source": "<$args = (foo; bar; baz; qux)>[$abcd:a;b;c;d]{<a><b><c><d>}[abcd:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/6",
+      "kind": "valid",
+      "source": "<$args = (: bar; baz)>[$abcd:a;b;c;d]{<a><b><c><d>}[abcd:foo;*<args>;qux]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/7",
+      "kind": "valid",
+      "source": "<$args = (: bar; baz)>[$abcd:a;b;c;d]{<a><b><c><d>}[abcd:foo;*<args>;qux]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/8",
+      "kind": "valid",
+      "source": "<$args = (: bar; baz)>[$abcd:a;b;c;d]{<a><b><c><d>}[abcd:foo;*<args>;qux]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/9",
+      "kind": "valid",
+      "source": "<$args = (: bar; baz)>[$abcd:a;b;c;d]{<a><b><c><d>}[abcd:foo;*<args>;qux]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/10",
+      "kind": "valid",
+      "source": "<$args = (: bar; baz)>[$abcd:a;b;c;d]{<a><b><c><d>}[abcd:foo;*<args>;qux]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/11",
+      "kind": "valid",
+      "source": "<$args = (foo; bar; baz; qux)>[$concat:a*]{[join:<a>;\\s]}[concat:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo bar baz qux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/12",
+      "kind": "valid",
+      "source": "<$args = (foo; bar; baz; qux)>[$concat:a*]{[join:<a>;\\s]}[concat:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo bar baz qux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/13",
+      "kind": "valid",
+      "source": "<$args = (foo; bar; baz; qux)>[$concat:a*]{[join:<a>;\\s]}[concat:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo bar baz qux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/14",
+      "kind": "valid",
+      "source": "<$args = (foo; bar; baz; qux)>[$concat:a*]{[join:<a>;\\s]}[concat:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo bar baz qux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/15",
+      "kind": "valid",
+      "source": "<$args = (foo; bar; baz; qux)>[$concat:a*]{[join:<a>;\\s]}[concat:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo bar baz qux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/16",
+      "kind": "valid",
+      "source": "[%println: cols*]{[join:<cols>;\\t]\\n}[println:**(foo; bar)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo\nbar\n\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/17",
+      "kind": "valid",
+      "source": "[%println: cols*]{[join:<cols>;\\t]\\n}[println:**(foo; bar)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo\nbar\n\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/18",
+      "kind": "valid",
+      "source": "[%println: cols*]{[join:<cols>;\\t]\\n}[println:**(foo; bar)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo\nbar\n\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/19",
+      "kind": "valid",
+      "source": "[%println: cols*]{[join:<cols>;\\t]\\n}[println:**(foo; bar)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo\nbar\n\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/20",
+      "kind": "valid",
+      "source": "[%println: cols*]{[join:<cols>;\\t]\\n}[println:**(foo; bar)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo\nbar\n\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/21",
+      "kind": "valid",
+      "source": "[%println: cols*]{[join:<cols>;\\t]\\n}[println:**(foo; bar; baz)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo\nbar\nbaz\n\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/22",
+      "kind": "valid",
+      "source": "[%println: cols*]{[join:<cols>;\\t]\\n}[println:**(foo; bar; baz)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo\nbar\nbaz\n\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/23",
+      "kind": "valid",
+      "source": "[%println: cols*]{[join:<cols>;\\t]\\n}[println:**(foo; bar; baz)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo\nbar\nbaz\n\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/24",
+      "kind": "valid",
+      "source": "[%println: cols*]{[join:<cols>;\\t]\\n}[println:**(foo; bar; baz)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo\nbar\nbaz\n\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/25",
+      "kind": "valid",
+      "source": "[%println: cols*]{[join:<cols>;\\t]\\n}[println:**(foo; bar; baz)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foo\nbar\nbaz\n\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/26",
+      "kind": "valid",
+      "source": "[cat:*a*(foo; baz); *a*(bar; qux)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/27",
+      "kind": "valid",
+      "source": "[cat:*a*(foo; baz); *a*(bar; qux)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/28",
+      "kind": "valid",
+      "source": "[cat:*a*(foo; baz); *a*(bar; qux)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/29",
+      "kind": "valid",
+      "source": "[cat:*a*(foo; baz); *a*(bar; qux)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/30",
+      "kind": "valid",
+      "source": "[cat:*a*(foo; baz); *a*(bar; qux)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "foobarbazqux\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/31",
+      "kind": "valid",
+      "source": "[cat:**(a; b) |> cat:**(c; d)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "acadbcbd\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/32",
+      "kind": "valid",
+      "source": "[cat:**(a; b) |> cat:**(c; d)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "acadbcbd\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/33",
+      "kind": "valid",
+      "source": "[cat:**(a; b) |> cat:**(c; d)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "acadbcbd\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/34",
+      "kind": "valid",
+      "source": "[cat:**(a; b) |> cat:**(c; d)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "acadbcbd\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/35",
+      "kind": "valid",
+      "source": "[cat:**(a; b) |> cat:**(c; d)]",
+      "seed": null,
+      "status": 0,
+      "stdout": "acadbcbd\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/36",
+      "kind": "valid",
+      "source": "<$args = (one; two; three)>[$head:x; xs*]{<x>[join:<xs>;\\s]}[head:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "onetwo three\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/37",
+      "kind": "valid",
+      "source": "<$args = (one; two; three)>[$head:x; xs*]{<x>[join:<xs>;\\s]}[head:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "onetwo three\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/38",
+      "kind": "valid",
+      "source": "<$args = (one; two; three)>[$head:x; xs*]{<x>[join:<xs>;\\s]}[head:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "onetwo three\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/39",
+      "kind": "valid",
+      "source": "<$args = (one; two; three)>[$head:x; xs*]{<x>[join:<xs>;\\s]}[head:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "onetwo three\n",
+      "stderr": ""
+    },
+    {
+      "label": "spread-temporal/40",
+      "kind": "valid",
+      "source": "<$args = (one; two; three)>[$head:x; xs*]{<x>[join:<xs>;\\s]}[head:*<args>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "onetwo three\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/1",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:forward]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "abcd\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/2",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:forward]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "abcd\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/3",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:forward]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "abcd\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/4",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:forward]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "abcd\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/5",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:forward]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "abcd\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/6",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:reverse]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "dcba\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/7",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:reverse]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "dcba\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/8",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:reverse]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "dcba\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/9",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:reverse]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "dcba\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/10",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:reverse]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "dcba\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/11",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:ping]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "abcd\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/12",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:ping]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "abcd\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/13",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:ping]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "abcd\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/14",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:ping]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "abcd\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/15",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:ping]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "abcd\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/16",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:pong]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "dcba\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/17",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:pong]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "dcba\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/18",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:pong]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "dcba\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/19",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:pong]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "dcba\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/20",
+      "kind": "valid",
+      "source": "[rep:4][sel:[mksel:pong]]{a|b|c|d}",
+      "seed": null,
+      "status": 0,
+      "stdout": "dcba\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/21",
+      "kind": "valid",
+      "source": "[match: 1]{hit @on 1|miss @on 2|fallback}",
+      "seed": null,
+      "status": 0,
+      "stdout": "hit\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/22",
+      "kind": "valid",
+      "source": "[match: 2]{hit @on 2|miss @on 3|fallback}",
+      "seed": null,
+      "status": 0,
+      "stdout": "hit\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/23",
+      "kind": "valid",
+      "source": "[match: 3]{hit @on 3|miss @on 4|fallback}",
+      "seed": null,
+      "status": 0,
+      "stdout": "hit\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/24",
+      "kind": "valid",
+      "source": "[match: 4]{hit @on 4|miss @on 5|fallback}",
+      "seed": null,
+      "status": 0,
+      "stdout": "hit\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/25",
+      "kind": "valid",
+      "source": "[match: 5]{hit @on 5|miss @on 6|fallback}",
+      "seed": null,
+      "status": 0,
+      "stdout": "hit\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/26",
+      "kind": "valid",
+      "source": "[match: foo]{skip @on foo @weight 0|pick @on foo @weight 1|fallback}",
+      "seed": null,
+      "status": 0,
+      "stdout": "pick\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/27",
+      "kind": "valid",
+      "source": "[match: foo]{skip @on foo @weight 0|pick @on foo @weight 1|fallback}",
+      "seed": null,
+      "status": 0,
+      "stdout": "pick\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/28",
+      "kind": "valid",
+      "source": "[match: foo]{skip @on foo @weight 0|pick @on foo @weight 1|fallback}",
+      "seed": null,
+      "status": 0,
+      "stdout": "pick\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/29",
+      "kind": "valid",
+      "source": "[match: foo]{skip @on foo @weight 0|pick @on foo @weight 1|fallback}",
+      "seed": null,
+      "status": 0,
+      "stdout": "pick\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/30",
+      "kind": "valid",
+      "source": "[match: foo]{skip @on foo @weight 0|pick @on foo @weight 1|fallback}",
+      "seed": null,
+      "status": 0,
+      "stdout": "pick\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/31",
+      "kind": "valid",
+      "source": "<$sel=[mksel:forward]>[sel-freeze:<sel>][sel-frozen:<sel>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/32",
+      "kind": "valid",
+      "source": "<$sel=[mksel:forward]>[sel-freeze:<sel>][sel-frozen:<sel>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/33",
+      "kind": "valid",
+      "source": "<$sel=[mksel:forward]>[sel-freeze:<sel>][sel-frozen:<sel>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/34",
+      "kind": "valid",
+      "source": "<$sel=[mksel:forward]>[sel-freeze:<sel>][sel-frozen:<sel>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/35",
+      "kind": "valid",
+      "source": "<$sel=[mksel:forward]>[sel-freeze:<sel>][sel-frozen:<sel>]",
+      "seed": null,
+      "status": 0,
+      "stdout": "@true\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/36",
+      "kind": "valid",
+      "source": "[rep:3][sep:\\s]{x}",
+      "seed": null,
+      "status": 0,
+      "stdout": "x x x\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/37",
+      "kind": "valid",
+      "source": "[rep:3][sep:\\s]{x}",
+      "seed": null,
+      "status": 0,
+      "stdout": "x x x\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/38",
+      "kind": "valid",
+      "source": "[rep:3][sep:\\s]{x}",
+      "seed": null,
+      "status": 0,
+      "stdout": "x x x\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/39",
+      "kind": "valid",
+      "source": "[rep:3][sep:\\s]{x}",
+      "seed": null,
+      "status": 0,
+      "stdout": "x x x\n",
+      "stderr": ""
+    },
+    {
+      "label": "selectors-blocks/40",
+      "kind": "valid",
+      "source": "[rep:3][sep:\\s]{x}",
+      "seed": null,
+      "status": 0,
+      "stdout": "x x x\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/1",
+      "kind": "valid",
+      "source": "\"example\" { @edit x: `<x> `<x> }",
+      "seed": null,
+      "status": 0,
+      "stdout": "example example\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/2",
+      "kind": "valid",
+      "source": "\"example\" { @edit x: `<x> `<x> }",
+      "seed": null,
+      "status": 0,
+      "stdout": "example example\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/3",
+      "kind": "valid",
+      "source": "\"example\" { @edit x: `<x> `<x> }",
+      "seed": null,
+      "status": 0,
+      "stdout": "example example\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/4",
+      "kind": "valid",
+      "source": "\"example\" { @edit x: `<x> `<x> }",
+      "seed": null,
+      "status": 0,
+      "stdout": "example example\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/5",
+      "kind": "valid",
+      "source": "\"example\" { @edit x: `<x> `<x> }",
+      "seed": null,
+      "status": 0,
+      "stdout": "example example\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/6",
+      "kind": "valid",
+      "source": "<$name=\"world\">Hello, `<name>!",
+      "seed": null,
+      "status": 0,
+      "stdout": "Hello, world!\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/7",
+      "kind": "valid",
+      "source": "<$name=\"world\">Hello, `<name>!",
+      "seed": null,
+      "status": 0,
+      "stdout": "Hello, world!\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/8",
+      "kind": "valid",
+      "source": "<$name=\"world\">Hello, `<name>!",
+      "seed": null,
+      "status": 0,
+      "stdout": "Hello, world!\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/9",
+      "kind": "valid",
+      "source": "<$name=\"world\">Hello, `<name>!",
+      "seed": null,
+      "status": 0,
+      "stdout": "Hello, world!\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/10",
+      "kind": "valid",
+      "source": "<$name=\"world\">Hello, `<name>!",
+      "seed": null,
+      "status": 0,
+      "stdout": "Hello, world!\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/11",
+      "kind": "valid",
+      "source": "{\\:} ~{\\(}",
+      "seed": null,
+      "status": 0,
+      "stdout": ":(\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/12",
+      "kind": "valid",
+      "source": "{\\:} ~{\\(}",
+      "seed": null,
+      "status": 0,
+      "stdout": ":(\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/13",
+      "kind": "valid",
+      "source": "{\\:} ~{\\(}",
+      "seed": null,
+      "status": 0,
+      "stdout": ":(\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/14",
+      "kind": "valid",
+      "source": "{\\:} ~{\\(}",
+      "seed": null,
+      "status": 0,
+      "stdout": ":(\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/15",
+      "kind": "valid",
+      "source": "{\\:} ~{\\(}",
+      "seed": null,
+      "status": 0,
+      "stdout": ":(\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/16",
+      "kind": "valid",
+      "source": "[assert-eq:1;1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/17",
+      "kind": "valid",
+      "source": "[assert-eq:2;2]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/18",
+      "kind": "valid",
+      "source": "[assert-eq:3;3]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/19",
+      "kind": "valid",
+      "source": "[assert-eq:4;4]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/20",
+      "kind": "valid",
+      "source": "[assert-eq:5;5]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/21",
+      "kind": "valid",
+      "source": "[assert-neq:1;2]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/22",
+      "kind": "valid",
+      "source": "[assert-neq:2;3]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/23",
+      "kind": "valid",
+      "source": "[assert-neq:3;4]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/24",
+      "kind": "valid",
+      "source": "[assert-neq:4;5]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/25",
+      "kind": "valid",
+      "source": "[assert-neq:5;6]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/26",
+      "kind": "valid",
+      "source": "[assert:[eq:1;1]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/27",
+      "kind": "valid",
+      "source": "[assert:[eq:2;2]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/28",
+      "kind": "valid",
+      "source": "[assert:[eq:3;3]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/29",
+      "kind": "valid",
+      "source": "[assert:[eq:4;4]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/30",
+      "kind": "valid",
+      "source": "[assert:[eq:5;5]]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/31",
+      "kind": "valid",
+      "source": "[%factorial:n]{1 [rep:<n>] {@edit x: <x> * [step]}}[factorial:1]",
+      "seed": null,
+      "status": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/32",
+      "kind": "valid",
+      "source": "[%factorial:n]{1 [rep:<n>] {@edit x: <x> * [step]}}[factorial:2]",
+      "seed": null,
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/33",
+      "kind": "valid",
+      "source": "[%factorial:n]{1 [rep:<n>] {@edit x: <x> * [step]}}[factorial:3]",
+      "seed": null,
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/34",
+      "kind": "valid",
+      "source": "[%factorial:n]{1 [rep:<n>] {@edit x: <x> * [step]}}[factorial:4]",
+      "seed": null,
+      "status": 0,
+      "stdout": "24\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/35",
+      "kind": "valid",
+      "source": "[%factorial:n]{1 [rep:<n>] {@edit x: <x> * [step]}}[factorial:5]",
+      "seed": null,
+      "status": 0,
+      "stdout": "120\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/36",
+      "kind": "valid",
+      "source": "\"left 1\" \"right 1\"",
+      "seed": null,
+      "status": 0,
+      "stdout": "left 1 right 1\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/37",
+      "kind": "valid",
+      "source": "\"left 2\" \"right 2\"",
+      "seed": null,
+      "status": 0,
+      "stdout": "left 2 right 2\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/38",
+      "kind": "valid",
+      "source": "\"left 3\" \"right 3\"",
+      "seed": null,
+      "status": 0,
+      "stdout": "left 3 right 3\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/39",
+      "kind": "valid",
+      "source": "\"left 4\" \"right 4\"",
+      "seed": null,
+      "status": 0,
+      "stdout": "left 4 right 4\n",
+      "stderr": ""
+    },
+    {
+      "label": "formatting-assertion/40",
+      "kind": "valid",
+      "source": "\"left 5\" \"right 5\"",
+      "seed": null,
+      "status": 0,
+      "stdout": "left 5 right 5\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/1@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;17];0]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "13\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/1@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;17];0]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/1@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;17];0]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/1@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;17];0]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/2@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;18];1]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/2@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;18];1]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/2@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;18];1]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/2@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;18];1]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/3@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;19];2]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "18\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/3@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;19];2]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/3@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;19];2]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "19\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/3@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;19];2]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/4@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;20];3]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/4@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;20];3]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/4@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;20];3]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "8\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/4@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;20];3]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/5@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;21];4]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/5@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;21];4]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/5@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;21];4]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/5@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;21];4]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/6@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;22];5]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/6@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;22];5]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/6@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;22];5]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/6@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;22];5]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/7@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;23];6]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "25\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/7@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;23];6]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/7@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;23];6]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/7@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;23];6]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/8@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;24];0]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/8@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;24];0]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/8@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;24];0]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/8@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;24];0]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/9@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;25];1]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "22\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/9@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;25];1]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/9@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;25];1]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/9@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;25];1]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/10@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;26];2]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "22\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/10@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;26];2]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/10@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;26];2]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "8\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/10@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;26];2]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/11@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;27];3]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "25\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/11@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;27];3]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/11@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;27];3]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "15\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/11@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;27];3]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/12@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;28];4]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "27\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/12@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;28];4]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/12@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;28];4]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/12@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;28];4]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/13@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;29];5]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/13@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;29];5]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/13@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;29];5]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/13@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;29];5]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/14@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;30];6]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "31\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/14@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;30];6]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/14@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;30];6]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "13\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/14@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;30];6]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/15@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;31];0]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/15@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;31];0]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/15@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;31];0]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/15@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;31];0]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/16@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;32];1]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/16@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;32];1]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "15\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/16@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;32];1]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/16@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;32];1]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "25\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/17@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;33];2]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "27\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/17@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;33];2]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/17@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;33];2]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/17@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;33];2]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "27\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/18@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;34];3]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "31\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/18@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;34];3]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/18@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;34];3]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "18\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/18@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;34];3]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/19@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;35];4]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "33\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/19@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;35];4]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/19@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;35];4]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "35\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/19@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;35];4]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/20@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;36];5]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "35\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/20@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;36];5]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/20@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;36];5]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/20@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;36];5]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/21@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;37];6]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "34\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/21@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;37];6]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "8\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/21@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;37];6]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "15\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/21@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;37];6]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/22@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;38];0]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/22@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;38];0]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/22@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;38];0]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/22@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;38];0]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/23@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;39];1]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "33\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/23@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;39];1]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/23@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;39];1]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "18\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/23@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;39];1]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "36\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/24@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;40];2]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "35\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/24@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;40];2]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/24@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;40];2]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/24@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;40];2]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "32\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/25@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;41];3]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "37\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/25@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;41];3]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/25@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;41];3]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "13\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/25@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;41];3]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/26@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;42];4]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "36\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/26@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;42];4]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/26@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;42];4]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/26@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;42];4]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/27@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;43];5]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/27@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;43];5]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/27@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;43];5]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "24\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/27@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;43];5]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/28@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;44];6]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "42\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/28@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;44];6]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "8\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/28@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;44];6]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/28@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;44];6]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "8\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/29@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;45];0]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "37\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/29@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;45];0]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/29@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;45];0]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/29@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;45];0]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/30@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;46];1]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "39\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/30@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;46];1]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/30@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;46];1]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/30@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;46];1]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/31@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;47];2]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "30\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/31@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;47];2]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/31@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;47];2]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/31@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;47];2]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/32@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;48];3]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "39\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/32@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;48];3]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/32@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;48];3]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "15\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/32@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;48];3]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/33@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;49];4]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "44\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/33@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;49];4]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/33@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;49];4]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/33@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;49];4]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/34@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;50];5]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "46\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/34@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;50];5]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "13\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/34@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;50];5]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/34@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;50];5]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/35@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;51];6]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "48\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/35@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;51];6]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "43\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/35@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;51];6]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "51\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/35@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;51];6]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "8\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/36@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;52];0]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "43\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/36@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;52];0]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/36@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;52];0]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "13\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/36@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;52];0]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/37@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;53];1]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "44\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/37@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;53];1]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/37@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;53];1]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/37@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;53];1]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/38@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;54];2]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "46\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/38@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;54];2]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/38@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;54];2]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "15\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/38@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;54];2]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/39@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;55];3]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "48\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/39@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;55];3]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/39@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;55];3]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "27\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/39@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;55];3]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/40@1",
+      "kind": "rng",
+      "source": "[add:[rand:0;56];4]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "50\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/40@7",
+      "kind": "rng",
+      "source": "[add:[rand:0;56];4]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/40@42",
+      "kind": "rng",
+      "source": "[add:[rand:0;56];4]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "18\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-int/40@0xdeadbeef",
+      "kind": "rng",
+      "source": "[add:[rand:0;56];4]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/1@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "1623\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/1@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "110\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/1@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "496\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/1@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/2@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "2434\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/2@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "166\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/2@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "744\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/2@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "144\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/3@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "3246\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/3@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "221\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/3@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "992\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/3@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "192\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/4@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "4058\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/4@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "276\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/4@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1240\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/4@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "240\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/5@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "4869\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/5@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "332\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/5@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1488\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/5@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "288\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/6@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "5681\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/6@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "387\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/6@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1736\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/6@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "336\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/7@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "6492\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/7@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "442\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/7@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1984\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/7@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "385\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/8@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "7304\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/8@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "498\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/8@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "2233\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/8@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "433\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/9@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "8116\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/9@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "553\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/9@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "2481\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/9@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "481\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/10@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "1623\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/10@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "110\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/10@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "496\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/10@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/11@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "2434\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/11@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "166\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/11@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "744\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/11@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "144\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/12@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "3246\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/12@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "221\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/12@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "992\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/12@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "192\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/13@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "4058\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/13@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "276\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/13@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1240\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/13@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "240\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/14@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "4869\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/14@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "332\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/14@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1488\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/14@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "288\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/15@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "5681\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/15@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "387\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/15@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1736\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/15@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "336\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/16@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "6492\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/16@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "442\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/16@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1984\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/16@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "385\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/17@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "7304\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/17@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "498\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/17@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "2233\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/17@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "433\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/18@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "8116\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/18@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "553\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/18@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "2481\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/18@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "481\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/19@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "1623\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/19@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "110\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/19@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "496\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/19@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/20@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "2434\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/20@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "166\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/20@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "744\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/20@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "144\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/21@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "3246\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/21@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "221\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/21@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "992\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/21@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "192\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/22@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "4058\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/22@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "276\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/22@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1240\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/22@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "240\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/23@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "4869\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/23@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "332\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/23@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1488\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/23@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "288\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/24@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "5681\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/24@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "387\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/24@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1736\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/24@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "336\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/25@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "6492\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/25@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "442\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/25@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1984\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/25@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "385\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/26@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "7304\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/26@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "498\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/26@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "2233\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/26@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "433\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/27@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "8116\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/27@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "553\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/27@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "2481\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/27@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "481\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/28@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "1623\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/28@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "110\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/28@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "496\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/28@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/29@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "2434\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/29@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "166\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/29@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "744\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/29@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "144\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/30@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "3246\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/30@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "221\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/30@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "992\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/30@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "192\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/31@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "4058\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/31@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "276\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/31@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1240\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/31@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "240\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/32@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "4869\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/32@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "332\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/32@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1488\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/32@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;6];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "288\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/33@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "5681\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/33@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "387\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/33@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1736\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/33@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;7];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "336\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/34@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "6492\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/34@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "442\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/34@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1984\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/34@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;8];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "385\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/35@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "7304\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/35@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "498\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/35@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "2233\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/35@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;9];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "433\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/36@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "8116\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/36@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "553\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/36@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "2481\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/36@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;10];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "481\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/37@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "1623\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/37@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "110\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/37@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "496\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/37@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;2];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/38@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "2434\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/38@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "166\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/38@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "744\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/38@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;3];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "144\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/39@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "3246\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/39@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "221\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/39@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "992\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/39@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;4];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "192\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/40@1",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "1",
+      "status": 0,
+      "stdout": "4058\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/40@7",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "7",
+      "status": 0,
+      "stdout": "276\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/40@42",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "42",
+      "status": 0,
+      "stdout": "1240\n",
+      "stderr": ""
+    },
+    {
+      "label": "rng-float/40@0xdeadbeef",
+      "kind": "rng",
+      "source": "[to-int:[mul:[randf:0;5];1000]]",
+      "seed": "0xdeadbeef",
+      "status": 0,
+      "stdout": "240\n",
+      "stderr": ""
+    },
+    {
+      "label": "bad-metadata/1",
+      "kind": "invalid",
+      "source": "@on alpha",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@on is not allowed in this context"
+    },
+    {
+      "label": "bad-metadata/2",
+      "kind": "invalid",
+      "source": "{foo @on beta @on beta-again}",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "duplicate @on modifier on block element"
+    },
+    {
+      "label": "bad-metadata/3",
+      "kind": "invalid",
+      "source": "@on gamma",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@on is not allowed in this context"
+    },
+    {
+      "label": "bad-metadata/4",
+      "kind": "invalid",
+      "source": "{foo @on delta @on delta-again}",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "duplicate @on modifier on block element"
+    },
+    {
+      "label": "bad-metadata/5",
+      "kind": "invalid",
+      "source": "@on omega",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@on is not allowed in this context"
+    },
+    {
+      "label": "bad-metadata/6",
+      "kind": "invalid",
+      "source": "{foo @on alpha @on alpha-again}",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "duplicate @on modifier on block element"
+    },
+    {
+      "label": "bad-metadata/7",
+      "kind": "invalid",
+      "source": "@on beta",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@on is not allowed in this context"
+    },
+    {
+      "label": "bad-metadata/8",
+      "kind": "invalid",
+      "source": "{foo @on gamma @on gamma-again}",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "duplicate @on modifier on block element"
+    },
+    {
+      "label": "bad-metadata/9",
+      "kind": "invalid",
+      "source": "@on delta",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@on is not allowed in this context"
+    },
+    {
+      "label": "bad-metadata/10",
+      "kind": "invalid",
+      "source": "{foo @on omega @on omega-again}",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "duplicate @on modifier on block element"
+    },
+    {
+      "label": "bad-metadata/11",
+      "kind": "invalid",
+      "source": "@on alpha",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@on is not allowed in this context"
+    },
+    {
+      "label": "bad-metadata/12",
+      "kind": "invalid",
+      "source": "{foo @on beta @on beta-again}",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "duplicate @on modifier on block element"
+    },
+    {
+      "label": "bad-metadata/13",
+      "kind": "invalid",
+      "source": "@on gamma",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@on is not allowed in this context"
+    },
+    {
+      "label": "bad-metadata/14",
+      "kind": "invalid",
+      "source": "{foo @on delta @on delta-again}",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "duplicate @on modifier on block element"
+    },
+    {
+      "label": "bad-metadata/15",
+      "kind": "invalid",
+      "source": "@on omega",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@on is not allowed in this context"
+    },
+    {
+      "label": "bad-metadata/16",
+      "kind": "invalid",
+      "source": "{foo @on alpha @on alpha-again}",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "duplicate @on modifier on block element"
+    },
+    {
+      "label": "bad-metadata/17",
+      "kind": "invalid",
+      "source": "@on beta",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@on is not allowed in this context"
+    },
+    {
+      "label": "bad-metadata/18",
+      "kind": "invalid",
+      "source": "{foo @on gamma @on gamma-again}",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "duplicate @on modifier on block element"
+    },
+    {
+      "label": "bad-metadata/19",
+      "kind": "invalid",
+      "source": "@on delta",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@on is not allowed in this context"
+    },
+    {
+      "label": "bad-metadata/20",
+      "kind": "invalid",
+      "source": "{foo @on omega @on omega-again}",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "duplicate @on modifier on block element"
+    },
+    {
+      "label": "bad-keyword/1",
+      "kind": "invalid",
+      "source": "@require alias0: 0",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@require path should be a string literal"
+    },
+    {
+      "label": "bad-keyword/2",
+      "kind": "invalid",
+      "source": "@bogus1",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "invalid keyword: '@bogus1'"
+    },
+    {
+      "label": "bad-keyword/3",
+      "kind": "invalid",
+      "source": "@require alias2: 2",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@require path should be a string literal"
+    },
+    {
+      "label": "bad-keyword/4",
+      "kind": "invalid",
+      "source": "@bogus3",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "invalid keyword: '@bogus3'"
+    },
+    {
+      "label": "bad-keyword/5",
+      "kind": "invalid",
+      "source": "@require alias4: 4",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@require path should be a string literal"
+    },
+    {
+      "label": "bad-keyword/6",
+      "kind": "invalid",
+      "source": "@bogus5",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "invalid keyword: '@bogus5'"
+    },
+    {
+      "label": "bad-keyword/7",
+      "kind": "invalid",
+      "source": "@require alias6: 6",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@require path should be a string literal"
+    },
+    {
+      "label": "bad-keyword/8",
+      "kind": "invalid",
+      "source": "@bogus7",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "invalid keyword: '@bogus7'"
+    },
+    {
+      "label": "bad-keyword/9",
+      "kind": "invalid",
+      "source": "@require alias8: 8",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@require path should be a string literal"
+    },
+    {
+      "label": "bad-keyword/10",
+      "kind": "invalid",
+      "source": "@bogus9",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "invalid keyword: '@bogus9'"
+    },
+    {
+      "label": "bad-keyword/11",
+      "kind": "invalid",
+      "source": "@require alias10: 10",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@require path should be a string literal"
+    },
+    {
+      "label": "bad-keyword/12",
+      "kind": "invalid",
+      "source": "@bogus11",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "invalid keyword: '@bogus11'"
+    },
+    {
+      "label": "bad-keyword/13",
+      "kind": "invalid",
+      "source": "@require alias12: 12",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@require path should be a string literal"
+    },
+    {
+      "label": "bad-keyword/14",
+      "kind": "invalid",
+      "source": "@bogus13",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "invalid keyword: '@bogus13'"
+    },
+    {
+      "label": "bad-keyword/15",
+      "kind": "invalid",
+      "source": "@require alias14: 14",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@require path should be a string literal"
+    },
+    {
+      "label": "bad-keyword/16",
+      "kind": "invalid",
+      "source": "@bogus15",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "invalid keyword: '@bogus15'"
+    },
+    {
+      "label": "bad-keyword/17",
+      "kind": "invalid",
+      "source": "@require alias16: 16",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@require path should be a string literal"
+    },
+    {
+      "label": "bad-keyword/18",
+      "kind": "invalid",
+      "source": "@bogus17",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "invalid keyword: '@bogus17'"
+    },
+    {
+      "label": "bad-keyword/19",
+      "kind": "invalid",
+      "source": "@require alias18: 18",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "@require path should be a string literal"
+    },
+    {
+      "label": "bad-keyword/20",
+      "kind": "invalid",
+      "source": "@bogus19",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "invalid keyword: '@bogus19'"
+    },
+    {
+      "label": "bad-lazy/1",
+      "kind": "invalid",
+      "source": "[$bad0: @lazy xs*] { <xs> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "lazy parameters cannot be variadic"
+    },
+    {
+      "label": "bad-lazy/2",
+      "kind": "invalid",
+      "source": "[$bad1: @lazy x?] { <x> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "access to optional argument 'x' can fail; add a fallback to the accessor or specify a default argument"
+    },
+    {
+      "label": "bad-lazy/3",
+      "kind": "invalid",
+      "source": "[$bad2: @lazy xs*] { <xs> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "lazy parameters cannot be variadic"
+    },
+    {
+      "label": "bad-lazy/4",
+      "kind": "invalid",
+      "source": "[$bad3: @lazy x?] { <x> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "access to optional argument 'x' can fail; add a fallback to the accessor or specify a default argument"
+    },
+    {
+      "label": "bad-lazy/5",
+      "kind": "invalid",
+      "source": "[$bad4: @lazy xs*] { <xs> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "lazy parameters cannot be variadic"
+    },
+    {
+      "label": "bad-lazy/6",
+      "kind": "invalid",
+      "source": "[$bad5: @lazy x?] { <x> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "access to optional argument 'x' can fail; add a fallback to the accessor or specify a default argument"
+    },
+    {
+      "label": "bad-lazy/7",
+      "kind": "invalid",
+      "source": "[$bad6: @lazy xs*] { <xs> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "lazy parameters cannot be variadic"
+    },
+    {
+      "label": "bad-lazy/8",
+      "kind": "invalid",
+      "source": "[$bad7: @lazy x?] { <x> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "access to optional argument 'x' can fail; add a fallback to the accessor or specify a default argument"
+    },
+    {
+      "label": "bad-lazy/9",
+      "kind": "invalid",
+      "source": "[$bad8: @lazy xs*] { <xs> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "lazy parameters cannot be variadic"
+    },
+    {
+      "label": "bad-lazy/10",
+      "kind": "invalid",
+      "source": "[$bad9: @lazy x?] { <x> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "access to optional argument 'x' can fail; add a fallback to the accessor or specify a default argument"
+    },
+    {
+      "label": "bad-lazy/11",
+      "kind": "invalid",
+      "source": "[$bad10: @lazy xs*] { <xs> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "lazy parameters cannot be variadic"
+    },
+    {
+      "label": "bad-lazy/12",
+      "kind": "invalid",
+      "source": "[$bad11: @lazy x?] { <x> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "access to optional argument 'x' can fail; add a fallback to the accessor or specify a default argument"
+    },
+    {
+      "label": "bad-lazy/13",
+      "kind": "invalid",
+      "source": "[$bad12: @lazy xs*] { <xs> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "lazy parameters cannot be variadic"
+    },
+    {
+      "label": "bad-lazy/14",
+      "kind": "invalid",
+      "source": "[$bad13: @lazy x?] { <x> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "access to optional argument 'x' can fail; add a fallback to the accessor or specify a default argument"
+    },
+    {
+      "label": "bad-lazy/15",
+      "kind": "invalid",
+      "source": "[$bad14: @lazy xs*] { <xs> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "lazy parameters cannot be variadic"
+    },
+    {
+      "label": "bad-lazy/16",
+      "kind": "invalid",
+      "source": "[$bad15: @lazy x?] { <x> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "access to optional argument 'x' can fail; add a fallback to the accessor or specify a default argument"
+    },
+    {
+      "label": "bad-lazy/17",
+      "kind": "invalid",
+      "source": "[$bad16: @lazy xs*] { <xs> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "lazy parameters cannot be variadic"
+    },
+    {
+      "label": "bad-lazy/18",
+      "kind": "invalid",
+      "source": "[$bad17: @lazy x?] { <x> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "access to optional argument 'x' can fail; add a fallback to the accessor or specify a default argument"
+    },
+    {
+      "label": "bad-lazy/19",
+      "kind": "invalid",
+      "source": "[$bad18: @lazy xs*] { <xs> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "lazy parameters cannot be variadic"
+    },
+    {
+      "label": "bad-lazy/20",
+      "kind": "invalid",
+      "source": "[$bad19: @lazy x?] { <x> }",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "access to optional argument 'x' can fail; add a fallback to the accessor or specify a default argument"
+    },
+    {
+      "label": "bad-accessor/1",
+      "kind": "invalid",
+      "source": "<@step = 1>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@step' is read-only"
+    },
+    {
+      "label": "bad-accessor/2",
+      "kind": "invalid",
+      "source": "<@rep += 2>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@rep' does not support this accessor form"
+    },
+    {
+      "label": "bad-accessor/3",
+      "kind": "invalid",
+      "source": "<@step = 3>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@step' is read-only"
+    },
+    {
+      "label": "bad-accessor/4",
+      "kind": "invalid",
+      "source": "<@rep += 4>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@rep' does not support this accessor form"
+    },
+    {
+      "label": "bad-accessor/5",
+      "kind": "invalid",
+      "source": "<@step = 5>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@step' is read-only"
+    },
+    {
+      "label": "bad-accessor/6",
+      "kind": "invalid",
+      "source": "<@rep += 6>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@rep' does not support this accessor form"
+    },
+    {
+      "label": "bad-accessor/7",
+      "kind": "invalid",
+      "source": "<@step = 7>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@step' is read-only"
+    },
+    {
+      "label": "bad-accessor/8",
+      "kind": "invalid",
+      "source": "<@rep += 8>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@rep' does not support this accessor form"
+    },
+    {
+      "label": "bad-accessor/9",
+      "kind": "invalid",
+      "source": "<@step = 9>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@step' is read-only"
+    },
+    {
+      "label": "bad-accessor/10",
+      "kind": "invalid",
+      "source": "<@rep += 10>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@rep' does not support this accessor form"
+    },
+    {
+      "label": "bad-accessor/11",
+      "kind": "invalid",
+      "source": "<@step = 11>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@step' is read-only"
+    },
+    {
+      "label": "bad-accessor/12",
+      "kind": "invalid",
+      "source": "<@rep += 12>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@rep' does not support this accessor form"
+    },
+    {
+      "label": "bad-accessor/13",
+      "kind": "invalid",
+      "source": "<@step = 13>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@step' is read-only"
+    },
+    {
+      "label": "bad-accessor/14",
+      "kind": "invalid",
+      "source": "<@rep += 14>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@rep' does not support this accessor form"
+    },
+    {
+      "label": "bad-accessor/15",
+      "kind": "invalid",
+      "source": "<@step = 15>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@step' is read-only"
+    },
+    {
+      "label": "bad-accessor/16",
+      "kind": "invalid",
+      "source": "<@rep += 16>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@rep' does not support this accessor form"
+    },
+    {
+      "label": "bad-accessor/17",
+      "kind": "invalid",
+      "source": "<@step = 17>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@step' is read-only"
+    },
+    {
+      "label": "bad-accessor/18",
+      "kind": "invalid",
+      "source": "<@rep += 18>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@rep' does not support this accessor form"
+    },
+    {
+      "label": "bad-accessor/19",
+      "kind": "invalid",
+      "source": "<@step = 19>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@step' is read-only"
+    },
+    {
+      "label": "bad-accessor/20",
+      "kind": "invalid",
+      "source": "<@rep += 20>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "attribute keyword '@rep' does not support this accessor form"
+    },
+    {
+      "label": "bad-compound-assignment/1",
+      "kind": "invalid",
+      "source": "<$x=1><x ^= 1>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "unexpected token: '^='"
+    },
+    {
+      "label": "bad-compound-assignment/2",
+      "kind": "invalid",
+      "source": "<$x=1><x ^= 2>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "unexpected token: '^='"
+    },
+    {
+      "label": "bad-compound-assignment/3",
+      "kind": "invalid",
+      "source": "<$x=1><x ^= 3>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "unexpected token: '^='"
+    },
+    {
+      "label": "bad-compound-assignment/4",
+      "kind": "invalid",
+      "source": "<$x=1><x ^= 4>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "unexpected token: '^='"
+    },
+    {
+      "label": "bad-compound-assignment/5",
+      "kind": "invalid",
+      "source": "<$x=1><x ^= 5>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "unexpected token: '^='"
+    },
+    {
+      "label": "bad-compound-assignment/6",
+      "kind": "invalid",
+      "source": "<$x=1><x ^= 6>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "unexpected token: '^='"
+    },
+    {
+      "label": "bad-compound-assignment/7",
+      "kind": "invalid",
+      "source": "<$x=1><x ^= 7>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "unexpected token: '^='"
+    },
+    {
+      "label": "bad-compound-assignment/8",
+      "kind": "invalid",
+      "source": "<$x=1><x ^= 8>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "unexpected token: '^='"
+    },
+    {
+      "label": "bad-compound-assignment/9",
+      "kind": "invalid",
+      "source": "<$x=1><x ^= 9>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "unexpected token: '^='"
+    },
+    {
+      "label": "bad-compound-assignment/10",
+      "kind": "invalid",
+      "source": "<$x=1><x ^= 10>",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "unexpected token: '^='"
+    },
+    {
+      "label": "bad-pipe-spread/1",
+      "kind": "invalid",
+      "source": "[cat: *]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "bad-pipe-spread/2",
+      "kind": "invalid",
+      "source": "[cat: **]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "bad-pipe-spread/3",
+      "kind": "invalid",
+      "source": "[cat: foo |>]",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "']' is not a valid identifier; identifiers may only use alphanumerics, underscores, and hyphens (but cannot be only digits)"
+    },
+    {
+      "label": "bad-pipe-spread/4",
+      "kind": "invalid",
+      "source": "[cat: |> assert-eq: foo]",
+      "seed": null,
+      "status": 70,
+      "stdout": "",
+      "stderr": "Runtime error: [ASSERT_ERROR] expected: foo; actual: "
+    },
+    {
+      "label": "bad-pipe-spread/5",
+      "kind": "invalid",
+      "source": "[$f:x]{<x>}[f:*]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "bad-pipe-spread/6",
+      "kind": "invalid",
+      "source": "[cat: *]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "bad-pipe-spread/7",
+      "kind": "invalid",
+      "source": "[cat: **]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "bad-pipe-spread/8",
+      "kind": "invalid",
+      "source": "[cat: foo |>]",
+      "seed": null,
+      "status": 65,
+      "stdout": "",
+      "stderr": "']' is not a valid identifier; identifiers may only use alphanumerics, underscores, and hyphens (but cannot be only digits)"
+    },
+    {
+      "label": "bad-pipe-spread/9",
+      "kind": "invalid",
+      "source": "[cat: |> assert-eq: foo]",
+      "seed": null,
+      "status": 70,
+      "stdout": "",
+      "stderr": "Runtime error: [ASSERT_ERROR] expected: foo; actual: "
+    },
+    {
+      "label": "bad-pipe-spread/10",
+      "kind": "invalid",
+      "source": "[$f:x]{<x>}[f:*]",
+      "seed": null,
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}
