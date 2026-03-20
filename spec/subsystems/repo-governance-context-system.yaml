@@ -1,0 +1,85 @@
+id: repo-governance-context-system
+title: Repo governance and anti-drift context system
+status: stable
+summary: >-
+  Owns repository-wide workflow rules, anti-drift tooling, generated context
+  artifacts, and contributor-facing maps that explain how to use them.
+owned_paths:
+  - .gitignore
+  - .nvmrc
+  - AGENTS.md
+  - LICENSE
+  - README.md
+  - docs/**
+  - glossary/**
+  - scripts/**
+  - spec/README.md
+  - spec/tooling-and-quality.md
+  - spec/comment-style.md
+  - spec/testing-style.md
+  - spec/decisions/**
+  - spec/generated/**
+  - spec/subsystems/index.yaml
+  - spec/subsystems/repo-governance-context-system.yaml
+  - notes.md
+related_paths: []
+entrypoints:
+  - path: scripts/context-system/build.mjs
+    symbols:
+      - buildContextArtifacts
+  - path: scripts/context-system/task.mjs
+    symbols:
+      - writeActiveTask
+  - path: scripts/context-system/check.mjs
+    symbols:
+      - checkContextState
+depends_on:
+  - public-api-and-build-contract
+  - library-core
+used_by: []
+required_reads:
+  spec:
+    - spec/README.md
+    - spec/tooling-and-quality.md
+  docs:
+    - docs/context-system/README.md
+    - docs/repo-workflow/README.md
+  decisions:
+    - spec/decisions/ADR-0001-anti-drift-context-system.md
+    - spec/decisions/ADR-0002-locked-subsystem-edit-policy.md
+glossary_terms:
+  - authoritative artifact
+  - derived artifact
+  - active task packet
+  - locked subsystem
+public_contracts:
+  - name: npm run context:build
+    summary: Regenerates tracked context artifacts from structured source files.
+  - name: npm run context:task -- "<task>"
+    summary: Writes the repo-local active task packet and prints a bounded task brief.
+  - name: npm run context:check
+    summary: Fails when task coverage, subsystem ownership, or derived context artifacts drift.
+invariants:
+  - id: gov-ctx-001
+    statement: AGENTS.md stays intentionally thin and routes readers to authoritative artifacts.
+  - id: gov-ctx-002
+    statement: Context build output is derived and must be regenerated from YAML source files.
+  - id: gov-ctx-003
+    statement: Local verification remains authoritative and npm run verify is never weakened.
+  - id: gov-ctx-004
+    statement: Every first-party file listed by the subsystem index must be owned by at least one subsystem.
+performance_constraints:
+  - Context artifacts stay compact enough for task briefing without requiring broad repo reads.
+change_policy:
+  default: additive-with-validation
+  requires_adr:
+    - changing active task enforcement semantics
+    - moving authoritative artifact homes
+tests:
+  - scripts/__tests__/contextSystem.test.js
+decision_refs:
+  - ADR-0001
+  - ADR-0002
+history_anchors:
+  introduced_by: 2026-03-19-boilerplate-bootstrap
+  major_refactors: []

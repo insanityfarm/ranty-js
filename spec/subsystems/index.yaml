@@ -1,0 +1,58 @@
+version: 1
+status_vocabulary:
+  locked: >-
+    Behavior and contract-sensitive architecture. Changes require an active
+    task allow-list entry and an ADR or ADR update in the same change.
+  stable: >-
+    Mature subsystem with explicit invariants. Changes still require subsystem
+    record updates when owned code changes.
+  evolving: >-
+    Subsystem with active iteration. Behavior may expand, but the subsystem
+    record remains authoritative for boundaries and dependencies.
+source_roots:
+  - .gitignore
+  - .nvmrc
+  - AGENTS.md
+  - LICENSE
+  - README.md
+  - docs
+  - glossary
+  - package-lock.json
+  - package.json
+  - scripts
+  - spec
+  - src
+  - tsconfig.build.json
+  - tsconfig.json
+  - vitest.config.ts
+  - eslint.config.mjs
+generated_roots:
+  - spec/generated
+allowed_local_outputs:
+  - .agent-context
+exempt_paths:
+  - notes.md
+architecture_rules:
+  - id: arch-001
+    from:
+      - src/internal/**
+    forbidden:
+      - src/index.ts
+      - src/public/**
+    allowed: []
+    message: >-
+      Internal implementation stays below the public API surface instead of
+      depending on exported modules or the root barrel.
+  - id: arch-002
+    from:
+      - src/index.ts
+    forbidden:
+      - src/internal/**
+    allowed:
+      - src/public/**
+    message: >-
+      The root barrel re-exports public modules instead of reaching into
+      internal implementation directly.
+task_state_path: .agent-context/active-task.json
+task_markdown_path: .agent-context/active-task.md
+review_packet_path: .agent-context/drift-review.md

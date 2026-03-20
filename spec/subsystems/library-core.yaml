@@ -1,0 +1,45 @@
+id: library-core
+title: Library core
+status: evolving
+summary: >-
+  Owns internal implementation helpers and the sample behavior used by the
+  starter public API.
+owned_paths:
+  - spec/subsystems/library-core.yaml
+  - src/__tests__/createExampleMessage.test.ts
+  - src/internal/**
+related_paths:
+  - src/public/**
+entrypoints:
+  - path: src/internal/formatExampleMessage.ts
+    symbols:
+      - formatExampleMessage
+depends_on: []
+used_by:
+  - public-api-and-build-contract
+  - repo-governance-context-system
+required_reads:
+  spec:
+    - spec/README.md
+    - spec/testing-style.md
+  docs: []
+  decisions: []
+glossary_terms:
+  - public API
+public_contracts:
+  - name: "formatExampleMessage(name?: string): string"
+    summary: Internal helper that normalizes the sample greeting behavior.
+invariants:
+  - id: core-001
+    statement: Internal helpers stay free to evolve as long as the public contract remains intact.
+performance_constraints:
+  - Internal helpers should stay small and easy to replace when consumers customize the starter.
+change_policy:
+  default: additive-with-validation
+  requires_adr: []
+tests:
+  - src/__tests__/createExampleMessage.test.ts
+decision_refs: []
+history_anchors:
+  introduced_by: 2026-03-19-boilerplate-bootstrap
+  major_refactors: []

@@ -1,0 +1,60 @@
+id: public-api-and-build-contract
+title: Public API and build contract
+status: locked
+summary: >-
+  Owns the exported library surface, root packaging metadata, and build-facing
+  configuration that defines how consumers load the package.
+owned_paths:
+  - package-lock.json
+  - package.json
+  - tsconfig.build.json
+  - tsconfig.json
+  - vitest.config.ts
+  - eslint.config.mjs
+  - spec/subsystems/public-api-and-build-contract.yaml
+  - src/index.ts
+  - src/public/**
+related_paths: []
+entrypoints:
+  - path: src/index.ts
+    symbols:
+      - createExampleMessage
+depends_on:
+  - library-core
+used_by:
+  - repo-governance-context-system
+required_reads:
+  spec:
+    - spec/README.md
+    - spec/tooling-and-quality.md
+  docs:
+    - docs/context-system/README.md
+  decisions:
+    - spec/decisions/ADR-0002-locked-subsystem-edit-policy.md
+glossary_terms:
+  - public API
+  - locked subsystem
+public_contracts:
+  - name: "createExampleMessage(name?: string): string"
+    summary: Public sample API exposed through the root package barrel.
+  - name: package exports
+    summary: Root package metadata defines the runtime and type entrypoints.
+invariants:
+  - id: api-001
+    statement: Consumers import through src/index.ts rather than internal implementation paths.
+  - id: api-002
+    statement: The root barrel re-exports public modules and does not reach into internal helpers directly.
+performance_constraints:
+  - Exported API changes must remain intentional because they affect downstream consumers.
+change_policy:
+  default: additive-with-validation
+  requires_adr:
+    - changing the meaning of the exported contract
+    - weakening the public barrel boundary
+tests:
+  - src/__tests__/createExampleMessage.test.ts
+decision_refs:
+  - ADR-0002
+history_anchors:
+  introduced_by: 2026-03-19-boilerplate-bootstrap
+  major_refactors: []

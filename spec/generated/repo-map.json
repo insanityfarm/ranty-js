@@ -1,0 +1,348 @@
+{
+  "generatedBy": "npm run context:build",
+  "version": 1,
+  "files": [
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": ".gitignore",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": ".nvmrc",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "AGENTS.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "LICENSE",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "README.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "docs/README.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "docs/context-system/README.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "docs/repo-workflow/README.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["public-api-and-build-contract"],
+      "path": "eslint.config.mjs",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "glossary/README.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "glossary/terms.yaml",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["public-api-and-build-contract"],
+      "path": "package-lock.json",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["public-api-and-build-contract"],
+      "path": "package.json",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": ["scripts/context-system/shared.mjs"],
+      "owners": ["repo-governance-context-system"],
+      "path": "scripts/__tests__/contextSystem.test.js",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "scripts/check-eslint-directives.mjs",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["scripts/context-system/shared.mjs"],
+      "owners": ["repo-governance-context-system"],
+      "path": "scripts/context-system/architecture.mjs",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["scripts/context-system/shared.mjs"],
+      "owners": ["repo-governance-context-system"],
+      "path": "scripts/context-system/build.mjs",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["scripts/context-system/shared.mjs"],
+      "owners": ["repo-governance-context-system"],
+      "path": "scripts/context-system/check.mjs",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["scripts/context-system/shared.mjs"],
+      "owners": ["repo-governance-context-system"],
+      "path": "scripts/context-system/review.mjs",
+      "type": "code"
+    },
+    {
+      "dependents": [
+        "scripts/__tests__/contextSystem.test.js",
+        "scripts/context-system/architecture.mjs",
+        "scripts/context-system/build.mjs",
+        "scripts/context-system/check.mjs",
+        "scripts/context-system/review.mjs",
+        "scripts/context-system/task.mjs",
+        "scripts/context-system/terms.mjs"
+      ],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "scripts/context-system/shared.mjs",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["scripts/context-system/shared.mjs"],
+      "owners": ["repo-governance-context-system"],
+      "path": "scripts/context-system/task.mjs",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": ["scripts/context-system/shared.mjs"],
+      "owners": ["repo-governance-context-system"],
+      "path": "scripts/context-system/terms.mjs",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "spec/README.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "spec/comment-style.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "spec/decisions/ADR-0001-anti-drift-context-system.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "spec/decisions/ADR-0002-locked-subsystem-edit-policy.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "spec/subsystems/index.yaml",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["library-core"],
+      "path": "spec/subsystems/library-core.yaml",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["public-api-and-build-contract"],
+      "path": "spec/subsystems/public-api-and-build-contract.yaml",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "spec/subsystems/repo-governance-context-system.yaml",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "spec/testing-style.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["repo-governance-context-system"],
+      "path": "spec/tooling-and-quality.md",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": ["src/index.ts"],
+      "owners": ["library-core"],
+      "path": "src/__tests__/createExampleMessage.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/__tests__/createExampleMessage.test.ts"],
+      "imports": ["src/public/createExampleMessage.ts"],
+      "owners": ["public-api-and-build-contract"],
+      "path": "src/index.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/public/createExampleMessage.ts"],
+      "imports": [],
+      "owners": ["library-core"],
+      "path": "src/internal/formatExampleMessage.ts",
+      "type": "code"
+    },
+    {
+      "dependents": ["src/index.ts"],
+      "imports": ["src/internal/formatExampleMessage.ts"],
+      "owners": ["public-api-and-build-contract"],
+      "path": "src/public/createExampleMessage.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["public-api-and-build-contract"],
+      "path": "tsconfig.build.json",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["public-api-and-build-contract"],
+      "path": "tsconfig.json",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["public-api-and-build-contract"],
+      "path": "vitest.config.ts",
+      "type": "code"
+    }
+  ],
+  "subsystems": [
+    {
+      "depends_on": [],
+      "id": "library-core",
+      "owned_paths": [
+        "spec/subsystems/library-core.yaml",
+        "src/__tests__/createExampleMessage.test.ts",
+        "src/internal/**"
+      ],
+      "related_paths": ["src/public/**"],
+      "status": "evolving",
+      "used_by": [
+        "public-api-and-build-contract",
+        "repo-governance-context-system"
+      ]
+    },
+    {
+      "depends_on": ["library-core"],
+      "id": "public-api-and-build-contract",
+      "owned_paths": [
+        "package-lock.json",
+        "package.json",
+        "tsconfig.build.json",
+        "tsconfig.json",
+        "vitest.config.ts",
+        "eslint.config.mjs",
+        "spec/subsystems/public-api-and-build-contract.yaml",
+        "src/index.ts",
+        "src/public/**"
+      ],
+      "related_paths": [],
+      "status": "locked",
+      "used_by": ["repo-governance-context-system"]
+    },
+    {
+      "depends_on": ["public-api-and-build-contract", "library-core"],
+      "id": "repo-governance-context-system",
+      "owned_paths": [
+        ".gitignore",
+        ".nvmrc",
+        "AGENTS.md",
+        "LICENSE",
+        "README.md",
+        "docs/**",
+        "glossary/**",
+        "scripts/**",
+        "spec/README.md",
+        "spec/tooling-and-quality.md",
+        "spec/comment-style.md",
+        "spec/testing-style.md",
+        "spec/decisions/**",
+        "spec/generated/**",
+        "spec/subsystems/index.yaml",
+        "spec/subsystems/repo-governance-context-system.yaml",
+        "notes.md"
+      ],
+      "related_paths": [],
+      "status": "stable",
+      "used_by": []
+    }
+  ]
+}

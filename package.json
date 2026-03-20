@@ -1,0 +1,50 @@
+{
+  "name": "anti-drift-ts-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Generic TypeScript boilerplate with an anti-drift workflow baked in.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "arch:check": "node ./scripts/context-system/architecture.mjs",
+    "build": "tsc -p tsconfig.build.json",
+    "check": "npm run lint && npm run format:check && npm run typecheck && npm run test && npm run arch:check && npm run context:check",
+    "context:build": "node ./scripts/context-system/build.mjs",
+    "context:check": "node ./scripts/context-system/check.mjs",
+    "context:task": "node ./scripts/context-system/task.mjs",
+    "drift:review": "node ./scripts/context-system/review.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "npm run lint:eslint && npm run lint:directives && npm run terms:check",
+    "lint:directives": "node ./scripts/check-eslint-directives.mjs",
+    "lint:eslint": "eslint . --max-warnings 0",
+    "terms:check": "node ./scripts/context-system/terms.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "verify": "npm run check && npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0",
+    "js-yaml": "^4.1.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.28.0",
+    "vitest": "^3.1.1"
+  }
+}
