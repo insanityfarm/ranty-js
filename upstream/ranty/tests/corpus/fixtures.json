@@ -145,6 +145,24 @@
       "stderr": ""
     },
     {
+      "file": "upstream/ranty/tests/sources/blocks/nested_expansion_duplicate_weight.ranty",
+      "status": 65,
+      "stdout": "",
+      "stderr": "duplicate @weight modifier on block element"
+    },
+    {
+      "file": "upstream/ranty/tests/sources/blocks/nested_expansion_edit_preserved.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "upstream/ranty/tests/sources/blocks/nested_expansion_recursive.ranty",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
       "file": "upstream/ranty/tests/sources/branch/if-else.ranty",
       "status": 0,
       "stdout": "",
