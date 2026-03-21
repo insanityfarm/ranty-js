@@ -18,7 +18,7 @@ import {
 
 const { flags } = parseArgs(process.argv.slice(2));
 const sourceRepo = flags.get("source-repo");
-const requestedRef = flags.get("ref") ?? "main";
+const requestedRef = flags.get("ref");
 const summaryFile = flags.get("summary-file");
 
 const previousContract = readJsonIfExists(
@@ -28,6 +28,7 @@ const bundle = await loadUpstreamBundle({
   sourceRepo,
   ref: requestedRef
 });
+const effectiveRef = bundle.requestedRef;
 const files = normalizeBundleFiles(bundle.files);
 const contractText = files.get("contract.json");
 
@@ -44,7 +45,7 @@ const lock = {
   schema_version: 1,
   upstream_repo: contract.source_repo ?? UPSTREAM_REPO_URL,
   vendored_root: VENDORED_UPSTREAM_ROOT,
-  requested_ref: requestedRef,
+  requested_ref: effectiveRef,
   source_commit: contract.source_commit,
   contract_sha256: sha256Hex(contractText),
   component_signatures: Object.fromEntries(
@@ -59,7 +60,7 @@ writeJson(path.join(vendoredUpstreamRoot, "lock.json"), lock);
 
 const summary = {
   sourceCommit: contract.source_commit,
-  requestedRef,
+  requestedRef: effectiveRef,
   changedComponents
 };
 

@@ -1,0 +1,1 @@
+[assert-eq: seedBseedC; [rep:all][sel:[mksel:forward]]{"seed"{@edit x: `<x>B|@edit x: `<x>C}}]

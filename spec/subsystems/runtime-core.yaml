@@ -9,6 +9,7 @@ owned_paths:
   - src/core/**
   - tests/access-range.test.ts
   - tests/attribute-keywords.test.ts
+  - tests/block-expansion.test.ts
   - tests/closure-math.test.ts
   - tests/collections.test.ts
   - tests/functions.test.ts
@@ -76,6 +77,7 @@ change_policy:
   requires_adr:
     - intentionally diverging core behavior from the Rust upstream contract
 tests:
+  - tests/block-expansion.test.ts
   - tests/smoke.test.ts
   - tests/lexer.test.ts
   - tests/module-paths.test.ts
@@ -86,4 +88,5 @@ decision_refs:
   - ADR-0003
 history_anchors:
   introduced_by: 2026-03-20-ranty-js-repo-split
-  major_refactors: []
+  major_refactors:
+    - 2026-03-20-upstream-nested-block-expansion-parity-port

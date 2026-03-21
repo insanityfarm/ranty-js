@@ -91,6 +91,7 @@ export interface BlockNode extends SequenceNodeBase {
   readonly kind: "block";
   readonly elements: readonly BlockElementNode[];
   readonly sink: boolean;
+  readonly protectedBlock: boolean;
 }
 
 export interface BlockEditDirective {

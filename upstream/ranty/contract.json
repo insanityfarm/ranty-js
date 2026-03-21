@@ -2,7 +2,7 @@
   "schema_version": 1,
   "generated_by": "cargo xtask parity build",
   "source_repo": "https://github.com/insanityfarm/ranty",
-  "source_commit": "39fc1506a96c0a167d7ce63c946875f0b0c3e661",
+  "source_commit": "373604f041c64d3cf5b5eb8e349664f562ca9831",
   "build_version": "1.0.0",
   "language_version": "1.0.0",
   "contract_root": "parity/ranty-js",
@@ -246,7 +246,7 @@
         "src/core/messages.ts",
         "src/core/errors.ts"
       ],
-      "signature": "041e184b3cbc58a98089f5aae8dd05e969ea2c080e1d6202692adfd4d1ec5b00"
+      "signature": "b761ec50aeac2b74071e88b5f970a18872f3a7e174980a516534866b328db947"
     },
     {
       "id": "syntax-model",
@@ -288,7 +288,7 @@
         "src/core/program.ts",
         "src/core/values.ts"
       ],
-      "signature": "c926d0ce3b5ce01b8c3f36b181e6ba17d9edbf6736e3644faef6b5a6f1e43b95"
+      "signature": "1afc8a05a1484974bfb4d9c1acff06ad4247fa18192c3d92186b8053ba06ad26"
     },
     {
       "id": "runtime-core",
@@ -437,6 +437,9 @@
         "tests/sources/anonymous/dynamic_anon_setter.ranty",
         "tests/sources/assert/assert_fail.ranty",
         "tests/sources/assert/assert_pass.ranty",
+        "tests/sources/blocks/nested_expansion_duplicate_weight.ranty",
+        "tests/sources/blocks/nested_expansion_edit_preserved.ranty",
+        "tests/sources/blocks/nested_expansion_recursive.ranty",
         "tests/sources/branch/if-else.ranty",
         "tests/sources/branch/if-elseif-else.ranty",
         "tests/sources/branch/if-elseif.ranty",
@@ -553,7 +556,7 @@
         "upstream/ranty/tests/corpus/**",
         "upstream/ranty/tests/sources/**"
       ],
-      "signature": "ccb63bcc6d0598f05c099f9d48044d1088d62420add67414814d0f81bee04175"
+      "signature": "5b5d7f18893552ed6fd7251d6cd8e54f80ba1a7c98f487c89e3f113b90eec9e0"
     }
   ]
 }

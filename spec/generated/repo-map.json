@@ -312,6 +312,13 @@
     },
     {
       "dependents": [],
+      "imports": ["scripts/upstream/shared.mjs"],
+      "owners": ["upstream-parity-contract"],
+      "path": "scripts/__tests__/upstreamTooling.test.js",
+      "type": "code"
+    },
+    {
+      "dependents": [],
       "imports": [],
       "owners": ["repo-governance-context-system"],
       "path": "scripts/check-eslint-directives.mjs",
@@ -383,6 +390,7 @@
     },
     {
       "dependents": [
+        "scripts/__tests__/upstreamTooling.test.js",
         "scripts/upstream/check-freshness.mjs",
         "scripts/upstream/sync-ranty.mjs"
       ],
@@ -1145,6 +1153,13 @@
     },
     {
       "dependents": [],
+      "imports": ["tests/suite-helpers.ts"],
+      "owners": ["runtime-core"],
+      "path": "tests/block-expansion.test.ts",
+      "type": "code"
+    },
+    {
+      "dependents": [],
       "imports": ["src/index.ts"],
       "owners": ["host-integrations"],
       "path": "tests/browser-global.test.ts",
@@ -1292,6 +1307,7 @@
     {
       "dependents": [
         "tests/attribute-keywords.test.ts",
+        "tests/block-expansion.test.ts",
         "tests/match-selector.test.ts",
         "tests/module-paths.test.ts",
         "tests/output-control.test.ts",
@@ -1525,6 +1541,27 @@
       "imports": [],
       "owners": ["upstream-parity-contract"],
       "path": "upstream/ranty/tests/sources/assert/assert_pass.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/blocks/nested_expansion_duplicate_weight.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/blocks/nested_expansion_edit_preserved.ranty",
+      "type": "text"
+    },
+    {
+      "dependents": [],
+      "imports": [],
+      "owners": ["upstream-parity-contract"],
+      "path": "upstream/ranty/tests/sources/blocks/nested_expansion_recursive.ranty",
       "type": "text"
     },
     {
@@ -2396,6 +2433,7 @@
         "src/core/**",
         "tests/access-range.test.ts",
         "tests/attribute-keywords.test.ts",
+        "tests/block-expansion.test.ts",
         "tests/closure-math.test.ts",
         "tests/collections.test.ts",
         "tests/functions.test.ts",
@@ -2430,6 +2468,7 @@
       "id": "upstream-parity-contract",
       "owned_paths": [
         "scripts/upstream/**",
+        "scripts/__tests__/upstreamTooling.test.js",
         "upstream/**",
         "tests/corpus-helpers.ts",
         "tests/stdlib-surface.test.ts",

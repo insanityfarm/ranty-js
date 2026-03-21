@@ -5,6 +5,7 @@ date: 2026-03-20
 subsystems:
   - runtime-core
   - host-integrations
+  - public-api-and-build-contract
   - upstream-parity-contract
 supersedes: []
 tags:
@@ -26,11 +27,14 @@ failing closed only when JS work touches surfaces that should remain in parity.
 Treat the Rust repo as authoritative for core behavior. Sync its
 `parity/ranty-js/**` bundle into `upstream/ranty/**`, record the synced commit
 and contract hash in `upstream/ranty/lock.json`, and treat that vendored bundle
-as a locked authoritative artifact.
+as a locked authoritative artifact. When upstream tooling runs without an
+explicit `--ref`, it resolves the Rust repo's default branch instead of
+assuming a hardcoded branch name.
 
 Pull requests may touch host-only or workflow-only surfaces while the parity
-lock is behind Rust `main`, but changes to `src/core/**`, core-facing tests, or
-public/build-sensitive surfaces must refresh the parity lock first.
+lock is behind the Rust repo's default branch, but changes to `src/core/**`,
+core-facing tests, or public/build-sensitive surfaces must refresh the parity
+lock first.
 
 ## Consequences
 
@@ -38,6 +42,12 @@ Core work in Ranty.js must be framed against the vendored upstream contract.
 `upstream/ranty/**` is not a local scratch area. Drift becomes explicit and
 reviewable through the parity lock, freshness check, and the vendored contract
 diff.
+
+Downstream parity ports may still land as `src/core/**` changes against the
+current vendored contract when Rust already synced the relevant parity bundle
+updates. Those tasks still count as parity-sensitive work across the related
+public/build and upstream subsystem seams, so their authoritative subsystem
+records and ADR rationale must stay explicit in the same change.
 
 ## Validation
 

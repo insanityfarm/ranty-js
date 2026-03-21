@@ -49,7 +49,7 @@ const NON_BLOCKING_PATTERNS = [
 
 const { flags } = parseArgs(process.argv.slice(2));
 const sourceRepo = flags.get("source-repo");
-const requestedRef = flags.get("ref") ?? "main";
+const requestedRef = flags.get("ref");
 
 const lock = readJsonIfExists(path.join(vendoredUpstreamRoot, "lock.json"));
 if (!lock) {
@@ -62,6 +62,7 @@ const bundle = await loadUpstreamBundle({
   sourceRepo,
   ref: requestedRef
 });
+const effectiveRef = bundle.requestedRef;
 const files = normalizeBundleFiles(bundle.files);
 const contractText = files.get("contract.json");
 
@@ -96,7 +97,7 @@ const blockingFiles = changedFiles.filter((relativePath) => {
 
 const behindMessage = [
   `Parity lock ${lock.source_commit} is behind upstream ${contract.source_commit}.`,
-  `Run npm run upstream:sync -- --ref=${requestedRef} to refresh upstream/ranty/**.`
+  `Run npm run upstream:sync -- --ref=${effectiveRef} to refresh upstream/ranty/**.`
 ].join(" ");
 
 if (blockingFiles.length > 0) {

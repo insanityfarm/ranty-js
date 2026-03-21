@@ -1,0 +1,1 @@
+[assert-eq: AB1AB2AC1AC2; [rep:all][sel:[mksel:forward]]{A{B|C}{1|2}}]
