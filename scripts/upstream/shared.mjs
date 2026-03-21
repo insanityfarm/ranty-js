@@ -141,20 +141,44 @@ async function fetchText(url) {
   return await response.text();
 }
 
+export async function resolveUpstreamRef(ref) {
+  if (ref) {
+    return ref;
+  }
+
+  const repo = await fetchJson(UPSTREAM_API_BASE);
+  if (
+    typeof repo.default_branch !== "string" ||
+    repo.default_branch.trim().length === 0
+  ) {
+    throw new Error(
+      `Could not determine the default branch for ${UPSTREAM_REPO_URL}.`
+    );
+  }
+
+  return repo.default_branch;
+}
+
 async function resolveRemoteCommit(ref) {
+  const requestedRef = await resolveUpstreamRef(ref);
   const commit = await fetchJson(
-    `${UPSTREAM_API_BASE}/commits/${encodeURIComponent(ref)}`
+    `${UPSTREAM_API_BASE}/commits/${encodeURIComponent(requestedRef)}`
   );
 
   if (typeof commit.sha !== "string" || commit.sha.length === 0) {
-    throw new Error(`Could not resolve upstream ref ${ref} to a commit SHA.`);
+    throw new Error(
+      `Could not resolve upstream ref ${requestedRef} to a commit SHA.`
+    );
   }
 
-  return commit.sha;
+  return {
+    requestedRef,
+    sourceCommit: commit.sha
+  };
 }
 
 async function loadRemoteBundleFiles(ref) {
-  const sourceCommit = await resolveRemoteCommit(ref);
+  const { requestedRef, sourceCommit } = await resolveRemoteCommit(ref);
   const tree = await fetchJson(
     `${UPSTREAM_API_BASE}/git/trees/${sourceCommit}?recursive=1`
   );
@@ -182,13 +206,13 @@ async function loadRemoteBundleFiles(ref) {
   }
 
   return {
-    requestedRef: ref,
+    requestedRef,
     sourceCommit,
     files
   };
 }
 
-export async function loadUpstreamBundle({ sourceRepo, ref = "main" }) {
+export async function loadUpstreamBundle({ sourceRepo, ref }) {
   if (sourceRepo) {
     const files = loadLocalBundleFiles(sourceRepo);
     const contractText = files.get("contract.json");
@@ -198,7 +222,7 @@ export async function loadUpstreamBundle({ sourceRepo, ref = "main" }) {
 
     const contract = JSON.parse(contractText);
     return {
-      requestedRef: ref,
+      requestedRef: ref ?? contract.source_commit,
       sourceCommit: contract.source_commit,
       files
     };

@@ -7,6 +7,7 @@ summary: >-
   inventories and corpora.
 owned_paths:
   - scripts/upstream/**
+  - scripts/__tests__/upstreamTooling.test.js
   - upstream/**
   - tests/corpus-helpers.ts
   - tests/stdlib-surface.test.ts
@@ -44,9 +45,9 @@ glossary_terms:
   - locked subsystem
 public_contracts:
   - name: "npm run upstream:sync -- --ref=<rust-sha-or-branch>"
-    summary: Refreshes the vendored upstream contract, tests, and parity lock from Rust.
+    summary: Refreshes the vendored upstream contract, tests, and parity lock from Rust, defaulting to the upstream repo's default branch when no ref is provided.
   - name: "npm run upstream:check-freshness"
-    summary: Compares the local parity lock against upstream Rust and blocks only core-sensitive drift.
+    summary: Compares the local parity lock against upstream Rust and blocks only core-sensitive drift, resolving the upstream repo's default branch when no ref is provided.
 invariants:
   - id: parity-001
     statement: upstream/ranty/** is synced from Rust and is never hand-edited.
@@ -64,6 +65,7 @@ change_policy:
   requires_adr:
     - changing Rust-upstream authority or the freshness gate semantics
 tests:
+  - scripts/__tests__/upstreamTooling.test.js
   - tests/stdlib-surface.test.ts
   - tests/smoke.test.ts
 decision_refs:
@@ -73,3 +75,4 @@ history_anchors:
   introduced_by: 2026-03-20-ranty-js-repo-split
   major_refactors:
     - 2026-03-20-upstream-nested-block-expansion-parity-port
+    - 2026-03-21-default-branch-upstream-ref-resolution

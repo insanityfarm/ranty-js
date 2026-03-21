@@ -312,6 +312,13 @@
     },
     {
       "dependents": [],
+      "imports": ["scripts/upstream/shared.mjs"],
+      "owners": ["upstream-parity-contract"],
+      "path": "scripts/__tests__/upstreamTooling.test.js",
+      "type": "code"
+    },
+    {
+      "dependents": [],
       "imports": [],
       "owners": ["repo-governance-context-system"],
       "path": "scripts/check-eslint-directives.mjs",
@@ -383,6 +390,7 @@
     },
     {
       "dependents": [
+        "scripts/__tests__/upstreamTooling.test.js",
         "scripts/upstream/check-freshness.mjs",
         "scripts/upstream/sync-ranty.mjs"
       ],
@@ -2460,6 +2468,7 @@
       "id": "upstream-parity-contract",
       "owned_paths": [
         "scripts/upstream/**",
+        "scripts/__tests__/upstreamTooling.test.js",
         "upstream/**",
         "tests/corpus-helpers.ts",
         "tests/stdlib-surface.test.ts",

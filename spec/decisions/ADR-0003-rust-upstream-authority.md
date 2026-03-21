@@ -27,11 +27,14 @@ failing closed only when JS work touches surfaces that should remain in parity.
 Treat the Rust repo as authoritative for core behavior. Sync its
 `parity/ranty-js/**` bundle into `upstream/ranty/**`, record the synced commit
 and contract hash in `upstream/ranty/lock.json`, and treat that vendored bundle
-as a locked authoritative artifact.
+as a locked authoritative artifact. When upstream tooling runs without an
+explicit `--ref`, it resolves the Rust repo's default branch instead of
+assuming a hardcoded branch name.
 
 Pull requests may touch host-only or workflow-only surfaces while the parity
-lock is behind Rust `main`, but changes to `src/core/**`, core-facing tests, or
-public/build-sensitive surfaces must refresh the parity lock first.
+lock is behind the Rust repo's default branch, but changes to `src/core/**`,
+core-facing tests, or public/build-sensitive surfaces must refresh the parity
+lock first.
 
 ## Consequences
 
