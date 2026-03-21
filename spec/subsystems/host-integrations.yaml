@@ -6,11 +6,11 @@ summary: >-
   host-specific code that sits above the runtime core.
 owned_paths:
   - benchmarks/run-hyperfine.sh
-  - docs/cli.md
   - src/hosts/**
   - tests/browser-global.test.ts
   - spec/subsystems/host-integrations.yaml
 related_paths:
+  - README.md
   - src/core/**
   - src/index.ts
   - tests/smoke.test.ts
@@ -31,8 +31,7 @@ required_reads:
     - spec/README.md
     - spec/testing-style.md
   docs:
-    - docs/cli.md
-    - docs/runtime.md
+    - README.md
   decisions:
     - spec/decisions/ADR-0003-rust-upstream-authority.md
 glossary_terms:

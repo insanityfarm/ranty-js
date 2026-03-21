@@ -1,18 +1,20 @@
 # Ranty.js Docs
 
-This directory contains both product documentation and contributor workflow
-guides. The authoritative implementation and workflow contract lives in
-[`../spec/README.md`](../spec/README.md). The authoritative terminology lives
-in [`../glossary/README.md`](../glossary/README.md). Future-facing follow-up
-lives in [`../notes.md`](../notes.md).
+The shared product reference for Ranty lives at
+<https://insanityfarm.github.io/ranty/>. The local JS-specific package,
+browser, host-integration, and CLI notes live in [`../README.md`](../README.md).
+
+The authoritative implementation and workflow contract lives in
+[`../spec/README.md`](../spec/README.md). The authoritative terminology
+lives in [`../glossary/README.md`](../glossary/README.md). Future-facing
+follow-up lives in [`../notes.md`](../notes.md).
 
 ## Product Docs
 
-- [`./intro.md`](./intro.md): project overview and language positioning
-- [`./library.md`](./library.md): package API and library usage
-- [`./modules.md`](./modules.md): module loading and dependency behavior
-- [`./runtime.md`](./runtime.md): compiler, runtime, and stdlib behavior
-- [`./cli.md`](./cli.md): CLI entrypoint behavior and flags
+- [Hosted Ranty Reference](https://insanityfarm.github.io/ranty/): shared
+  language, stdlib, modules, runtime, and CLI reference
+- [`../README.md`](../README.md): Ranty.js-specific package, browser, Node, and
+  host-integration details
 
 ## Workflow Docs
 

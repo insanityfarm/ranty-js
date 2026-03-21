@@ -6,9 +6,6 @@ summary: >-
   resolution logic, value model, and the behavior tests that exercise them.
 owned_paths:
   - benchmarks/workloads/**
-  - docs/library.md
-  - docs/modules.md
-  - docs/runtime.md
   - src/core/**
   - tests/access-range.test.ts
   - tests/attribute-keywords.test.ts
@@ -29,6 +26,7 @@ owned_paths:
   - tests/suite-helpers.ts
   - spec/subsystems/runtime-core.yaml
 related_paths:
+  - README.md
   - src/hosts/**
   - upstream/ranty/**
 entrypoints:
@@ -53,9 +51,7 @@ required_reads:
     - spec/README.md
     - spec/testing-style.md
   docs:
-    - docs/library.md
-    - docs/modules.md
-    - docs/runtime.md
+    - README.md
   decisions:
     - spec/decisions/ADR-0003-rust-upstream-authority.md
 glossary_terms:

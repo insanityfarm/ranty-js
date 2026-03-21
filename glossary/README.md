@@ -82,7 +82,7 @@ When code, docs, comments, and spec text refer to the same concept, they should 
   - shared runtime layer
 - Applies to:
   - `src/core`
-  - `docs/runtime.md`
+  - `README.md`
   - `spec/subsystems/runtime-core.yaml`
 - Related terms: `public API`, `upstream parity contract`
 

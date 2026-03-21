@@ -26,13 +26,18 @@ parity machinery.
 Mark those subsystems as `locked` in their subsystem records. Any task that
 intends to edit locked subsystem code must opt in through the repo-local active
 task packet, and the same change must update the touched subsystem record plus a
-relevant ADR in `spec/decisions/`.
+relevant ADR in `spec/decisions/`. That policy also covers local documentation
+surfaces that describe the supported JS package contract, even when the actual
+runtime implementation stays unchanged.
 
 ## Consequences
 
 Routine feature work fails closed when it spills into locked subsystem code.
 Explicit architecture work remains possible, but it must be visible in the
-authoritative records.
+authoritative records. Changes that move or consolidate public package
+documentation, such as routing JS-specific reference material through
+`README.md` and a thin `docs/README.md`, must stay explicit in subsystem
+records and ADR text rather than being treated as informal copy edits.
 
 ## Validation
 

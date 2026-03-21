@@ -243,18 +243,8 @@
     {
       "dependents": [],
       "imports": [],
-      "owners": [
-        "public-api-and-build-contract",
-        "repo-governance-context-system"
-      ],
+      "owners": ["repo-governance-context-system"],
       "path": "docs/README.md",
-      "type": "text"
-    },
-    {
-      "dependents": [],
-      "imports": [],
-      "owners": ["host-integrations"],
-      "path": "docs/cli.md",
       "type": "text"
     },
     {
@@ -267,36 +257,8 @@
     {
       "dependents": [],
       "imports": [],
-      "owners": ["public-api-and-build-contract"],
-      "path": "docs/intro.md",
-      "type": "text"
-    },
-    {
-      "dependents": [],
-      "imports": [],
-      "owners": ["runtime-core"],
-      "path": "docs/library.md",
-      "type": "text"
-    },
-    {
-      "dependents": [],
-      "imports": [],
-      "owners": ["runtime-core"],
-      "path": "docs/modules.md",
-      "type": "text"
-    },
-    {
-      "dependents": [],
-      "imports": [],
       "owners": ["repo-governance-context-system"],
       "path": "docs/repo-workflow/README.md",
-      "type": "text"
-    },
-    {
-      "dependents": [],
-      "imports": [],
-      "owners": ["runtime-core"],
-      "path": "docs/runtime.md",
       "type": "text"
     },
     {
@@ -2356,12 +2318,16 @@
       "id": "host-integrations",
       "owned_paths": [
         "benchmarks/run-hyperfine.sh",
-        "docs/cli.md",
         "src/hosts/**",
         "tests/browser-global.test.ts",
         "spec/subsystems/host-integrations.yaml"
       ],
-      "related_paths": ["src/core/**", "src/index.ts", "tests/smoke.test.ts"],
+      "related_paths": [
+        "README.md",
+        "src/core/**",
+        "src/index.ts",
+        "tests/smoke.test.ts"
+      ],
       "status": "evolving",
       "used_by": ["public-api-and-build-contract", "upstream-parity-contract"]
     },
@@ -2377,12 +2343,10 @@
         "tsconfig.json",
         "vitest.config.ts",
         "eslint.config.mjs",
-        "docs/README.md",
-        "docs/intro.md",
         "src/index.ts",
         "spec/subsystems/public-api-and-build-contract.yaml"
       ],
-      "related_paths": ["src/core/**", "src/hosts/**"],
+      "related_paths": ["README.md", "src/core/**", "src/hosts/**"],
       "status": "locked",
       "used_by": ["repo-governance-context-system"]
     },
@@ -2429,9 +2393,6 @@
       "id": "runtime-core",
       "owned_paths": [
         "benchmarks/workloads/**",
-        "docs/library.md",
-        "docs/modules.md",
-        "docs/runtime.md",
         "src/core/**",
         "tests/access-range.test.ts",
         "tests/attribute-keywords.test.ts",
@@ -2452,7 +2413,7 @@
         "tests/suite-helpers.ts",
         "spec/subsystems/runtime-core.yaml"
       ],
-      "related_paths": ["src/hosts/**", "upstream/ranty/**"],
+      "related_paths": ["README.md", "src/hosts/**", "upstream/ranty/**"],
       "status": "evolving",
       "used_by": [
         "public-api-and-build-contract",

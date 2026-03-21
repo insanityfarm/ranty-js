@@ -2,8 +2,9 @@ id: repo-governance-context-system
 title: Repo governance and anti-drift context system
 status: stable
 summary: >-
-  Owns repository-wide workflow rules, anti-drift tooling, generated context
-  artifacts, and contributor-facing maps that explain how to use them.
+  Owns repository-wide workflow rules, top-level documentation routing,
+  anti-drift tooling, generated context artifacts, and contributor-facing maps
+  that explain how to use them.
 owned_paths:
   - .github/**
   - .gitignore
@@ -63,6 +64,8 @@ glossary_terms:
   - active task packet
   - locked subsystem
 public_contracts:
+  - name: top-level project docs
+    summary: README.md is the local Ranty.js product-doc entrypoint, while docs/README.md routes readers to workflow guides and the hosted shared reference.
   - name: "npm run context:build"
     summary: Regenerates tracked context artifacts from glossary, subsystem, and ADR source files.
   - name: 'npm run context:task -- "<task>"'
@@ -78,6 +81,8 @@ invariants:
     statement: Local verification remains authoritative and npm run verify is never weakened.
   - id: gov-ctx-004
     statement: Every first-party file listed by the subsystem index must be owned by at least one subsystem.
+  - id: gov-ctx-005
+    statement: README.md stays the local Ranty.js product-doc entrypoint and docs/README.md stays a thin router to hosted shared docs plus local workflow guides.
 performance_constraints:
   - Context artifacts stay compact enough for task briefing without requiring broad repo reads.
 change_policy:

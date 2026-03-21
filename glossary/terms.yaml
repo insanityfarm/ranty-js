@@ -93,7 +93,7 @@ terms:
       - shared runtime layer
     applies_to:
       - src/core
-      - docs/runtime.md
+      - README.md
       - spec/subsystems/runtime-core.yaml
     related_terms:
       - public-api

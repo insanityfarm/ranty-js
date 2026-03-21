@@ -13,11 +13,10 @@ owned_paths:
   - tsconfig.json
   - vitest.config.ts
   - eslint.config.mjs
-  - docs/README.md
-  - docs/intro.md
   - src/index.ts
   - spec/subsystems/public-api-and-build-contract.yaml
 related_paths:
+  - README.md
   - src/core/**
   - src/hosts/**
 entrypoints:
@@ -39,6 +38,7 @@ required_reads:
     - spec/README.md
     - spec/tooling-and-quality.md
   docs:
+    - README.md
     - docs/context-system/README.md
   decisions:
     - spec/decisions/ADR-0002-locked-subsystem-edit-policy.md
