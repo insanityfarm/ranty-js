@@ -288,6 +288,12 @@ class Parser {
         continue;
       }
 
+      if (this.isProtectedBlockStart()) {
+        this.expect("@");
+        nodes.push(this.parseBlock(false, true));
+        continue;
+      }
+
       if (this.matchesSymbol("`")) {
         this.nextToken();
         this.skipInlineWhitespace();
@@ -1346,7 +1352,7 @@ class Parser {
     };
   }
 
-  private parseBlock(sink: boolean): BlockNode {
+  private parseBlock(sink: boolean, protectedBlock = false): BlockNode {
     const start = this.currentIndex();
     this.expect("{");
     const elements: BlockElementNode[] = [];
@@ -1370,12 +1376,13 @@ class Parser {
       );
     }
 
-    return {
+    return this.normalizeBlock({
       kind: "block",
       elements,
       sink,
+      protectedBlock,
       span: { start, end: this.currentIndex() }
-    };
+    });
   }
 
   private parseBlockElement(blockStart: number): BlockElementNode {
@@ -1459,11 +1466,155 @@ class Parser {
     };
   }
 
+  private normalizeBlock(block: BlockNode): BlockNode {
+    const elements: BlockElementNode[] = [];
+
+    for (const element of block.elements) {
+      elements.push(...this.expandBlockElement(element, block.span));
+    }
+
+    return {
+      ...block,
+      elements
+    };
+  }
+
+  private expandBlockElement(
+    element: BlockElementNode,
+    span: BlockNode["span"]
+  ): readonly BlockElementNode[] {
+    const expandableChildren = element.sequence.nodes
+      .map((node, index) => ({ node, index }))
+      .filter(
+        ({ node }) => node.kind === "block" && !node.protectedBlock
+      ) as ReadonlyArray<{ readonly node: BlockNode; readonly index: number }>;
+
+    if (expandableChildren.length === 0) {
+      return [element];
+    }
+
+    let expanded: readonly BlockElementNode[] = [element];
+
+    for (const { index } of expandableChildren) {
+      const next: BlockElementNode[] = [];
+
+      for (const candidate of expanded) {
+        const child = candidate.sequence.nodes[index];
+        if (child?.kind !== "block" || child.protectedBlock) {
+          next.push(candidate);
+          continue;
+        }
+
+        for (const childElement of child.elements) {
+          next.push(
+            this.inlineChildBlockElement(
+              candidate,
+              index,
+              child,
+              childElement,
+              span
+            )
+          );
+        }
+      }
+
+      expanded = next;
+    }
+
+    return expanded;
+  }
+
+  private inlineChildBlockElement(
+    candidate: BlockElementNode,
+    expressionIndex: number,
+    childBlock: BlockNode,
+    childElement: BlockElementNode,
+    span: BlockNode["span"]
+  ): BlockElementNode {
+    const lifted = this.liftBlockElementMetadata(candidate, childElement, span);
+    const nodes = [...lifted.sequence.nodes];
+    nodes[expressionIndex] = {
+      kind: "block",
+      elements: [this.stripBlockElementMetadata(childElement)],
+      sink: childBlock.sink,
+      protectedBlock: false,
+      span: childBlock.span
+    };
+
+    return {
+      ...lifted,
+      sequence: {
+        kind: "sequence",
+        nodes
+      }
+    };
+  }
+
+  private liftBlockElementMetadata(
+    target: BlockElementNode,
+    source: BlockElementNode,
+    span: BlockNode["span"]
+  ): BlockElementNode {
+    let on = target.on;
+    let weight = target.weight;
+
+    if (source.on) {
+      if (on) {
+        compilerError(
+          this.#reporter,
+          "R0041",
+          "duplicate @on modifier on block element",
+          span.start,
+          span.end,
+          "@on"
+        );
+      }
+
+      on = source.on;
+    }
+
+    if (source.weight) {
+      if (weight) {
+        compilerError(
+          this.#reporter,
+          "R0041",
+          "duplicate @weight modifier on block element",
+          span.start,
+          span.end,
+          "@weight"
+        );
+      }
+
+      weight = source.weight;
+    }
+
+    return {
+      sequence: target.sequence,
+      ...(target.edit ? { edit: target.edit } : {}),
+      ...(on ? { on } : {}),
+      ...(weight ? { weight } : {})
+    };
+  }
+
+  private stripBlockElementMetadata(
+    element: BlockElementNode
+  ): BlockElementNode {
+    return {
+      sequence: element.sequence,
+      ...(element.edit ? { edit: element.edit } : {})
+    };
+  }
+
   private tryParseBlockEditDirective(): BlockEditDirective | null {
     const start = this.mark();
     this.skipTrivia();
 
     if (!this.matchesSymbol("@")) {
+      this.reset(start);
+      return null;
+    }
+
+    if (this.matchesSymbol("{", 1)) {
       this.reset(start);
       return null;
     }
@@ -1508,6 +1659,10 @@ class Parser {
   }
 
   private parseHintedNode(): SequenceNode {
+    if (this.isProtectedBlockStart()) {
+      this.expect("@");
+      return this.parseBlock(false, true);
+    }
     if (this.matchesSymbol("<")) {
       return this.parseAngleNode();
     }
@@ -2458,6 +2613,10 @@ class Parser {
     }
 
     nodes[nodes.length - 1] = trimmed;
+  }
+
+  private isProtectedBlockStart(): boolean {
+    return this.matchesSymbol("@") && this.matchesSymbol("{", 1);
   }
 
   private validateNoMisplacedMetadata(

@@ -5,6 +5,7 @@ date: 2026-03-20
 subsystems:
   - runtime-core
   - host-integrations
+  - public-api-and-build-contract
   - upstream-parity-contract
 supersedes: []
 tags:
@@ -38,6 +39,12 @@ Core work in Ranty.js must be framed against the vendored upstream contract.
 `upstream/ranty/**` is not a local scratch area. Drift becomes explicit and
 reviewable through the parity lock, freshness check, and the vendored contract
 diff.
+
+Downstream parity ports may still land as `src/core/**` changes against the
+current vendored contract when Rust already synced the relevant parity bundle
+updates. Those tasks still count as parity-sensitive work across the related
+public/build and upstream subsystem seams, so their authoritative subsystem
+records and ADR rationale must stay explicit in the same change.
 
 ## Validation
 
