@@ -36,19 +36,14 @@
   "module_resolution": {
     "resolver_type": "DefaultModuleResolver",
     "cache_global": "__MODULES",
-    "environment_variables": [
-      "RANTY_MODULES_PATH"
-    ],
+    "environment_variables": ["RANTY_MODULES_PATH"],
     "search_order": [
       "dependant program directory",
       "local modules path or current working directory",
       "RANTY_MODULES_PATH when enabled"
     ]
   },
-  "supported_file_extensions": [
-    "ranty",
-    "rant"
-  ],
+  "supported_file_extensions": ["ranty", "rant"],
   "stdlib_symbols": [
     "BUILD_VERSION",
     "EPSILON",
@@ -237,12 +232,8 @@
       "title": "Compiler pipeline",
       "summary": "Lexing, reading, parser entrypoints, compiler diagnostics, and source-file compilation.",
       "scope": "core",
-      "depends_on": [
-        "syntax-model"
-      ],
-      "rust_paths": [
-        "src/compiler/**/*.rs"
-      ],
+      "depends_on": ["syntax-model"],
+      "rust_paths": ["src/compiler/**/*.rs"],
       "matched_files": [
         "src/compiler/lexer.rs",
         "src/compiler/message.rs",
@@ -304,10 +295,7 @@
       "title": "Runtime core",
       "summary": "Execution context, runtime engine, formatting state, RNG, module loading, data sources, and core runtime utilities.",
       "scope": "core",
-      "depends_on": [
-        "compiler",
-        "syntax-model"
-      ],
+      "depends_on": ["compiler", "syntax-model"],
       "rust_paths": [
         "src/data.rs",
         "src/format/**/*.rs",
@@ -353,13 +341,8 @@
       "title": "Standard library",
       "summary": "Built-in functions, constants, block attributes, conversion helpers, generators, and collection/string operations.",
       "scope": "core",
-      "depends_on": [
-        "runtime-core",
-        "syntax-model"
-      ],
-      "rust_paths": [
-        "src/stdlib/**/*.rs"
-      ],
+      "depends_on": ["runtime-core", "syntax-model"],
+      "rust_paths": ["src/stdlib/**/*.rs"],
       "matched_files": [
         "src/stdlib/assertion.rs",
         "src/stdlib/block.rs",
@@ -376,9 +359,7 @@
         "src/stdlib/strings.rs",
         "src/stdlib/verify.rs"
       ],
-      "js_targets": [
-        "src/core/stdlib/**"
-      ],
+      "js_targets": ["src/core/stdlib/**"],
       "signature": "6312851db6aca2f68af37888aaaa60ecfb9c5ee23ef6fce2048e2c7c48a30c12"
     },
     {
@@ -386,21 +367,14 @@
       "title": "CLI host",
       "summary": "Native Rust CLI and REPL entrypoint behavior.",
       "scope": "host-node",
-      "depends_on": [
-        "runtime-core",
-        "stdlib"
-      ],
-      "rust_paths": [
-        "src/tools/cli/**/*"
-      ],
+      "depends_on": ["runtime-core", "stdlib"],
+      "rust_paths": ["src/tools/cli/**/*"],
       "matched_files": [
         "src/tools/cli/_copyright.txt",
         "src/tools/cli/_credits.txt",
         "src/tools/cli/main.rs"
       ],
-      "js_targets": [
-        "src/hosts/node/**"
-      ],
+      "js_targets": ["src/hosts/node/**"],
       "signature": "f10eb88d110153dff1606c5b2afa2b4f74fae2b43a287a47b359f168ca3d465e"
     },
     {
@@ -408,15 +382,9 @@
       "title": "Browser host bridge",
       "summary": "Browser-facing virtual module exposure layered on top of core module-resolution semantics.",
       "scope": "host-browser",
-      "depends_on": [
-        "runtime-core"
-      ],
-      "rust_paths": [
-        "src/modres.rs"
-      ],
-      "matched_files": [
-        "src/modres.rs"
-      ],
+      "depends_on": ["runtime-core"],
+      "rust_paths": ["src/modres.rs"],
+      "matched_files": ["src/modres.rs"],
       "js_targets": [
         "src/hosts/browser/**",
         "src/core/virtual-module-resolver.ts"
@@ -428,21 +396,10 @@
       "title": "Rust memory management internals",
       "summary": "Garbage collection internals and Rust-only memory behavior that the JS port translates rather than copies literally.",
       "scope": "rust-only",
-      "depends_on": [
-        "runtime-core"
-      ],
-      "rust_paths": [
-        "src/gc.rs",
-        "src/gc_tests.rs"
-      ],
-      "matched_files": [
-        "src/gc.rs",
-        "src/gc_tests.rs"
-      ],
-      "js_targets": [
-        "src/core/ranty.ts",
-        "src/core/runtime/vm.ts"
-      ],
+      "depends_on": ["runtime-core"],
+      "rust_paths": ["src/gc.rs", "src/gc_tests.rs"],
+      "matched_files": ["src/gc.rs", "src/gc_tests.rs"],
+      "js_targets": ["src/core/ranty.ts", "src/core/runtime/vm.ts"],
       "signature": "3943cb174be3832a7b5621c36430212167739e98000c3e784d55503d73a8b73a"
     },
     {
@@ -450,15 +407,8 @@
       "title": "Upstream behavior fixtures",
       "summary": "Canonical behavior fixtures and corpus outputs that the downstream JS repo vendors for parity testing.",
       "scope": "core",
-      "depends_on": [
-        "compiler",
-        "runtime-core",
-        "stdlib"
-      ],
-      "rust_paths": [
-        "tests/corpus/**/*",
-        "tests/sources/**/*"
-      ],
+      "depends_on": ["compiler", "runtime-core", "stdlib"],
+      "rust_paths": ["tests/corpus/**/*", "tests/sources/**/*"],
       "matched_files": [
         "tests/corpus/cli.json",
         "tests/corpus/fixtures.json",
