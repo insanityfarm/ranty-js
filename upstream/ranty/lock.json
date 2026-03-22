@@ -2,7 +2,7 @@
   "schema_version": 1,
   "upstream_repo": "https://github.com/insanityfarm/ranty",
   "vendored_root": "upstream/ranty",
-  "requested_ref": "04401491cb8774e70330111c1294eb8b6365d992",
+  "requested_ref": "25c9343eea9630f02c6aa05f1e7154ddd44ffdf4",
   "source_commit": "373604f041c64d3cf5b5eb8e349664f562ca9831",
   "contract_sha256": "8f8b2d5ca0c701377a01bf5e3b4d61409907a19c49740564afe78096e528a99b",
   "component_signatures": {
