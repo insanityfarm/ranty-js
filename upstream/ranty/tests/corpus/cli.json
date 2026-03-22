@@ -3,7 +3,9 @@
     {
       "name": "cli_help_mentions_ranty_and_supported_flags",
       "kind": "simple",
-      "args": ["--help"],
+      "args": [
+        "--help"
+      ],
       "stdin": null,
       "expectedStatus": 0,
       "expectedStdout": null,
@@ -23,7 +25,9 @@
     {
       "name": "cli_version_reports_the_current_build_version",
       "kind": "simple",
-      "args": ["--version"],
+      "args": [
+        "--version"
+      ],
       "stdin": null,
       "expectedStatus": 0,
       "expectedStdout": null,
@@ -42,7 +46,9 @@
       "files": {
         "hello.ranty": "\"hello from file\""
       },
-      "args": ["$WORKSPACE/hello.ranty"],
+      "args": [
+        "$WORKSPACE/hello.ranty"
+      ],
       "stdin": null,
       "expectedStatus": 0,
       "expectedStdout": "hello from file\n",
@@ -61,7 +67,11 @@
       "files": {
         "bad.ranty": "@if : {}"
       },
-      "args": ["--eval", "\"from eval\"", "$WORKSPACE/bad.ranty"],
+      "args": [
+        "--eval",
+        "\"from eval\"",
+        "$WORKSPACE/bad.ranty"
+      ],
       "stdin": null,
       "expectedStatus": 0,
       "expectedStdout": "from eval\n",
@@ -94,7 +104,12 @@
       "name": "cli_uses_deterministic_hex_seeds",
       "kind": "paired-simple",
       "first": {
-        "args": ["--seed", "0xdeadbeef", "--eval", "[rand:0;1000000]"],
+        "args": [
+          "--seed",
+          "0xdeadbeef",
+          "--eval",
+          "[rand:0;1000000]"
+        ],
         "stdin": null,
         "expectedStatus": 0,
         "stderrIncludes": [],
@@ -106,7 +121,12 @@
         }
       },
       "second": {
-        "args": ["--seed", "deadbeef", "--eval", "[rand:0;1000000]"],
+        "args": [
+          "--seed",
+          "deadbeef",
+          "--eval",
+          "[rand:0;1000000]"
+        ],
         "stdin": null,
         "expectedStatus": 0,
         "stderrIncludes": [],
@@ -121,12 +141,19 @@
     {
       "name": "cli_rejects_invalid_seed_values",
       "kind": "simple",
-      "args": ["--seed", "xyz", "--eval", "test"],
+      "args": [
+        "--seed",
+        "xyz",
+        "--eval",
+        "test"
+      ],
       "stdin": null,
       "expectedStatus": 64,
       "expectedStdout": null,
       "stdoutIncludes": [],
-      "stderrIncludes": ["invalid seed"],
+      "stderrIncludes": [
+        "invalid seed"
+      ],
       "stderrExcludes": [],
       "observed": {
         "status": 64,
@@ -138,10 +165,15 @@
       "name": "cli_can_suppress_warnings",
       "kind": "paired-simple",
       "first": {
-        "args": ["--eval", "<$unused = 1>ok"],
+        "args": [
+          "--eval",
+          "<$unused = 1>ok"
+        ],
         "stdin": null,
         "expectedStatus": 0,
-        "stderrIncludes": ["defined but never used"],
+        "stderrIncludes": [
+          "defined but never used"
+        ],
         "stderrExcludes": [],
         "observed": {
           "status": 0,
@@ -150,11 +182,17 @@
         }
       },
       "second": {
-        "args": ["--no-warnings", "--eval", "<$unused = 1>ok"],
+        "args": [
+          "--no-warnings",
+          "--eval",
+          "<$unused = 1>ok"
+        ],
         "stdin": null,
         "expectedStatus": 0,
         "stderrIncludes": [],
-        "stderrExcludes": ["defined but never used"],
+        "stderrExcludes": [
+          "defined but never used"
+        ],
         "observed": {
           "status": 0,
           "stdout": "ok\n",
@@ -165,7 +203,11 @@
     {
       "name": "cli_accepts_no_debug_flag",
       "kind": "simple",
-      "args": ["--no-debug", "--eval", "\"no debug\""],
+      "args": [
+        "--no-debug",
+        "--eval",
+        "\"no debug\""
+      ],
       "stdin": null,
       "expectedStatus": 0,
       "expectedStdout": "no debug\n",
@@ -181,12 +223,21 @@
     {
       "name": "cli_bench_mode_reports_compile_and_execution_timing",
       "kind": "simple",
-      "args": ["--bench-mode", "--seed", "1", "--eval", "\"bench\""],
+      "args": [
+        "--bench-mode",
+        "--seed",
+        "1",
+        "--eval",
+        "\"bench\""
+      ],
       "stdin": null,
       "expectedStatus": 0,
       "expectedStdout": "bench\n",
       "stdoutIncludes": [],
-      "stderrIncludes": ["Compiled", "Executed"],
+      "stderrIncludes": [
+        "Compiled",
+        "Executed"
+      ],
       "stderrExcludes": [],
       "observed": {
         "status": 0,
@@ -197,12 +248,17 @@
     {
       "name": "cli_returns_dataerr_for_compile_failures",
       "kind": "simple",
-      "args": ["--eval", "@require"],
+      "args": [
+        "--eval",
+        "@require"
+      ],
       "stdin": null,
       "expectedStatus": 65,
       "expectedStdout": null,
       "stdoutIncludes": [],
-      "stderrIncludes": ["Compile failed"],
+      "stderrIncludes": [
+        "Compile failed"
+      ],
       "stderrExcludes": [],
       "observed": {
         "status": 65,
@@ -213,12 +269,17 @@
     {
       "name": "cli_returns_software_for_runtime_failures",
       "kind": "simple",
-      "args": ["--eval", "[error: \"boom\"]"],
+      "args": [
+        "--eval",
+        "[error: \"boom\"]"
+      ],
       "stdin": null,
       "expectedStatus": 70,
       "expectedStdout": null,
       "stdoutIncludes": [],
-      "stderrIncludes": ["Runtime error"],
+      "stderrIncludes": [
+        "Runtime error"
+      ],
       "stderrExcludes": [],
       "observed": {
         "status": 70,
