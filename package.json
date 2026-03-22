@@ -1,7 +1,7 @@
 {
   "name": "ranty-js",
   "version": "1.0.0",
-  "description": "TypeScript port of the Ranty procedural templating language",
+  "description": "Ranty.js - JavaScript port of the Ranty procedural templating language",
   "license": "MIT",
   "repository": {
     "type": "git",

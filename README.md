@@ -1,3 +1,5 @@
+[![NPM](https://img.shields.io/npm/dy/ranty-js)](https://www.npmjs.com/package/ranty-js)
+
 # Ranty.js
 
 Ranty.js is the TypeScript port of
